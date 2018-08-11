@@ -113,7 +113,7 @@ body {
 }
 
 .demo-layout .demo-navigation .mdl-navigation__link:hover {
-	background-color: rgba(0, 0, 0, .1);
+	background-color: rgba(0, 0, 0, .08);
 	color: #607d8b;
 }
 
@@ -133,11 +133,70 @@ body {
 }
 
 .mdl-menu__item {
-	color: #757575;
+	color: rgba(0, 0, 0, 0.54);
 }
 
 .mdl-menu__item .material-icons {
 	margin-right: 16px;
+	vertical-align: middle;
+}
+
+.mdl-cell {
+	border-radius: 8px
+}
+
+.mdl-dialog {
+	border: none;
+	box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2);
+	width: 320px;
+	border-radius: 8px;
+}
+
+.mdl-dialog__title {
+	padding: 8px;
+	margin: 0;
+	font-size: 1rem;
+}
+
+.mdl-dialog__actions {
+	padding: 8px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.mdl-dialog__actions > * {
+	margin-right: 8px;
+	height: 36px;
+}
+
+.mdl-dialog__actions > *:first-child {
+	margin-right: 0;
+}
+
+.mdl-dialog__actions--full-width {
+	padding: 0 0 8px 0;
+}
+
+.mdl-dialog__actions--full-width > * {
+	height: 48px;
+	-webkit-flex: 0 0 100%;
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	padding-right: 16px;
+	margin-right: 0;
+	text-align: right;
+}
+
+.mdl-dialog__content {
+	padding: 8px;
+	color: rgba(0, 0, 0, 0.54);
 }
 
 /*---------------------------*/
@@ -236,7 +295,7 @@ _:-ms-input-placeholder,
 
 .demo-updates .mdl-card__title {
 	min-height: 200px;
-	background-image: url('images/dog.png');
+	background-image: url("../images/dog.png");
 	background-position: 90% 100%;
 	background-repeat: no-repeat;
 }
@@ -277,7 +336,6 @@ _:-ms-input-placeholder,
 	-ms-flex-align: center;
 	align-items: center;
 }
-
 
 @media (max-width: 640px) {
 	.demo-content {
