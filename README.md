@@ -1,2 +1,2 @@
-# konnect
+# Konnect
 Intranet for NCERC
