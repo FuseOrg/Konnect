@@ -17,7 +17,12 @@ a {
 
 html,
 body {
-	font-family: 'Roboto', 'Helvetica', sans-serif;
+	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
+	font-size: 18px;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 .demo-avatar {
@@ -104,7 +109,7 @@ body {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .demo-layout .demo-navigation .mdl-navigation__link:hover {
@@ -121,17 +126,28 @@ body {
 	margin-left: 16px;
 }
 
+/*---------------------------*/
+
+.active {
+	color: #ff4081 !important;
+}
+
+.mdl-menu__item {
+	color: #757575;
+}
 
 .mdl-menu__item .material-icons {
 	margin-right: 16px;
 }
 
+/*---------------------------*/
 
 .demo-content {
-	max-width: 1080px;
+	padding: 32px;
 }
 
 .demo-charts {
+	padding: 32px;
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
@@ -207,7 +223,7 @@ _:-ms-input-placeholder,
 .demo-cards .mdl-card__title.mdl-card__title {
 	color: white;
 	font-size: 24px;
-	font-weight: 400;
+	font-weight: 600;
 }
 
 .demo-cards ul {
@@ -260,4 +276,11 @@ _:-ms-input-placeholder,
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
+}
+
+
+@media (max-width: 640px) {
+	.demo-content {
+		padding: 0;
+	}
 }
