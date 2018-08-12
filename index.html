@@ -30,22 +30,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-pink.min.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <style>
-    #fab {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 28px;
-      margin-bottom: 28px;
-      z-index: 3;
-    }
-    </style>
   </head>
   <body>
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
       <header class="demo-header mdl-layout__header mdl-color--blue-grey-500 mdl-color-text--white">
-        <div class="mdl-layout__header-row">
+        <div class="demo-header-row mdl-layout__header-row">
           <span class="mdl-layout-title">Dashboard</span>
           <div class="mdl-layout-spacer"></div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
@@ -57,9 +46,10 @@
               <label class="mdl-textfield__label" for="search">Enter your query...</label>
             </div>
           </div>
-          <button id="notifications" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons">notifications_none</i>
-          </button>
+					<button id="notifications" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+						<i class="material-icons" data-badge="3">notifications</i>
+					</button>
+          <span class="mdl-badge mdl-badge--overlap" data-badge="4"></span>
           <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="notifications">
             <li class="mdl-menu__item"><i class="material-icons">done</i>Notification #1</li>
             <li class="mdl-menu__item"><i class="material-icons">done</i>Notification #2</li>
@@ -101,7 +91,8 @@
           <a class="mdl-navigation__link" href="src/documents.html"><i class="material-icons" role="presentation">file_copy</i>Documents</a>
           <a class="mdl-navigation__link" href="src/gallery.html"><i class="material-icons" role="presentation">image</i>Gallery</a>
           <a class="mdl-navigation__link" href="src/profile.html"><i class="material-icons" role="presentation">face</i>Profile</a>
-          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-layout-spacer mdl-menu__item--full-bleed-divider"></div>
+          <a class="mdl-navigation__link" href=""><i class="material-icons" role="presentation">settings</i>Settings</a>
           <a class="mdl-navigation__link" href=""><i class="material-icons" role="presentation">help_outline</i>Help</a>
         </nav>
       </div>
@@ -184,6 +175,58 @@
             </div>
           </div>
         </div>
+        <footer class="mdl-mega-footer">
+          <div class="mdl-mega-footer--middle-section">
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Features</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Updates</a></li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Details</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="#">Spec</a></li>
+                <li><a href="#">Tools</a></li>
+                <li><a href="#">Resources</a></li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">FAQ</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="#">Questions</a></li>
+                <li><a href="#">Answers</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Quick Links</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="#">Link #1</a></li>
+                <li><a href="#">Link #2</a></li>
+                <li><a href="#">Link #3</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-mega-footer--bottom-section">
+            <div class="mdl-logo">
+              Konnect
+            </div>
+            <ul class="mdl-mega-footer--link-list">
+             	<li><i class="material-icons">favorite</i></li>
+              <li><a href="https://fuse-org.firebaseapp.com">&copy;Fuse Org</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy and Terms</a></li>
+            </ul>
+          </div>
+        </footer>
       </main>
     </div>
 		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="position: fixed; left: -1000px; height: -1000px;">

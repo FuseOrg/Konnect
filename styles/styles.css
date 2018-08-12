@@ -26,9 +26,9 @@ body {
 }
 
 .demo-avatar {
-	width: 48px;
-	height: 48px;
-	border-radius: 24px;
+	width: 64px;
+	height: 64px;
+	border-radius: 100%;
 }
 
 .demo-layout .mdl-layout__header .mdl-layout__drawer-button {
@@ -128,6 +128,10 @@ body {
 
 /*---------------------------*/
 
+.demo-header-row {
+	padding: 0 16px 0 64px;
+}
+
 .active {
 	color: #ff4081 !important;
 }
@@ -200,6 +204,21 @@ body {
 }
 
 /*---------------------------*/
+
+#fab {
+	position: fixed;
+	display: block;
+	right: 0;
+	bottom: 0;
+	margin-right: 28px;
+	margin-bottom: 28px;
+	z-index: 3;
+}
+
+.mdl-layout-title {
+	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
+	font-size: 22px;
+}
 
 .demo-content {
 	padding: 32px;
