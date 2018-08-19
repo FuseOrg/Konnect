@@ -36,6 +36,7 @@ html,
 body {
 	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
 	font-size: 18px;
+	line-height: 1.5;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -118,7 +119,7 @@ body {
 
 .demo-layout .demo-navigation .mdl-navigation__link {
 	padding: 16px;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 600;
 }
 
@@ -163,11 +164,11 @@ body {
 	height: auto;
 }
 
-.mdl-cell {
-}
+.mdl-card {}
 
-.mdl-card {
+.section--center .mdl-card {
 	padding: 16px;
+	margin: 0;
 }
 
 .mdl-card__supporting-text {
@@ -177,6 +178,7 @@ body {
 	width: 100%;
 	padding: 8px;
 	text-overflow: ellipsis;
+	line-height: 1.5;
 }
 
 .section__play-btn {
@@ -184,6 +186,23 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 256px;
+}
+
+.section__play-btn .material-icons {
+	font-size: 3rem;
+}
+
+.demo-card-image.mdl-card {
+	min-height: 256px;
+	background-position: center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+}
+
+.demo-card-image .mdl-card__actions {
+	padding: 16px;
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .2));
+	color: #fff;
 }
 
 .mdl-dialog {
