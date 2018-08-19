@@ -155,7 +155,7 @@ body {
 	vertical-align: middle;
 }
 
-.mdl-button:not(.mdl-button--icon) {
+.mdl-button:not(.mdl-button--icon):not(.mdl-button--fab) {
 	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
 	text-transform: none;
 	font-size: 18px;
