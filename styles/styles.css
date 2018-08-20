@@ -292,7 +292,7 @@ h4.heading {
 	font-size: 16px;
 }
 
-.mdl-data-table tr td.mdl-data-table__cell--non-numeric:hover {
+.mdl-data-table a:hover {
 	color: var(--accent-color);
 }
 
