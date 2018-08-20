@@ -19,7 +19,7 @@ h5,
 h6 {
 	margin: 8px 0;
 	padding: 0;
-	font-weight: 600;
+	font-weight: 400;
 	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
 }
 
@@ -120,7 +120,7 @@ body {
 .demo-layout .demo-navigation .mdl-navigation__link {
 	padding: 16px;
 	font-size: 16px;
-	font-weight: 600;
+	color: inherit;
 }
 
 .demo-layout .demo-navigation .mdl-navigation__link:hover {
@@ -148,7 +148,7 @@ body {
 }
 
 .mdl-menu__item {
-	color: rgba(0, 0, 0, 0.54);
+	color: rgba(0, 0, 0, 0.68);
 }
 
 .mdl-menu__item .material-icons {
@@ -160,7 +160,7 @@ body {
 	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
 	text-transform: none;
 	font-size: 18px;
-	padding: 8px 16px;
+	padding: 4px 16px;
 	margin: 4px;
 	height: auto;
 }
@@ -168,6 +168,7 @@ body {
 h4.heading {
 	padding: 8px 0;
 }
+
 .mdl-card {
 	transition: 200ms ease;
 }
@@ -226,13 +227,17 @@ h4.heading {
 	color: #fff;
 }
 
+.demo-card-event .mdl-card__actions .mdl-button {
+	color: #fff;
+}
+
 .mdl-data-table {
 	table-layout: fixed;
 	width: 100% !important;
 	font-size: 16px;
 }
 
-.mdl-data-table tr:hover {
+.mdl-data-table tr td.mdl-data-table__cell--non-numeric:hover {
 	color: var(--accent-color);
 }
 
@@ -299,7 +304,7 @@ th {
 
 .mdl-dialog__content {
 	padding: 8px;
-	color: rgba(0, 0, 0, 0.54);
+	color: rgba(0, 0, 0, 0.68);
 }
 
 .mdl-mega-footer--link-list a:hover {
@@ -405,7 +410,6 @@ _:-ms-input-placeholder,
 .demo-cards .mdl-card__title.mdl-card__title {
 	color: white;
 	font-size: 24px;
-	font-weight: 600;
 }
 
 .demo-cards ul {
@@ -417,7 +421,7 @@ _:-ms-input-placeholder,
 }
 
 .demo-options .mdl-checkbox__box-outline {
-	border-color: rgba(255, 255, 255, 0.89);
+	border-color: #fff;
 }
 
 .demo-options ul {
