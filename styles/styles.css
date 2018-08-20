@@ -190,8 +190,6 @@ body {
 	padding: 8px;
 }
 
-/*---------------------------*/
-
 .demo-header-row {
 	padding: 0 16px 0 64px;
 }
@@ -257,12 +255,12 @@ h4.heading {
 	background-size: cover !important;
 	background-repeat: no-repeat !important;
 	border-radius: 8px;
+	color: #fff;
 }
 
 .demo-card-image .mdl-card__actions {
 	padding: 16px;
 	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .2));
-	color: #fff;
 }
 
 .demo-card-event.mdl-card {
@@ -306,6 +304,10 @@ th {
 .mdl-data-table td:first-of-type,
 .mdl-data-table th:first-of-type {
 	text-align: left;
+}
+
+.del:hover {
+	color: #f44336 !important;
 }
 
 .section--footer {
@@ -375,8 +377,6 @@ th {
 .mdl-mega-footer--link-list a:hover {
 	color: #fff;
 }
-
-/*---------------------------*/
 
 @media (max-width: 640px) {
 	.demo-content {
