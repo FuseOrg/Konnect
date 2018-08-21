@@ -35,6 +35,7 @@ a {
 
 html,
 body {
+	margin: 0;
 	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
 	font-size: 18px;
 	line-height: 1.5;
@@ -138,6 +139,11 @@ body {
 	margin-left: 16px;
 }
 
+.logo {
+	font-weight: 600;
+	margin: 0 8px 0 0;
+}
+
 #fab {
 	position: fixed;
 	display: block;
@@ -156,13 +162,6 @@ body {
 .demo-content {
 	padding: 32px;
 	max-width: 1080px;
-}
-
-.demo-charts {
-	padding: 32px;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
 }
 
 .demo-options .mdl-checkbox__box-outline,
@@ -306,6 +305,8 @@ th {
 	text-align: left;
 }
 
+.mdl-data-table tr:hover {}
+
 .del:hover {
 	color: #f44336 !important;
 }
@@ -318,6 +319,10 @@ th {
 	width: 64px;
 	height: 64px;
 	border-radius: 100%;
+}
+
+.mdl-mega-footer--link-list a:hover {
+	color: #fff;
 }
 
 .mdl-dialog {
@@ -374,8 +379,10 @@ th {
 	color: rgba(0, 0, 0, 0.68);
 }
 
-.mdl-mega-footer--link-list a:hover {
-	color: #fff;
+.mdl-snackbar {
+	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
+	font-size: 18px;
+	margin: 8px;
 }
 
 @media (max-width: 640px) {
@@ -384,5 +391,8 @@ th {
 	}
 	.section--footer {
 		padding: 32px 8px;
+	}
+	.mdl-snackbar {
+		margin: 0;
 	}
 }
