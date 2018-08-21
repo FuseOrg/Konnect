@@ -77,8 +77,9 @@ body {
 	margin: 4px 0;
 }
 
-.input:placeholder {
+.input::placeholder {
 	color: #fff;
+	opacity: .4;
 }
 
 .input:last-of-type {
