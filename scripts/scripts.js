@@ -27,7 +27,7 @@
 		}
 		var data = {
 			message: 'Accent color changed!',
-			timeout: 5000,
+			timeout: 10000,
 			actionHandler: handler,
 			actionText: 'Undo'
 		};
@@ -40,7 +40,8 @@
 	showToastButton.addEventListener('click', function () {
 		'use strict';
 		var data = {
-			message: 'Toast #' + ++counter
+			message: 'Toast #' + ++counter,
+			timeout: 5000
 		};
 		snackbarContainer.MaterialSnackbar.showSnackbar(data);
 	});
