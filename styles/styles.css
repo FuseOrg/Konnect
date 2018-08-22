@@ -144,6 +144,12 @@ body {
 	margin: 0 8px 0 0;
 }
 
+.img-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
 #fab {
 	position: fixed;
 	display: block;
