@@ -51,6 +51,11 @@ body {
 	border-radius: 100%;
 }
 
+.demo-layout .mdl-layout__header .mdl-layout__drawer-button {
+	background: transparent;
+	color: inherit;
+}
+
 .mdl-layout__drawer .avatar {
 	margin-bottom: 16px;
 }
