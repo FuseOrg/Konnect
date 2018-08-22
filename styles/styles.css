@@ -53,7 +53,7 @@ body {
 
 .demo-layout .mdl-layout__header .mdl-layout__drawer-button {
 	background: transparent;
-	color: inherit;
+	color: rgba(0, 0, 0, .87);
 }
 
 .mdl-layout__drawer .avatar {
