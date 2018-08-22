@@ -5,60 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Intranet for NCERC">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Konnect</title>
-
-		<meta name="theme-color" content="#607d8b">
+    <title>Konnect | Dashboard</title>
+		<meta name="theme-color" content="#fff">
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
 		<meta name="application-name" content="Konnect">
     <link rel="icon" sizes="192x192" href="../images/android-desktop.png">
-
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
     <meta name="apple-mobile-web-app-title" content="Konnect">
     <link rel="apple-touch-icon-precomposed" href="../images/ios-desktop.png">
-
     <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="../images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#607d8b">
-
+    <meta name="msapplication-TileImage" content="../images/ios-desktop.png">
+    <meta name="msapplication-TileColor" content="#fff">
     <link rel="shortcut icon" href="../images/favicon.png">
-
 <!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-pink.min.css">
+    <link rel="stylesheet" href="../styles/material.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
   </head>
-  <body>
+  <body class="mdl-demo mdl-color--grey-50 mdl-color-text--grey-800 mdl-base">
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
       <header class="demo-header mdl-layout__header">
         <div class="demo-header-row mdl-layout__header-row">
-          <span class="mdl-layout-title">Dashboard</span>
+          <span class="mdl-layout-title logo">Konnect</span>
           <div class="mdl-layout-spacer"></div>
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+          <!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" for="search">
               <i class="material-icons">search</i>
             </label>
             <div class="mdl-textfield__expandable-holder">
               <input class="mdl-textfield__input" type="text" id="search">
-              <label class="mdl-textfield__label" for="search">Enter your query...</label>
+              <label class="mdl-textfield__label" for="search">Search</label>
             </div>
-          </div>
+          </div> -->
 					<button id="notifications" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-						<i class="material-icons" data-badge="3">notifications</i>
+						<i class="material-icons">notifications</i>
 					</button>
           <span class="mdl-badge mdl-badge--overlap" data-badge="4"></span>
           <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="notifications">
             <li class="mdl-menu__item"><i class="material-icons">done</i>Notification #1</li>
             <li class="mdl-menu__item"><i class="material-icons">done</i>Notification #2</li>
             <li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">done</i>Notification #3</li>
+            <li class="mdl-menu__item"><i class="material-icons">notifications</i>All notifications</li>
             <li class="mdl-menu__item"><i class="material-icons">done_all</i>Mark all as read</li>
           </ul>
-          <button id="hdrbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons">more_vert</i>
-          </button>
+          <button id="hdrbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon img-bg" style="background-image: url(../images/user.jpg);"></button>
           <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
 						<li class="mdl-menu__item"><i class="material-icons">face</i>Profile</li>
 						<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">settings</i>Settings</li>
@@ -66,14 +60,14 @@
           </ul>
         </div>
       </header>
-      <div class="demo-drawer mdl-layout__drawer mdl-color--grey-100 mdl-color-text--grey-600 mdl-shadow--6dp">
+      <div class="demo-drawer mdl-layout__drawer mdl-color--grey-100 mdl-shadow--6dp">
         <header class="demo-drawer-header">
           <img src="../images/user.jpg" class="demo-avatar avatar">
           <div class="demo-avatar-dropdown">
-						<a href="profile.html"><span>Username</span></a>
+						<a href=""><span>User name</span></a>
             <div class="mdl-layout-spacer"></div>
             <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-              <i class="material-icons" role="presentation">account_circle</i>
+              <i class="material-icons" role="presentation">arrow_drop_down</i>
               <span class="visuallyhidden">Accounts</span>
             </button>
             <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
@@ -83,10 +77,11 @@
             </ul>
           </div>
         </header>
-        <nav class="demo-navigation mdl-navigation mdl-color--white mdl-color-text--grey-50">
+        <nav class="demo-navigation mdl-navigation mdl-color--white">
           <a class="mdl-navigation__link active" href=""><i class="material-icons" role="presentation">home</i>Dashboard</a>
-          <a class="mdl-navigation__link" href="news.html"><i class="material-icons" role="presentation">announcement</i><span class="mdl-badge mdl-badge--no-background" data-badge="4">News</span></a>
-					<a class="mdl-navigation__link" href="events.html"><i class="material-icons" role="presentation">event</i><span class="mdl-badge mdl-badge--no-background" data-badge="2">Events</span></a>
+          <a class="mdl-navigation__link" href=""><i class="material-icons" role="presentation">notifications</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
+          <a class="mdl-navigation__link" href="news.html"><i class="material-icons" role="presentation">announcement</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
+					<a class="mdl-navigation__link" href="events.html"><i class="material-icons" role="presentation">event</i><span class="mdl-badge mdl-badge--no-background" data-badge="1">Events</span></a>
           <a class="mdl-navigation__link" href="directory.html"><i class="material-icons" role="presentation">group</i>Directory</a>
           <a class="mdl-navigation__link" href="files.html"><i class="material-icons" role="presentation">file_copy</i>Files</a>
           <a class="mdl-navigation__link" href="gallery.html"><i class="material-icons" role="presentation">image</i>Gallery</a>
@@ -96,85 +91,617 @@
           <a class="mdl-navigation__link" href=""><i class="material-icons" role="presentation">help_outline</i>Help</a>
         </nav>
       </div>
-      <main class="mdl-layout__content mdl-color--grey-200">
+      <main class="mdl-layout__content">
         <div class="mdl-grid demo-content">
-          <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-            <svg fill="currentColor" width="128px" height="128px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)" />
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan></text>
-            </svg>
-            <svg fill="currentColor" width="128px" height="128px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)" />
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-            </svg>
-            <svg fill="currentColor" width="128px" height="128px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)" />
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-            </svg>
-            <svg fill="currentColor" width="128px" height="128px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)" />
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-            </svg>
-          </div>
-          <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
-            <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
-              <use xlink:href="#chart" />
-            </svg>
-            <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
-              <use xlink:href="#chart" />
-            </svg>
-          </div>
-          <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-            <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
-                <h2 class="mdl-card__title-text">Updates</h2>
+					<!--News cards-->
+					<h4 class="heading mdl-cell mdl-cell--12-col">News</h4>
+          <div class="section--center mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--5-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-color--grey-400">
+              <i class="material-icons">play_circle_filled</i>
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--7-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Heading</h4>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus perferendis dolorem aspernatur necessitatibus dolorum debitis cumque eum, dicta.
               </div>
-              <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Read more</a>
               </div>
-              <div class="mdl-card__actions mdl-card--border">
-                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read More</a>
-              </div>
-            </div>
-            <div class="demo-separator mdl-cell--1-col"></div>
-            <div class="demo-options mdl-card mdl-color--deep-purple-500 mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--12-col-desktop">
-              <div class="mdl-card__supporting-text mdl-color-text--blue-grey-50">
-                <h3>View options</h3>
-                <ul>
-                  <li>
-                    <label for="chkbox1" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input type="checkbox" id="chkbox1" class="mdl-checkbox__input">
-                      <span class="mdl-checkbox__label">Click per object</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label for="chkbox2" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input type="checkbox" id="chkbox2" class="mdl-checkbox__input">
-                      <span class="mdl-checkbox__label">Views per object</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label for="chkbox3" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input type="checkbox" id="chkbox3" class="mdl-checkbox__input">
-                      <span class="mdl-checkbox__label">Objects selected</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label for="chkbox4" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input type="checkbox" id="chkbox4" class="mdl-checkbox__input">
-                      <span class="mdl-checkbox__label">Objects viewed</span>
-                    </label>
-                  </li>
-                </ul>
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--blue-grey-50">Change location</a>
-                <div class="mdl-layout-spacer"></div>
-                <i class="material-icons">location_on</i>
-              </div>
+							<div class="mdl-card__menu">
+								<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+									<i class="material-icons">more_vert</i>
+								</button>
+							</div>
             </div>
           </div>
+          <div class="section--center mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--5-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-color--grey-400">
+              <i class="material-icons">play_circle_filled</i>
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--7-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Heading</h4>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus perferendis dolorem aspernatur necessitatibus dolorum debitis cumque eum, dicta.
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Read more</a>
+              </div>
+							<div class="mdl-card__menu">
+								<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+									<i class="material-icons">more_vert</i>
+								</button>
+							</div>
+            </div>
+          </div>
+          <div class="section--center mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--5-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-color--grey-400">
+              <i class="material-icons">play_circle_filled</i>
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--7-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Heading</h4>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus perferendis dolorem aspernatur necessitatibus dolorum debitis cumque eum, dicta.
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Read more</a>
+              </div>
+							<div class="mdl-card__menu">
+								<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+									<i class="material-icons">more_vert</i>
+								</button>
+							</div>
+            </div>
+          </div>
+					<!--Event cards-->
+					<h4 class="heading mdl-cell mdl-cell--12-col">Events</h4>
+					<div class="demo-card-event mdl-card mdl-shadow--2dp mdl-color--red-500 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title mdl-card--expand">
+							<h4>
+								Event<br>
+								May 24, 2018<br>
+								7-11PM
+							</h4>
+						</div>
+						<div class="demo-options">
+							<ul>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+										<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+										<span class="mdl-checkbox__label">Attending</span>
+									</label>
+								</li>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+										<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
+										<span class="mdl-checkbox__label">Notify</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+								Add to Calendar
+							</button>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">event</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+					<div class="demo-card-event mdl-card mdl-shadow--2dp mdl-color--amber-500 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title mdl-card--expand">
+							<h4>
+								Event<br>
+								May 24, 2018<br>
+								7-11PM
+							</h4>
+						</div>
+						<div class="demo-options">
+							<ul>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+										<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+										<span class="mdl-checkbox__label">Attending</span>
+									</label>
+								</li>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+										<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
+										<span class="mdl-checkbox__label">Notify</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+								Add to Calendar
+							</button>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">event</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+					<div class="demo-card-event mdl-card mdl-shadow--2dp mdl-color--green-500 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title mdl-card--expand">
+							<h4>
+								Event<br>
+								May 24, 2018<br>
+								7-11PM
+							</h4>
+						</div>
+						<div class="demo-options">
+							<ul>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+										<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+										<span class="mdl-checkbox__label">Attending</span>
+									</label>
+								</li>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+										<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
+										<span class="mdl-checkbox__label">Notify</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+								Add to Calendar
+							</button>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">event</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+					<div class="demo-card-event mdl-card mdl-shadow--2dp mdl-color--blue-500 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title mdl-card--expand">
+							<h4>
+								Event<br>
+								May 24, 2018<br>
+								7-11PM
+							</h4>
+						</div>
+						<div class="demo-options">
+							<ul>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+										<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+										<span class="mdl-checkbox__label">Attending</span>
+									</label>
+								</li>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+										<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
+										<span class="mdl-checkbox__label">Notify</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+								Add to Calendar
+							</button>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">event</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+					<div class="demo-card-event mdl-card mdl-shadow--2dp mdl-color--cyan-500 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title mdl-card--expand">
+							<h4>
+								Event<br>
+								May 24, 2018<br>
+								7-11PM
+							</h4>
+						</div>
+						<div class="demo-options">
+							<ul>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+										<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+										<span class="mdl-checkbox__label">Attending</span>
+									</label>
+								</li>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+										<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
+										<span class="mdl-checkbox__label">Notify</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+								Add to Calendar
+							</button>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">event</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+					<div class="demo-card-event mdl-card mdl-shadow--2dp mdl-color--teal-500 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title mdl-card--expand">
+							<h4>
+								Event<br>
+								May 24, 2018<br>
+								7-11PM
+							</h4>
+						</div>
+						<div class="demo-options">
+							<ul>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+										<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+										<span class="mdl-checkbox__label">Attending</span>
+									</label>
+								</li>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+										<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
+										<span class="mdl-checkbox__label">Notify</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+								Add to Calendar
+							</button>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">event</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+					<!--Directory table-->
+					<h4 class="heading mdl-cell mdl-cell--12-col">Directory</h4>
+					<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<thead>
+							<tr>
+								<th class="mdl-data-table__cell--non-numeric mdl-data-table__header--sorted-ascending">Departments</th>
+								<th>Strength</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric"><a href="">AUE</a></td>
+								<td>546</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric"><a href="">CSE</a></td>
+								<td>642</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric"><a href="">ECE</a></td>
+								<td>556</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric"><a href="">EEE</a></td>
+								<td>596</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric"><a href="">ME</a></td>
+								<td>544</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric"><a href="">MTR</a></td>
+								<td>566</td>
+							</tr>
+						</tbody>
+					</table>
+					<!--Files table-->
+					<h4 class="heading mdl-cell mdl-cell--12-col">Files</h4>
+					<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<thead>
+							<tr>
+								<th class="mdl-data-table__cell--non-numeric">File</th>
+								<th>Actions</th>
+								<th>Department</th>
+								<th>Uploaded by</th>
+								<th class="mdl-data-table__header--sorted-descending">Date</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric"><a href="">Admit Card.pdf</a></td>
+								<td>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">get_app</i>
+									</a>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
+										<i class="material-icons">delete</i>
+									</a>
+								</td>
+								<td>Administrative Office</td>
+								<td>CMO</td>
+								<td>11/5/18</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric"><a href="">Progress Card.docx</a></td>
+								<td>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">get_app</i>
+									</a>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
+										<i class="material-icons">delete</i>
+									</a>
+								</td>
+								<td>Principal</td>
+								<td>Principal</td>
+								<td>8/5/18</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric"><a href="">Notice.pdf</a></td>
+								<td>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">get_app</i>
+									</a>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
+										<i class="material-icons">delete</i>
+									</a>
+								</td>
+								<td>CSE</td>
+								<td>HOD</td>
+								<td>17/5/18</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric"><a href="">Overall Report.pdf</a></td>
+								<td>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">get_app</i>
+									</a>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
+										<i class="material-icons">delete</i>
+									</a>
+								</td>
+								<td>CSE</td>
+								<td>Silja Varghees</td>
+								<td>25/5/18</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric"><a href="">S3 Report.xcl</a></td>
+								<td>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">get_app</i>
+									</a>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
+										<i class="material-icons">delete</i>
+									</a>
+								</td>
+								<td>CSE</td>
+								<td>Sruthy M R</td>
+								<td>7/6/18</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric"><a href="">S2 Report.xcl</a></td>
+								<td>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">get_app</i>
+									</a>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
+										<i class="material-icons">delete</i>
+									</a>
+								</td>
+								<td>CSE</td>
+								<td>Shiji S</td>
+								<td>8/6/18</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric"><a href="">Upload new file</a></td>
+								<td>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">add</i>
+									</a>
+								</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+					<!--Gallery cards-->
+					<h4 class="heading mdl-cell mdl-cell--12-col">Gallery</h4>
+					<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg1.jpg)">
+						<div class="mdl-card__title mdl-card--expand"></div>
+						<div class="mdl-card__actions">
+							<span>Image</span>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">open_in_new</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+					<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg2.jpg)">
+						<div class="mdl-card__title mdl-card--expand"></div>
+						<div class="mdl-card__actions">
+							<span>Image</span>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">open_in_new</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+					<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg3.jpg)">
+						<div class="mdl-card__title mdl-card--expand"></div>
+						<div class="mdl-card__actions">
+							<span>Image</span>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">open_in_new</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+					<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg4.jpg)">
+						<div class="mdl-card__title mdl-card--expand"></div>
+						<div class="mdl-card__actions">
+							<span>Image</span>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">open_in_new</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+					<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg1.jpg)">
+						<div class="mdl-card__title mdl-card--expand"></div>
+						<div class="mdl-card__actions">
+							<span>Image</span>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">open_in_new</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+					<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg2.jpg)">
+						<div class="mdl-card__title mdl-card--expand"></div>
+						<div class="mdl-card__actions">
+							<span>Image</span>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">open_in_new</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+					<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg3.jpg)">
+						<div class="mdl-card__title mdl-card--expand"></div>
+						<div class="mdl-card__actions">
+							<span>Image</span>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">open_in_new</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+					<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg4.jpg)">
+						<div class="mdl-card__title mdl-card--expand"></div>
+						<div class="mdl-card__actions">
+							<span>Image</span>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">open_in_new</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
         </div>
+				<div class="section--footer mdl-color--grey-200 mdl-grid">
+					<div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
+						<div class="mdl-color--accent section__circle"></div>
+					</div>
+					<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+						<h4>Username</h4>
+						Bio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus perferendis dolorem aspernatur necessitatibus dolorum debitis cumque eum, dicta.
+					</div>
+					<div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
+						<div class="mdl-color--primary section__circle"></div>
+					</div>
+					<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+						<h4>NCE15CS037</h4>
+						Department: CSE<br>
+						Division: A<br>
+						Semester: S7
+					</div>
+					<div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
+						<div class="mdl-color--primary section__circle"></div>
+					</div>
+					<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+						<h4>Excellence</h4>
+						Subject #1: A+<br>
+						Subject #2: C<br>
+						Subject #3: B+<br>
+						Subject #4: D<br>
+						Subject #5: F<br>
+						Subject #6: O
+					</div>
+					<div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
+						<div class="mdl-color--primary section__circle"></div>
+					</div>
+					<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+						<h4>Progress</h4>
+						Subject #1: A+<br>
+						Subject #2: C<br>
+						Subject #3: B+<br>
+						Subject #4: D<br>
+						Subject #5: F<br>
+						Subject #6: O
+					</div>
+				</div>
         <footer class="mdl-mega-footer">
           <div class="mdl-mega-footer--middle-section">
             <div class="mdl-mega-footer--drop-down-section">
@@ -216,11 +743,11 @@
             </div>
           </div>
           <div class="mdl-mega-footer--bottom-section">
-            <div class="mdl-logo">
+            <div class="mdl-logo logo">
               Konnect
             </div>
             <ul class="mdl-mega-footer--link-list">
-             	<li><i class="material-icons">device_hub</i></li>
+             	<li><i class="material-icons">favorite</i></li>
               <li><a href="https://fuse-org.firebaseapp.com">&copy;Fuse Org</a></li>
               <li><a href="#">Help</a></li>
               <li><a href="#">Privacy and Terms</a></li>
@@ -229,81 +756,30 @@
         </footer>
       </main>
     </div>
-		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="position: fixed; left: -1000px; height: -1000px;">
-			<defs>
-				<mask id="piemask" maskContentUnits="objectBoundingBox">
-					<circle cx=0.5 cy=0.5 r=0.49 fill="white" />
-					<circle cx=0.5 cy=0.5 r=0.40 fill="black" />
-				</mask>
-				<g id="piechart">
-					<circle cx=0.5 cy=0.5 r=0.5 />
-					<path d="M 0.5 0.5 0.5 0 A 0.5 0.5 0 0 1 0.95 0.28 z" stroke="none" fill="rgba(255, 255, 255, 0.75)" />
-				</g>
-			</defs>
-		</svg>
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 250" style="position: fixed; left: -1000px; height: -1000px;">
-			<defs>
-				<g id="chart">
-					<g id="Gridlines">
-						<line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="27.3" x2="468.3" y2="27.3" />
-						<line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="66.7" x2="468.3" y2="66.7" />
-						<line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="105.3" x2="468.3" y2="105.3" />
-						<line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="144.7" x2="468.3" y2="144.7" />
-						<line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="184.3" x2="468.3" y2="184.3" />
-					</g>
-					<g id="Numbers">
-						<text transform="matrix(1 0 0 1 485 29.3333)" fill="#888888" font-family="Roboto" font-size="9">500</text>
-						<text transform="matrix(1 0 0 1 485 69)" fill="#888888" font-family="Roboto" font-size="9">400</text>
-						<text transform="matrix(1 0 0 1 485 109.3333)" fill="#888888" font-family="Roboto" font-size="9">300</text>
-						<text transform="matrix(1 0 0 1 485 149)" fill="#888888" font-family="Roboto" font-size="9">200</text>
-						<text transform="matrix(1 0 0 1 485 188.3333)" fill="#888888" font-family="Roboto" font-size="9">100</text>
-						<text transform="matrix(1 0 0 1 0 249.0003)" fill="#888888" font-family="Roboto" font-size="9">1</text>
-						<text transform="matrix(1 0 0 1 78 249.0003)" fill="#888888" font-family="Roboto" font-size="9">2</text>
-						<text transform="matrix(1 0 0 1 154.6667 249.0003)" fill="#888888" font-family="Roboto" font-size="9">3</text>
-						<text transform="matrix(1 0 0 1 232.1667 249.0003)" fill="#888888" font-family="Roboto" font-size="9">4</text>
-						<text transform="matrix(1 0 0 1 309 249.0003)" fill="#888888" font-family="Roboto" font-size="9">5</text>
-						<text transform="matrix(1 0 0 1 386.6667 249.0003)" fill="#888888" font-family="Roboto" font-size="9">6</text>
-						<text transform="matrix(1 0 0 1 464.3333 249.0003)" fill="#888888" font-family="Roboto" font-size="9">7</text>
-					</g>
-					<g id="Layer_5">
-						<polygon opacity="0.36" stroke-miterlimit="10" points="0,223.3 48,138.5 154.7,169 211,88.5
-						294.5,80.5 380,165.2 437,75.5 469.5,223.3 	"/>
-					</g>
-					<g id="Layer_4">
-						<polygon stroke-miterlimit="10" points="469.3,222.7 1,222.7 48.7,166.7 155.7,188.3 212,132.7
-						296.7,128 380.7,184.3 436.7,125 	"/>
-					</g>
-				</g>
-			</defs>
-		</svg>
-		<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--6dp">
+		<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp show-modal">
 			<i class="material-icons">add</i>
 		</button>
 		<dialog class="mdl-dialog">
-			<h4 class="mdl-dialog__title">Allow data collection?</h4>
+			<h4 class="mdl-dialog__title">Upload new file</h4>
 			<div class="mdl-dialog__content">
 				<p>
 					Allowing us to collect data will let us get you the information you want faster.
 				</p>
 			</div>
 			<div class="mdl-dialog__actions">
-				<button type="button" class="mdl-button">Agree</button>
-				<button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent close">Disagree</button>
+				<button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent close">Upload</button>
+				<button id="demo-show-toast" class="mdl-button">Show Toast</button>
 			</div>
 		</dialog>
-		<script>
-			var dialog = document.querySelector('dialog');
-			var showDialogButton = document.querySelector('#fab');
-			if (! dialog.showModal) {
-				dialogPolyfill.registerDialog(dialog);
-			}
-			showDialogButton.addEventListener('click', function() {
-				dialog.showModal();
-			});
-			dialog.querySelector('.close').addEventListener('click', function() {
-				dialog.close();
-			});
-		</script>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		<div id="demo-snackbar-example" class="mdl-snackbar mdl-js-snackbar">
+			<div class="mdl-snackbar__text"></div>
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-snackbar__action"></button>
+		</div>
+		<div id="demo-toast-example" class="mdl-snackbar mdl-js-snackbar">
+			<div class="mdl-snackbar__text"></div>
+			<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-snackbar__action"></button>
+		</div>
+    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/material.min.js"></script>
   </body>
 </html>
