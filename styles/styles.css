@@ -305,7 +305,8 @@ h4.heading {
 .mdl-data-table td,
 th {
 	width: 100%;
-	overflow-x: auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .mdl-data-table td:first-of-type,
