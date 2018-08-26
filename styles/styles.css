@@ -296,7 +296,6 @@ h4.heading {
 	table-layout: fixed;
 	width: 100% !important;
 	font-size: 16px;
-	overflow-x: auto;
 }
 
 .mdl-data-table a:hover {
@@ -306,8 +305,7 @@ h4.heading {
 .mdl-data-table td,
 th {
 	width: 100%;
-	overflow: hidden;
-	text-overflow: ellipsis;
+	overflow-x: auto;
 }
 
 .mdl-data-table td:first-of-type,
