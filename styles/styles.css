@@ -167,15 +167,16 @@ body {
 }
 
 .demo-ribbon {
-  width: 100%;
+  display: flex;
+  position: relative;
   height: 40vh;
   background-color: var(--primary-color);
-  flex-shrink: none;
 }
 
 .demo-main {
+  display: flex;
   margin-top: -35vh;
-  flex-shrink: none;
+  position: relative;
 }
 
 .demo-content {
