@@ -174,9 +174,7 @@ body {
 }
 
 .demo-main {
-  display: flex;
   margin-top: -35vh;
-  position: relative;
 }
 
 .demo-content {
