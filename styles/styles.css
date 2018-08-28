@@ -175,8 +175,6 @@ body {
 }
 
 .demo-main {
-  display: flex;
-  position: relative;
   margin-top: -35vh;
   flex-shrink: 0;
 }
