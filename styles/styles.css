@@ -238,10 +238,11 @@ body {
 }
 
 .flex {
-	display: inline-flex;
+	flex-direction: row !important;
 }
 
 .heading {
+	display: flex;
 	font-size: 24px;
 }
 
