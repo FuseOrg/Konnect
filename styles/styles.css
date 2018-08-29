@@ -238,11 +238,11 @@ body {
 }
 
 .flex {
-	display: flex;
+	display: inline-flex;
 }
 
 .heading {
-	font-size: 32px;
+	font-size: 24px;
 }
 
 .mdl-card {
