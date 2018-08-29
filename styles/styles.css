@@ -238,10 +238,11 @@ body {
 }
 
 h4.heading {
+	display: flex;
 	padding: 8px 0;
 }
 
-h4.heading:nth-of-type(1) { 
+div h4.heading:nth-of-type(1) { 
 	color: #fff;
 }
 
