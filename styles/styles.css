@@ -242,8 +242,7 @@ body {
 }
 
 .heading {
-	display: flex;
-	padding: 8px 0;
+	font-size: 32px;
 }
 
 .mdl-card {
