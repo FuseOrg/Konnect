@@ -237,13 +237,12 @@ body {
 	height: auto;
 }
 
-.flex {
-	flex-direction: row !important;
+.heading {
+	font-size: 24px;
 }
 
-.heading {
-	display: flex;
-	font-size: 24px;
+.sort {
+	text-align: right;
 }
 
 .mdl-card {
