@@ -168,7 +168,6 @@ body {
 
 .demo-ribbon {
   display: flex;
-  position: relative;
   height: 40vh;
   background-color: var(--primary-color);
 }
