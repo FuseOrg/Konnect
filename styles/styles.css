@@ -166,17 +166,6 @@ body {
 	font-size: 22px;
 }
 
-.demo-ribbon {
-  display: flex;
-  position: relative;
-  height: 40vh;
-  background-color: var(--primary-color);
-}
-
-.demo-main {
-  margin-top: -35vh;
-}
-
 .demo-content {
 	padding: 32px;
 	max-width: 1080px;
