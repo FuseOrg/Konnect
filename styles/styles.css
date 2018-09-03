@@ -171,7 +171,6 @@ body {
   position: relative;
   height: 40vh;
   background-color: var(--primary-color);
-  flex-shrink: 0;
 }
 
 .demo-main {
