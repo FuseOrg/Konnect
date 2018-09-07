@@ -4,6 +4,7 @@
 *::after {
 	box-sizing: border-box;
 	outline: 0;
+	border: none;
 }
 
 :root {
@@ -135,6 +136,16 @@ body {
 .demo-ribbon {
 	height: 30vh;
 	z-index: 0;
+}
+
+.search {
+	display: flex;
+	width: calc(100% - 16px);
+	background-color: #fff;
+	padding: 16px;
+	border-radius: 2px;
+	margin: 0 auto;
+	font-size: 16px;
 }
 
 .demo-content {
@@ -321,6 +332,10 @@ th {
 
 .del:hover {
 	color: #f44336 !important;
+}
+
+th.sort:hover {
+	cursor: pointer;
 }
 
 th.sort:after {
