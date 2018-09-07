@@ -28,6 +28,7 @@
 	<link rel="stylesheet" href="../styles/styles.css">
 	<script src="../scripts/material.min.js"></script>
 	<script src="../scripts/jquery.min.js"></script>
+	<script src="../scripts/list.min.js"></script>
 </head>
 
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-800 mdl-base">
@@ -101,10 +102,10 @@
 					News
 				</div>
 				<div class="mdl-cell mdl-cell--1-col">
-					<button id="events-sort" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon sort">
+					<button id="news-sort" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon section-sort">
 						<i class="material-icons">sort</i>
 					</button>
-					<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="events-sort">
+					<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="news-sort">
 						<li class="mdl-menu__item"><i class="material-icons">sort_by_alpha</i>Title</li>
 						<li class="mdl-menu__item"><i class="material-icons">date_range</i>Date</li>
 					</ul>
@@ -194,11 +195,11 @@
 				<div class="mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone heading">
 					Events
 				</div>
-				<div class="mdl-cell mdl-cell--1-col sort">
-					<button id="news-sort" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+				<div class="mdl-cell mdl-cell--1-col">
+					<button id="events-sort" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon section-sort">
 						<i class="material-icons">sort</i>
 					</button>
-					<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="news-sort">
+					<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="events-sort">
 						<li class="mdl-menu__item"><i class="material-icons">sort_by_alpha</i>Title</li>
 						<li class="mdl-menu__item"><i class="material-icons">date_range</i>Date</li>
 					</ul>
@@ -427,158 +428,180 @@
 				</div>
 				<!--Directory table-->
 				<h4 class="heading mdl-cell mdl-cell--12-col">Directory</h4>
-				<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-					<thead>
-						<tr>
-							<th class="mdl-data-table__cell--non-numeric mdl-data-table__header--sorted-ascending">Departments</th>
-							<th>Strength</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="mdl-data-table__cell--non-numeric"><a href="">AUE</a></td>
-							<td>546</td>
-						</tr>
-						<tr>
-							<td class="mdl-data-table__cell--non-numeric"><a href="">CSE</a></td>
-							<td>642</td>
-						</tr>
-						<tr>
-							<td class="mdl-data-table__cell--non-numeric"><a href="">ECE</a></td>
-							<td>556</td>
-						</tr>
-						<tr>
-							<td class="mdl-data-table__cell--non-numeric"><a href="">EEE</a></td>
-							<td>596</td>
-						</tr>
-						<tr>
-							<td class="mdl-data-table__cell--non-numeric"><a href="">ME</a></td>
-							<td>544</td>
-						</tr>
-						<tr>
-							<td class="mdl-data-table__cell--non-numeric"><a href="">MTR</a></td>
-							<td>566</td>
-						</tr>
-					</tbody>
-				</table>
+				<div id="directory-table">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+						<label class="mdl-button mdl-js-button mdl-button--icon" for="search-directory">
+							<i class="material-icons">search</i>
+						</label>
+						<div class="mdl-textfield__expandable-holder">
+							<input class="mdl-textfield__input search" type="text" id="search-directory">
+							<label class="mdl-textfield__label" for="sample-expandable">Search</label>
+						</div>
+					</div>
+					<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+						<thead>
+							<tr>
+								<th class="mdl-data-table__cell--non-numeric sort" data-sort="department">Departments</th>
+								<th class="sort" data-sort="strength">Strength</th>
+							</tr>
+						</thead>
+						<tbody class="list">
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric department"><a href="">CSE</a></td>
+								<td class="strength">642</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric department"><a href="">MTR</a></td>
+								<td class="strength">566</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric department"><a href="">EEE</a></td>
+								<td class="strength">596</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric department"><a href="">ME</a></td>
+								<td class="strength">544</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric department"><a href="">AUE</a></td>
+								<td class="strength">546</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric department"><a href="">ECE</a></td>
+								<td class="strength">556</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 				<!--Files table-->
 				<h4 class="heading mdl-cell mdl-cell--12-col">Files</h4>
-				<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-					<thead>
-						<tr>
-							<th class="mdl-data-table__cell--non-numeric">File</th>
-							<th>Actions</th>
-							<th>Department</th>
-							<th>Uploaded by</th>
-							<th class="mdl-data-table__header--sorted-descending">Date</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="mdl-data-table__cell--non-numeric"><a href="">Admit Card.pdf</a></td>
-							<td>
-								<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-									<i class="material-icons">get_app</i>
-								</a>
-								<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
-									<i class="material-icons">delete</i>
-								</a>
-							</td>
-							<td>Administrative Office</td>
-							<td>CMO</td>
-							<td>11/5/18</td>
-						</tr>
-						<tr>
-							<td class="mdl-data-table__cell--non-numeric"><a href="">Progress Card.docx</a></td>
-							<td>
-								<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-									<i class="material-icons">get_app</i>
-								</a>
-								<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
-									<i class="material-icons">delete</i>
-								</a>
-							</td>
-							<td>Principal</td>
-							<td>Principal</td>
-							<td>8/5/18</td>
-						</tr>
-						<tr>
-							<td class="mdl-data-table__cell--non-numeric"><a href="">Notice.pdf</a></td>
-							<td>
-								<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-									<i class="material-icons">get_app</i>
-								</a>
-								<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
-									<i class="material-icons">delete</i>
-								</a>
-							</td>
-							<td>CSE</td>
-							<td>HOD</td>
-							<td>17/5/18</td>
-						</tr>
-						<tr>
-							<td class="mdl-data-table__cell--non-numeric"><a href="">Overall Report.pdf</a></td>
-							<td>
-								<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-									<i class="material-icons">get_app</i>
-								</a>
-								<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
-									<i class="material-icons">delete</i>
-								</a>
-							</td>
-							<td>CSE</td>
-							<td>Silja Varghees</td>
-							<td>25/5/18</td>
-						</tr>
-						<tr>
-							<td class="mdl-data-table__cell--non-numeric"><a href="">S3 Report.xcl</a></td>
-							<td>
-								<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-									<i class="material-icons">get_app</i>
-								</a>
-								<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
-									<i class="material-icons">delete</i>
-								</a>
-							</td>
-							<td>CSE</td>
-							<td>Sruthy M R</td>
-							<td>7/6/18</td>
-						</tr>
-						<tr>
-							<td class="mdl-data-table__cell--non-numeric"><a href="">S2 Report.xcl</a></td>
-							<td>
-								<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-									<i class="material-icons">get_app</i>
-								</a>
-								<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
-									<i class="material-icons">delete</i>
-								</a>
-							</td>
-							<td>CSE</td>
-							<td>Shiji S</td>
-							<td>8/6/18</td>
-						</tr>
-					</tbody>
-					<tfoot>
-						<tr>
-							<td class="mdl-data-table__cell--non-numeric"><a href="">Upload new file</a></td>
-							<td>
-								<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-									<i class="material-icons">add</i>
-								</a>
-							</td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-					</tfoot>
-				</table>
+				<div id="files-table">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+						<label class="mdl-button mdl-js-button mdl-button--icon" for="search-files">
+							<i class="material-icons">search</i>
+						</label>
+						<div class="mdl-textfield__expandable-holder">
+							<input class="mdl-textfield__input search" type="text" id="search-files">
+							<label class="mdl-textfield__label" for="sample-expandable">Search</label>
+						</div>
+					</div>
+					<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+						<thead>
+							<tr>
+								<th class="mdl-data-table__cell--non-numeric sort" data-sort="name">File name</th>
+								<th>Actions</th>
+								<th>Department</th>
+								<th>Uploaded by</th>
+								<th class="sort" data-sort="date">Date</th>
+							</tr>
+						</thead>
+						<tbody class="list">
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">Admit Card.pdf</a></td>
+								<td>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">get_app</i>
+									</a>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
+										<i class="material-icons">delete</i>
+									</a>
+								</td>
+								<td>Administrative Office</td>
+								<td>CMO</td>
+								<td class="date">11/5/18</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">Progress Card.docx</a></td>
+								<td>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">get_app</i>
+									</a>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
+										<i class="material-icons">delete</i>
+									</a>
+								</td>
+								<td>Principal</td>
+								<td>Principal</td>
+								<td class="date">8/5/18</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">Notice.pdf</a></td>
+								<td>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">get_app</i>
+									</a>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
+										<i class="material-icons">delete</i>
+									</a>
+								</td>
+								<td>CSE</td>
+								<td>HOD</td>
+								<td class="date">17/5/18</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">Overall Report.pdf</a></td>
+								<td>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">get_app</i>
+									</a>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
+										<i class="material-icons">delete</i>
+									</a>
+								</td>
+								<td>CSE</td>
+								<td>Silja Varghees</td>
+								<td class="date">25/5/18</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">S3 Report.xcl</a></td>
+								<td>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">get_app</i>
+									</a>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
+										<i class="material-icons">delete</i>
+									</a>
+								</td>
+								<td>CSE</td>
+								<td>Sruthy M R</td>
+								<td class="date">7/6/18</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">S2 Report.xcl</a></td>
+								<td>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">get_app</i>
+									</a>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
+										<i class="material-icons">delete</i>
+									</a>
+								</td>
+								<td>CSE</td>
+								<td>Shiji S</td>
+								<td class="date">8/6/18</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">Upload new file</a></td>
+								<td>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">add</i>
+									</a>
+								</td>
+								<td></td>
+								<td></td>
+								<td class="date"></td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
 				<!--Gallery cards-->
 				<div class="mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone heading">
 					Gallery
 				</div>
-				<div class="mdl-cell mdl-cell--1-col sort">
-					<button id="gallery-sort" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+				<div class="mdl-cell mdl-cell--1-col">
+					<button id="gallery-sort" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon section-sort">
 						<i class="material-icons">sort</i>
 					</button>
 					<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="gallery-sort">
