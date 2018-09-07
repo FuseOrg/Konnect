@@ -118,7 +118,8 @@ body {
 
 .demo-layout .demo-navigation .mdl-navigation__link {
 	padding: 16px;
-	font-size: 16px;
+	font-size: 17px;
+	font-weight: 500;
 	color: inherit;
 }
 
@@ -255,6 +256,7 @@ body {
 
 .section__play-btn .material-icons {
 	font-size: 3rem;
+	color: #fff;
 }
 
 .demo-card-image.mdl-card {

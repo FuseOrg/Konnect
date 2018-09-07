@@ -48,34 +48,26 @@
 	});
 
 	var directories = {
-			valueNames: ["department", "strength"]
+			valueNames: ["name", "strength"]
 		},
-		documentTable = new List("directory-table", directories);
-
-	$($("th.sort")[0]).trigger("click", function () {
-		console.log("clicked");
-	});
+		directoryTable = new List("directory-table", directories);
 
 	$("input.search").on("keyup", function (e) {
 		if (e.keyCode === 27) {
 			$(e.currentTarget).val("");
-			documentTable.search("");
+			directoryTable.search("");
 		}
 	});
 
 	var files = {
-			valueNames: ["name", "date"]
+			valueNames: ["name", "department", "uploaded", "date"]
 		},
-		documentTable = new List("files-table", files);
-
-	$($("th.sort")[0]).trigger("click", function () {
-		console.log("clicked");
-	});
+		filesTable = new List("files-table", files);
 
 	$("input.search").on("keyup", function (e) {
 		if (e.keyCode === 27) {
 			$(e.currentTarget).val("");
-			documentTable.search("");
+			filesTable.search("");
 		}
 	});
 
