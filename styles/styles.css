@@ -7,8 +7,8 @@
 }
 
 :root {
-	--primary-color: #607d8b;
-	--accent-color: #ff4081;
+	--primary-color: #607888;
+	--accent-color: #2979FF;
 }
 
 h1,
@@ -52,7 +52,8 @@ body {
 }
 
 .demo-layout .mdl-layout__header .mdl-layout__drawer-button {
-	color: #fff;
+	background: transparent;
+	color: rgba(0, 0, 0, .87);
 }
 
 .mdl-layout__drawer .avatar {
@@ -144,6 +145,12 @@ body {
 	margin: 0 8px 0 0;
 }
 
+.img-bg {
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center !important;
+}
+
 #fab {
 	position: fixed;
 	display: block;
@@ -191,6 +198,8 @@ body {
 
 .demo-header-row {
 	padding: 0 16px 0 64px;
+	background-color: #fff;
+	color: rgba(0, 0, 0, .87);
 }
 
 .active {
@@ -215,8 +224,12 @@ body {
 	height: auto;
 }
 
-h4.heading {
-	padding: 8px 0;
+.heading {
+	font-size: 24px;
+}
+
+.sort {
+	text-align: right;
 }
 
 .mdl-card {
@@ -396,3 +409,4 @@ th {
 		margin: 0;
 	}
 }
+

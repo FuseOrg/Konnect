@@ -6,19 +6,19 @@
     <meta name="description" content="Intranet for NCERC">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>Konnect | Dashboard</title>
-		<meta name="theme-color" content="#607d8b">
+		<meta name="theme-color" content="#fff">
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
 		<meta name="application-name" content="Konnect">
     <link rel="icon" sizes="192x192" href="../images/android-desktop.png">
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
     <meta name="apple-mobile-web-app-title" content="Konnect">
     <link rel="apple-touch-icon-precomposed" href="../images/ios-desktop.png">
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="../images/ios-desktop.png">
-    <meta name="msapplication-TileColor" content="#607d8b">
+    <meta name="msapplication-TileColor" content="#fff">
     <link rel="shortcut icon" href="../images/favicon.png">
 <!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
@@ -32,28 +32,27 @@
         <div class="demo-header-row mdl-layout__header-row">
           <span class="mdl-layout-title logo">Konnect</span>
           <div class="mdl-layout-spacer"></div>
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+          <!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
             <label class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" for="search">
               <i class="material-icons">search</i>
             </label>
             <div class="mdl-textfield__expandable-holder">
               <input class="mdl-textfield__input" type="text" id="search">
-              <label class="mdl-textfield__label" for="search">Enter your query...</label>
+              <label class="mdl-textfield__label" for="search">Search</label>
             </div>
-          </div>
+          </div> -->
 					<button id="notifications" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-						<i class="material-icons" data-badge="3">notifications</i>
+						<i class="material-icons">notifications</i>
 					</button>
           <span class="mdl-badge mdl-badge--overlap" data-badge="4"></span>
           <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="notifications">
             <li class="mdl-menu__item"><i class="material-icons">done</i>Notification #1</li>
             <li class="mdl-menu__item"><i class="material-icons">done</i>Notification #2</li>
             <li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">done</i>Notification #3</li>
+            <li class="mdl-menu__item"><i class="material-icons">notifications</i>All notifications</li>
             <li class="mdl-menu__item"><i class="material-icons">done_all</i>Mark all as read</li>
           </ul>
-          <button id="hdrbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons">more_vert</i>
-          </button>
+          <button id="hdrbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon img-bg" style="background-image: url(../images/user.jpg);"></button>
           <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
 						<li class="mdl-menu__item"><i class="material-icons">face</i>Profile</li>
 						<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">settings</i>Settings</li>
@@ -65,7 +64,7 @@
         <header class="demo-drawer-header">
           <img src="../images/user.jpg" class="demo-avatar avatar">
           <div class="demo-avatar-dropdown">
-						<a href="profile.html"><span>Username</span></a>
+						<a href=""><span>User name</span></a>
             <div class="mdl-layout-spacer"></div>
             <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
               <i class="material-icons" role="presentation">arrow_drop_down</i>
@@ -80,8 +79,9 @@
         </header>
         <nav class="demo-navigation mdl-navigation mdl-color--white">
           <a class="mdl-navigation__link active" href=""><i class="material-icons" role="presentation">home</i>Dashboard</a>
-          <a class="mdl-navigation__link" href="news.html"><i class="material-icons" role="presentation">announcement</i><span class="mdl-badge mdl-badge--no-background" data-badge="4">News</span></a>
-					<a class="mdl-navigation__link" href="events.html"><i class="material-icons" role="presentation">event</i><span class="mdl-badge mdl-badge--no-background" data-badge="2">Events</span></a>
+          <a class="mdl-navigation__link" href=""><i class="material-icons" role="presentation">notifications</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
+          <a class="mdl-navigation__link" href="news.html"><i class="material-icons" role="presentation">announcement</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
+					<a class="mdl-navigation__link" href="events.html"><i class="material-icons" role="presentation">event</i><span class="mdl-badge mdl-badge--no-background" data-badge="1">Events</span></a>
           <a class="mdl-navigation__link" href="directory.html"><i class="material-icons" role="presentation">group</i>Directory</a>
           <a class="mdl-navigation__link" href="files.html"><i class="material-icons" role="presentation">file_copy</i>Files</a>
           <a class="mdl-navigation__link" href="gallery.html"><i class="material-icons" role="presentation">image</i>Gallery</a>
@@ -91,18 +91,39 @@
           <a class="mdl-navigation__link" href=""><i class="material-icons" role="presentation">help_outline</i>Help</a>
         </nav>
       </div>
-      <main class="mdl-layout__content">
+      <div class="demo-ribbon mdl-shadow--2dp"></div>
+      <main class="demo-main mdl-layout__content">
         <div class="mdl-grid demo-content">
 					<!--News cards-->
-					<h4 class="heading mdl-cell mdl-cell--12-col">News</h4>
+<div class="mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone heading">
+          News
+</div>
+<div class="mdl-cell mdl-cell--1-col sort">
+          <button id="news-sort" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+             <i class="material-icons">sort</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="news-sort">
+            <li class="mdl-menu__item"><i class="material-icons">sort_by_alpha</i>Title</li>
+            <li class="mdl-menu__item"><i class="material-icons">date_range</i>Date</li>
+          </ul>
+</div>
           <div class="section--center mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <header class="section__play-btn mdl-cell mdl-cell--5-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-color--grey-400">
               <i class="material-icons">play_circle_filled</i>
             </header>
             <div class="mdl-card mdl-cell mdl-cell--7-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
-                <h4>Heading</h4>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus perferendis dolorem aspernatur necessitatibus dolorum debitis cumque eum, dicta.
+                <h4>RUBIX 2K18</h4>
+                <p>National level inter-college tech fest at Nehru College of Engineering and Research Centre.</p>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">CSE</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">Event</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">NCERC</span>
+                </span>
               </div>
               <div class="mdl-card__actions">
                 <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
@@ -121,8 +142,14 @@
             </header>
             <div class="mdl-card mdl-cell mdl-cell--7-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
-                <h4>Heading</h4>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus perferendis dolorem aspernatur necessitatibus dolorum debitis cumque eum, dicta.
+                <h4>Placements at NCERC</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus perferendis dolorem aspernatur necessitatibus dolorum debitis cumque eum, dicta.</p>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">NCERC</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">Placement</span>
+                </span>
               </div>
               <div class="mdl-card__actions">
                 <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
@@ -141,8 +168,14 @@
             </header>
             <div class="mdl-card mdl-cell mdl-cell--7-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
-                <h4>Heading</h4>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus perferendis dolorem aspernatur necessitatibus dolorum debitis cumque eum, dicta.
+                <h4>KTU - IIT level university</h4>
+                <p>🤣</p>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">KTU</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">University</span>
+                </span>
               </div>
               <div class="mdl-card__actions">
                 <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
@@ -156,13 +189,24 @@
             </div>
           </div>
 					<!--Event cards-->
-					<h4 class="heading mdl-cell mdl-cell--12-col">Events</h4>
+<div class="mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone heading">
+          Events
+</div>
+<div class="mdl-cell mdl-cell--1-col sort">
+          <button id="events-sort" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+             <i class="material-icons">sort</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="events-sort">
+            <li class="mdl-menu__item"><i class="material-icons">sort_by_alpha</i>Title</li>
+            <li class="mdl-menu__item"><i class="material-icons">date_range</i>Date</li>
+          </ul>
+</div>
 					<div class="demo-card-event mdl-card mdl-shadow--2dp mdl-color--red-500 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
 						<div class="mdl-card__title mdl-card--expand">
 							<h4>
-								Event<br>
+								RUBIX 2K18<br>
 								May 24, 2018<br>
-								7-11PM
+								10AM - 5PM @ NCERC
 							</h4>
 						</div>
 						<div class="demo-options">
@@ -199,9 +243,9 @@
 					<div class="demo-card-event mdl-card mdl-shadow--2dp mdl-color--amber-500 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
 						<div class="mdl-card__title mdl-card--expand">
 							<h4>
-								Event<br>
-								May 24, 2018<br>
-								7-11PM
+								BLOOM 2K18<br>
+								December 3, 2018<br>
+								9AM - 11PM
 							</h4>
 						</div>
 						<div class="demo-options">
@@ -426,6 +470,33 @@
 								<td>566</td>
 							</tr>
 						</tbody>
+						<tfoot>
+<tr>
+    <td colspan=3>
+      <div class="mdl-paging"><span class="mdl-paging__per-page"><span class="mdl-paging__per-page-label">Rows per page:</span><span class="mdl-paging__per-page-value">10</span>
+        <button id="HkhZcTBbWFADje7t2" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-paging__per-page-dropdown"><i class="material-icons">arrow_drop_down</i>
+        </button>
+        <ul for="HkhZcTBbWFADje7t2" class="mdl-menu mdl-menu--top-left mdl-js-menu mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events">
+          <li tabindex="-1" data-value="10" class="mdl-menu__item mdl-js-ripple-effect">10
+          </li>
+          <li tabindex="-1" data-value="20" class="mdl-menu__item mdl-js-ripple-effect">50
+          </li>
+          <li tabindex="-1" data-value="30" class="mdl-menu__item mdl-js-ripple-effect">100
+          </li>
+          <li tabindex="-1" data-value="40" class="mdl-menu__item mdl-js-ripple-effect">500
+          </li>
+          <li tabindex="-1" data-value="50" class="mdl-menu__item mdl-js-ripple-effect">1000
+          </li>
+        </ul>
+        </span><span class="mdl-paging__count">11-20 of 257</span>
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-paging__prev"><i class="material-icons">keyboard_arrow_left</i>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-paging__next"><i class="material-icons">keyboard_arrow_right</i>
+        </button>
+      </div>
+    </td>
+  </tr>
+						</tfoot>
 					</table>
 					<!--Files table-->
 					<h4 class="heading mdl-cell mdl-cell--12-col">Files</h4>
@@ -538,7 +609,18 @@
 						</tbody>
 					</table>
 					<!--Gallery cards-->
-					<h4 class="heading mdl-cell mdl-cell--12-col">Gallery</h4>
+<div class="mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone heading">
+          Gallery
+</div>
+<div class="mdl-cell mdl-cell--1-col sort">
+          <button id="gallery-sort" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+             <i class="material-icons">sort</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="gallery-sort">
+            <li class="mdl-menu__item"><i class="material-icons">sort_by_alpha</i>Title</li>
+            <li class="mdl-menu__item"><i class="material-icons">date_range</i>Date</li>
+          </ul>
+</div>
 					<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg1.jpg)">
 						<div class="mdl-card__title mdl-card--expand"></div>
 						<div class="mdl-card__actions">
