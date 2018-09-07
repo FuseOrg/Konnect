@@ -239,11 +239,7 @@ body {
 	transition: 200ms ease;
 }
 
-.heading:first-child {
-	color: #fff;
-}
-
-.sort:first-child {
+.heading:first-child, .sort:first-child {
 	color: #fff;
 }
 
