@@ -7,7 +7,7 @@
 }
 
 :root {
-	--primary-color: #607888;
+	--primary-color: #03a9f4;
 	--accent-color: #2979FF;
 }
 
@@ -21,7 +21,6 @@ h6 {
 	padding: 0;
 	font-weight: 400;
 	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
-	color: rgba(0, 0, 0, 0.87);
 }
 
 [hidden] {
@@ -30,7 +29,7 @@ h6 {
 
 a {
 	text-decoration: none;
-	color: inherit;
+	color: var(--accent-color);
 }
 
 html,
@@ -52,8 +51,7 @@ body {
 }
 
 .demo-layout .mdl-layout__header .mdl-layout__drawer-button {
-	background: transparent;
-	color: rgba(0, 0, 0, .87);
+	background: none;
 }
 
 .mdl-layout__drawer .avatar {
@@ -126,7 +124,6 @@ body {
 
 .demo-layout .demo-navigation .mdl-navigation__link:hover {
 	background-color: rgba(0, 0, 0, .08);
-	color: var(--primary-color);
 }
 
 .demo-navigation .mdl-navigation__link .material-icons {
@@ -206,15 +203,10 @@ body {
 .demo-header-row {
 	padding: 0 16px 0 64px;
 	background-color: #fff;
-	color: rgba(0, 0, 0, .87);
 }
 
 .active {
 	color: var(--accent-color) !important;
-}
-
-.mdl-menu__item {
-	color: rgba(0, 0, 0, 0.68);
 }
 
 .mdl-menu__item .material-icons {
@@ -239,7 +231,8 @@ body {
 	transition: 200ms ease;
 }
 
-.heading:first-child, .sort:first-child {
+.heading:first-child,
+.sort:first-child {
 	color: #fff;
 }
 
@@ -306,7 +299,7 @@ body {
 }
 
 .mdl-data-table a:hover {
-	color: var(--accent-color);
+	color: var(--primary-color);
 }
 
 .mdl-data-table td,
