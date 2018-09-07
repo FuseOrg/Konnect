@@ -16,14 +16,14 @@
 	var buttons = document.querySelectorAll('.mdl-button--accent');
 	var handler = function (event) {
 		for (var i = 0; i < buttons.length; i++) {
-			buttons[i].style.backgroundColor = '#ff4081';
+			buttons[i].style.backgroundColor = '#2979FF';
 		}
 	};
 
 	showSnackbarButton.addEventListener('click', function () {
 		'use strict';
 		for (var i = 0; i < buttons.length; i++) {
-			buttons[i].style.backgroundColor = '#' + '00acee';
+			buttons[i].style.backgroundColor = '#' + '03a9f4';
 		}
 		var data = {
 			message: 'Accent color changed!',

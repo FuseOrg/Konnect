@@ -34,15 +34,15 @@
 			<div class="demo-header-row mdl-layout__header-row">
 				<span class="mdl-layout-title logo">Konnect</span>
 				<div class="mdl-layout-spacer"></div>
-				<!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-						<label class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" for="search">
-							<i class="material-icons">search</i>
-						</label>
-						<div class="mdl-textfield__expandable-holder">
-							<input class="mdl-textfield__input" type="text" id="search">
-							<label class="mdl-textfield__label" for="search">Search</label>
-						</div>
-					</div> -->
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+					<label class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" for="search">
+						<i class="material-icons">search</i>
+					</label>
+					<div class="mdl-textfield__expandable-holder">
+						<input class="mdl-textfield__input" type="text" id="search">
+						<label class="mdl-textfield__label" for="search">Search</label>
+					</div>
+				</div>
 				<button id="notifications" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">notifications</i></button>
 				<span class="mdl-badge mdl-badge--overlap" data-badge="4"></span>
 				<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="notifications">
@@ -193,10 +193,10 @@
 					Events
 				</div>
 				<div class="mdl-cell mdl-cell--1-col sort">
-					<button id="events-sort" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+					<button id="news-sort" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
 						<i class="material-icons">sort</i>
 					</button>
-					<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="events-sort">
+					<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="news-sort">
 						<li class="mdl-menu__item"><i class="material-icons">sort_by_alpha</i>Title</li>
 						<li class="mdl-menu__item"><i class="material-icons">date_range</i>Date</li>
 					</ul>
@@ -458,33 +458,6 @@
 							<td>566</td>
 						</tr>
 					</tbody>
-					<tfoot>
-						<tr>
-							<td colspan=3>
-								<div class="mdl-paging"><span class="mdl-paging__per-page"><span class="mdl-paging__per-page-label">Rows per page:</span><span class="mdl-paging__per-page-value">10</span>
-										<button id="HkhZcTBbWFADje7t2" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-paging__per-page-dropdown"><i class="material-icons">arrow_drop_down</i>
-										</button>
-										<ul for="HkhZcTBbWFADje7t2" class="mdl-menu mdl-menu--top-left mdl-js-menu mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events">
-											<li tabindex="-1" data-value="10" class="mdl-menu__item mdl-js-ripple-effect">10
-											</li>
-											<li tabindex="-1" data-value="20" class="mdl-menu__item mdl-js-ripple-effect">50
-											</li>
-											<li tabindex="-1" data-value="30" class="mdl-menu__item mdl-js-ripple-effect">100
-											</li>
-											<li tabindex="-1" data-value="40" class="mdl-menu__item mdl-js-ripple-effect">500
-											</li>
-											<li tabindex="-1" data-value="50" class="mdl-menu__item mdl-js-ripple-effect">1000
-											</li>
-										</ul>
-									</span><span class="mdl-paging__count">11-20 of 257</span>
-									<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-paging__prev"><i class="material-icons">keyboard_arrow_left</i>
-									</button>
-									<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-paging__next"><i class="material-icons">keyboard_arrow_right</i>
-									</button>
-								</div>
-							</td>
-						</tr>
-					</tfoot>
 				</table>
 				<!--Files table-->
 				<h4 class="heading mdl-cell mdl-cell--12-col">Files</h4>
@@ -583,6 +556,8 @@
 							<td>Shiji S</td>
 							<td>8/6/18</td>
 						</tr>
+					</tbody>
+					<tfoot>
 						<tr>
 							<td class="mdl-data-table__cell--non-numeric"><a href="">Upload new file</a></td>
 							<td>
@@ -594,7 +569,7 @@
 							<td></td>
 							<td></td>
 						</tr>
-					</tbody>
+					</tfoot>
 				</table>
 				<!--Gallery cards-->
 				<div class="mdl-cell mdl-cell--11-col-desktop mdl-cell--7-col-tablet mdl-cell--3-col-phone heading">
