@@ -324,40 +324,18 @@ th {
 }
 
 th.sort:after {
-	display: inline-block;
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-bottom: 5px solid transparent;
-	content: "";
-	position: relative;
-	top: -10px;
-	right: -5px;
+	font-size: 22px;
+	content: " ·";
 }
 
 th.sort.asc:after {
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 5px solid #757575;
-	content: "";
-	position: relative;
-	top: 4px;
-	right: -5px;
+	font-size: 22px;
+	content: " ↓";
 }
 
 th.sort.desc:after {
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-bottom: 5px solid #757575;
-	content: "";
-	position: relative;
-	top: -4px;
-	right: -5px;
+	font-size: 22px;
+	content: " ↑";
 }
 
 .section--footer {
