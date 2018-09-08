@@ -257,11 +257,13 @@ body {
 
 .mdl-card {
 	transition: 200ms ease;
+	border-radius: 8px;
 }
 
 .section--center .mdl-card {
 	padding: 16px;
 	margin: 0;
+	border-radius: 0;
 }
 
 .mdl-card__supporting-text {
@@ -319,6 +321,8 @@ body {
 .mdl-data-table {
 	table-layout: fixed;
 	font-size: 16px;
+	border-radius: 8px;
+	border: none;
 }
 
 .mdl-data-table td,
