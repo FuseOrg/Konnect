@@ -21,7 +21,7 @@
 	<meta name="msapplication-TileImage" content="../images/ios-desktop.png">
 	<meta name="msapplication-TileColor" content="#fff">
 	<link rel="shortcut icon" href="../images/favicon.png">
-	<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">-->
+	<!--	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="../styles/material.min.css">
@@ -49,9 +49,9 @@
 				<button id="notifications" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">notifications_none</i></button>
 				<span class="mdl-badge mdl-badge--overlap" data-badge="4"></span>
 				<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="notifications">
-					<li class="mdl-menu__item"><i class="material-icons">done</i>Notification #1</li>
-					<li class="mdl-menu__item"><i class="material-icons">done</i>Notification #2</li>
-					<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">done</i>Notification #3</li>
+					<li class="mdl-menu__item"><i class="material-icons">outlined_flag</i>Notification #1</li>
+					<li class="mdl-menu__item"><i class="material-icons">bookmark_border</i>Notification #2</li>
+					<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">outlined_flag</i>Notification #3</li>
 					<li class="mdl-menu__item"><i class="material-icons">notifications_none</i>All notifications</li>
 					<li class="mdl-menu__item"><i class="material-icons">done_all</i>Mark all as read</li>
 				</ul>
@@ -67,7 +67,7 @@
 			<header class="demo-drawer-header">
 				<img src="../images/user.jpg" class="demo-avatar avatar">
 				<div class="demo-avatar-dropdown">
-					<a href=""><span>User name</span></a>
+					<span>User name</span>
 					<div class="mdl-layout-spacer"></div>
 					<button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
 						<i class="material-icons" role="presentation">expand_more</i>
@@ -81,8 +81,8 @@
 				</div>
 			</header>
 			<nav class="demo-navigation mdl-navigation mdl-color--white">
-				<a class="mdl-navigation__link active" href=""><i class="material-icons" role="presentation">drag_indicator</i>Dashboard</a>
-				<a class="mdl-navigation__link" href=""><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
+				<a class="mdl-navigation__link active" href="dashboard.html"><i class="material-icons" role="presentation">drag_indicator</i>Dashboard</a>
+				<a class="mdl-navigation__link" href="notifications.html"><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
 				<a class="mdl-navigation__link" href="news.html"><i class="material-icons" role="presentation">outlined_flag</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
 				<a class="mdl-navigation__link" href="events.html"><i class="material-icons" role="presentation">bookmark_border</i><span class="mdl-badge mdl-badge--no-background" data-badge="1">Events</span></a>
 				<a class="mdl-navigation__link" href="directory.html"><i class="material-icons" role="presentation">kitchen</i>Directory</a>
@@ -90,13 +90,67 @@
 				<a class="mdl-navigation__link" href="gallery.html"><i class="material-icons" role="presentation">crop_original</i>Gallery</a>
 				<a class="mdl-navigation__link" href="profile.html"><i class="material-icons" role="presentation">tag_faces</i>Profile</a>
 				<div class="mdl-layout-spacer mdl-menu__item--full-bleed-divider"></div>
-				<a class="mdl-navigation__link" href=""><i class="material-icons" role="presentation">tune</i>Settings</a>
-				<a class="mdl-navigation__link" href=""><i class="material-icons" role="presentation">help_outline</i>Help</a>
+				<a class="mdl-navigation__link" href="settings.html"><i class="material-icons" role="presentation">tune</i>Settings</a>
+				<a class="mdl-navigation__link" href="help.html"><i class="material-icons" role="presentation">help_outline</i>Help</a>
 			</nav>
 		</div>
 		<main class="demo-main mdl-layout__content">
 			<div class="demo-ribbon mdl-color--accent mdl-shadow--2dp"></div>
 			<div class="demo-content mdl-grid">
+				<!--Notifications-->
+				<div class="mdl-cell mdl-cell--12-col heading">
+					Notifications
+				</div>
+				<ul class="demo-list-three mdl-list mdl-card mdl-cell mdl-cell--12-col mdl-list mdl-shadow--2dp">
+					<li class="mdl-list__item mdl-list__item--three-line">
+						<span class="mdl-list__item-primary-content">
+							<i class="material-icons mdl-list__item-avatar">flag</i>
+							<span>Notification #1</span>
+							<span class="mdl-list__item-text-body">
+								Bob stars in his own show now, called "Better Call Saul".
+							</span>
+						</span>
+						<span class="mdl-list__item-secondary-content">
+							<a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#"><i class="material-icons">done</i></a>
+						</span>
+					</li>
+					<li class="mdl-list__item mdl-list__item--three-line">
+						<span class="mdl-list__item-primary-content">
+							<i class="material-icons mdl-list__item-avatar">bookmark</i>
+							<span>Notification #2</span>
+							<span class="mdl-list__item-text-body">
+								Bob Odinkrik played the role of Saul in Breaking Bad. Due to public fondness for the character, Bob stars in his own show now, called "Better Call Saul".
+							</span>
+						</span>
+						<span class="mdl-list__item-secondary-content">
+							<a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#"><i class="material-icons">done</i></a>
+						</span>
+					</li>
+					<li class="mdl-list__item mdl-list__item--three-line">
+						<span class="mdl-list__item-primary-content">
+							<i class="material-icons mdl-list__item-avatar">flag</i>
+							<span>Notification #3</span>
+							<span class="mdl-list__item-text-body">
+								Bryan Cranston played the role of Walter in Breaking Bad. He is also known for playing Hal in Malcom in the Middle.
+							</span>
+						</span>
+						<span class="mdl-list__item-secondary-content">
+							<a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#"><i class="material-icons">done</i></a>
+						</span>
+					</li>
+					<li class="mdl-list__item mdl-list__item--three-line">
+						<span class="mdl-list__item-primary-content">
+							<i class="material-icons mdl-list__item-avatar">flag</i>
+							<span>Notification #4</span>
+							<span class="mdl-list__item-text-body">
+								Aaron Paul played the role of Jesse in Breaking Bad. He also featured in the "Need For Speed" Movie.
+							</span>
+						</span>
+						<span class="mdl-list__item-secondary-content">
+							<a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#"><i class="material-icons">done</i></a>
+						</span>
+					</li>
+				</ul>
 				<!--News cards-->
 				<div class="mdl-cell mdl-cell--12-col heading">
 					News
@@ -412,7 +466,7 @@
 				<h4 class="heading mdl-cell mdl-cell--12-col">Directory</h4>
 				<div id="directory-table">
 					<input class="mdl-shadow--2dp search" type="text" placeholder="Search">
-					<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+					<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-cell mdl-cell--12-col mdl-shadow--2dp">
 						<thead>
 							<tr>
 								<th class="mdl-data-table__cell--non-numeric sort" data-sort="name">Name</th>
@@ -451,7 +505,7 @@
 				<h4 class="heading mdl-cell mdl-cell--12-col">Files</h4>
 				<div id="files-table">
 					<input class="mdl-shadow--2dp search" type="text" placeholder="Search">
-					<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+					<table class="mdl-data-table mdl-js-data-table mdl-cell mdl-cell--12-col mdl-shadow--2dp">
 						<thead>
 							<tr>
 								<th class="mdl-data-table__cell--non-numeric sort" data-sort="name">File name</th>
@@ -775,6 +829,7 @@
 	<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp show-modal">
 		<i class="material-icons">add</i>
 	</button>
+	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Add</span>
 	<dialog class="mdl-dialog">
 		<h4 class="mdl-dialog__title">Upload new file</h4>
 		<div class="mdl-dialog__content">

@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Intranet for NCERC">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Konnect | Files</title>
+	<title>Konnect | Notifications</title>
 	<meta name="theme-color" content="#fff">
 	<!-- Add to homescreen for Chrome on Android -->
 	<meta name="mobile-web-app-capable" content="yes">
@@ -49,9 +49,9 @@
 				<button id="notifications" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">notifications_none</i></button>
 				<span class="mdl-badge mdl-badge--overlap" data-badge="4"></span>
 				<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="notifications">
-					<li class="mdl-menu__item"><i class="material-icons">done</i>Notification #1</li>
-					<li class="mdl-menu__item"><i class="material-icons">done</i>Notification #2</li>
-					<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">done</i>Notification #3</li>
+					<li class="mdl-menu__item"><i class="material-icons">outlined_flag</i>Notification #1</li>
+					<li class="mdl-menu__item"><i class="material-icons">bookmark_border</i>Notification #2</li>
+					<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">outlined_flag</i>Notification #3</li>
 					<li class="mdl-menu__item"><i class="material-icons">notifications_none</i>All notifications</li>
 					<li class="mdl-menu__item"><i class="material-icons">done_all</i>Mark all as read</li>
 				</ul>
@@ -81,12 +81,12 @@
 				</div>
 			</header>
 			<nav class="demo-navigation mdl-navigation mdl-color--white">
-				<a class="mdl-navigation__link" href="dashboard.html"><i class="material-icons" role="presentation">drag_indicator</i>Dashboard</a>
+				<a class="mdl-navigation__link active" href="dashboard.html"><i class="material-icons" role="presentation">drag_indicator</i>Dashboard</a>
 				<a class="mdl-navigation__link" href="notifications.html"><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
 				<a class="mdl-navigation__link" href="news.html"><i class="material-icons" role="presentation">outlined_flag</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
 				<a class="mdl-navigation__link" href="events.html"><i class="material-icons" role="presentation">bookmark_border</i><span class="mdl-badge mdl-badge--no-background" data-badge="1">Events</span></a>
 				<a class="mdl-navigation__link" href="directory.html"><i class="material-icons" role="presentation">kitchen</i>Directory</a>
-				<a class="mdl-navigation__link active" href="files.html"><i class="material-icons" role="presentation">cloud_queue</i>Files</a>
+				<a class="mdl-navigation__link" href="files.html"><i class="material-icons" role="presentation">cloud_queue</i>Files</a>
 				<a class="mdl-navigation__link" href="gallery.html"><i class="material-icons" role="presentation">crop_original</i>Gallery</a>
 				<a class="mdl-navigation__link" href="profile.html"><i class="material-icons" role="presentation">tag_faces</i>Profile</a>
 				<div class="mdl-layout-spacer mdl-menu__item--full-bleed-divider"></div>
@@ -97,121 +97,60 @@
 		<main class="demo-main mdl-layout__content">
 			<div class="demo-ribbon mdl-color--accent mdl-shadow--2dp"></div>
 			<div class="demo-content mdl-grid">
-				<!--Files table-->
-				<h4 class="heading mdl-cell mdl-cell--12-col">Files</h4>
-				<div id="files-table">
-					<input class="mdl-shadow--2dp search" type="text" placeholder="Search">
-					<table class="mdl-data-table mdl-js-data-table mdl-cell mdl-cell--12-col mdl-shadow--2dp">
-						<thead>
-							<tr>
-								<th class="mdl-data-table__cell--non-numeric sort" data-sort="name">File name</th>
-								<th class="mdl-data-table__cell--non-numeric">Actions</th>
-								<th class="sort" data-sort="department">Department</th>
-								<th class="sort" data-sort="uploaded">Uploaded by</th>
-								<th class="sort" data-sort="date">Date</th>
-							</tr>
-						</thead>
-						<tbody class="list">
-							<tr>
-								<td class="mdl-data-table__cell--non-numeric name"><a href="">Admit Card.pdf</a></td>
-								<td class="mdl-data-table__cell--non-numeric">
-									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-										<i class="material-icons">save_alt</i>
-									</a>
-									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
-										<i class="material-icons">delete_outline</i>
-									</a>
-								</td>
-								<td class="department">Administrative Office</td>
-								<td class="uploaded">CMO</td>
-								<td class="date">1/5/18</td>
-							</tr>
-							<tr>
-								<td class="mdl-data-table__cell--non-numeric name"><a href="">Progress Card.docx</a></td>
-								<td class="mdl-data-table__cell--non-numeric">
-									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-										<i class="material-icons">save_alt</i>
-									</a>
-									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
-										<i class="material-icons">delete_outline</i>
-									</a>
-								</td>
-								<td class="department">Principal</td>
-								<td class="uploaded">Principal</td>
-								<td class="date">8/5/18</td>
-							</tr>
-							<tr>
-								<td class="mdl-data-table__cell--non-numeric name"><a href="">Notice.pdf</a></td>
-								<td class="mdl-data-table__cell--non-numeric">
-									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-										<i class="material-icons">save_alt</i>
-									</a>
-									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
-										<i class="material-icons">delete_outline</i>
-									</a>
-								</td>
-								<td class="department">CSE</td>
-								<td class="uploaded">HOD</td>
-								<td class="date">1/5/18</td>
-							</tr>
-							<tr>
-								<td class="mdl-data-table__cell--non-numeric name"><a href="">Overall Report.pdf</a></td>
-								<td class="mdl-data-table__cell--non-numeric">
-									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-										<i class="material-icons">save_alt</i>
-									</a>
-									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
-										<i class="material-icons">delete_outline</i>
-									</a>
-								</td>
-								<td class="department">CSE</td>
-								<td class="uploaded">Silja Varghees</td>
-								<td class="date">2/5/18</td>
-							</tr>
-							<tr>
-								<td class="mdl-data-table__cell--non-numeric name"><a href="">S3 Report.xcl</a></td>
-								<td class="mdl-data-table__cell--non-numeric">
-									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-										<i class="material-icons">save_alt</i>
-									</a>
-									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
-										<i class="material-icons">delete_outline</i>
-									</a>
-								</td>
-								<td class="department">CSE</td>
-								<td class="uploaded">Sruthy M R</td>
-								<td class="date">7/6/18</td>
-							</tr>
-							<tr>
-								<td class="mdl-data-table__cell--non-numeric name"><a href="">S2 Report.xcl</a></td>
-								<td class="mdl-data-table__cell--non-numeric">
-									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-										<i class="material-icons">save_alt</i>
-									</a>
-									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
-										<i class="material-icons">delete_outline</i>
-									</a>
-								</td>
-								<td class="department">CSE</td>
-								<td class="uploaded">Shiji S</td>
-								<td class="date">8/6/18</td>
-							</tr>
-						</tbody>
-						<tfoot>
-							<tr>
-								<td class="mdl-data-table__cell--non-numeric name"><a href="">Upload new file</a></td>
-								<td class="mdl-data-table__cell--non-numeric">
-									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-										<i class="material-icons">add</i>
-									</a>
-								</td>
-								<td></td>
-								<td></td>
-								<td class="date"></td>
-							</tr>
-						</tfoot>
-					</table>
+				<!--Notifications-->
+				<div class="mdl-cell mdl-cell--12-col heading">
+					Notifications
 				</div>
+				<ul class="demo-list-three mdl-list mdl-card mdl-cell mdl-cell--12-col mdl-list mdl-shadow--2dp">
+					<li class="mdl-list__item mdl-list__item--three-line">
+						<span class="mdl-list__item-primary-content">
+							<i class="material-icons mdl-list__item-avatar">flag</i>
+							<span>Notification #1</span>
+							<span class="mdl-list__item-text-body">
+								Bob stars in his own show now, called "Better Call Saul".
+							</span>
+						</span>
+						<span class="mdl-list__item-secondary-content">
+							<a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#"><i class="material-icons">done</i></a>
+						</span>
+					</li>
+					<li class="mdl-list__item mdl-list__item--three-line">
+						<span class="mdl-list__item-primary-content">
+							<i class="material-icons mdl-list__item-avatar">bookmark</i>
+							<span>Notification #2</span>
+							<span class="mdl-list__item-text-body">
+								Bob Odinkrik played the role of Saul in Breaking Bad. Due to public fondness for the character, Bob stars in his own show now, called "Better Call Saul".
+							</span>
+						</span>
+						<span class="mdl-list__item-secondary-content">
+							<a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#"><i class="material-icons">done</i></a>
+						</span>
+					</li>
+					<li class="mdl-list__item mdl-list__item--three-line">
+						<span class="mdl-list__item-primary-content">
+							<i class="material-icons mdl-list__item-avatar">flag</i>
+							<span>Notification #3</span>
+							<span class="mdl-list__item-text-body">
+								Bryan Cranston played the role of Walter in Breaking Bad. He is also known for playing Hal in Malcom in the Middle.
+							</span>
+						</span>
+						<span class="mdl-list__item-secondary-content">
+							<a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#"><i class="material-icons">done</i></a>
+						</span>
+					</li>
+					<li class="mdl-list__item mdl-list__item--three-line">
+						<span class="mdl-list__item-primary-content">
+							<i class="material-icons mdl-list__item-avatar">flag</i>
+							<span>Notification #4</span>
+							<span class="mdl-list__item-text-body">
+								Aaron Paul played the role of Jesse in Breaking Bad. He also featured in the "Need For Speed" Movie.
+							</span>
+						</span>
+						<span class="mdl-list__item-secondary-content">
+							<a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#"><i class="material-icons">done</i></a>
+						</span>
+					</li>
+				</ul>
 			</div>
 		</main>
 	</div>
