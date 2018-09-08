@@ -120,8 +120,11 @@
 				<!--Directory table-->
 				<h4 class="heading mdl-cell mdl-cell--12-col">Directory</h4>
 				<div id="directory-table">
-					<input class="mdl-shadow--3dp search" id="directory-search" type="text" placeholder="Search">
-					<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-cell mdl-cell--12-col mdl-shadow--3dp">
+					<div class="table-search">
+						<label for="directory-search" class="ico"><i class="material-icons" role="presentation">search</i></label>
+						<input class="mdl-shadow--3dp search" id="directory-search" type="text">
+					</div>
+					<table class="mdl-data-table mdl-js-data-table mdl-cell mdl-cell--12-col mdl-shadow--3dp">
 						<thead>
 							<tr>
 								<th class="mdl-data-table__cell--non-numeric sort" data-sort="name">Name</th>
@@ -154,16 +157,51 @@
 								<td class="strength">556</td>
 							</tr>
 						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan=2 class="mdl-data-table__cell--non-numeric">
+									Rows per page: 10
+									<button id="per-row" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">arrow_drop_up</i></button>
+									<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--top-left" for="per-row">
+										<li data-value="10" class="mdl-menu__item">10</li>
+										<li data-value="50" class="mdl-menu__item">50</li>
+										<li data-value="100" class="mdl-menu__item">100</li>
+										<li data-value="*" class="mdl-menu__item">All</li>
+									</ul>
+									Showing 1-6 of 6
+									<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">keyboard_arrow_left</i></button>
+									<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">keyboard_arrow_right</i></button>
+								</td>
+							</tr>
+						</tfoot>
 					</table>
 				</div>
 			</div>
 		</main>
 	</div>
-	<label id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp show-modal" for="directory-search">
+	<label id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp" for="directory-search">
 		<i class="material-icons">search</i>
 	</label>
 	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Search</span>
 	<script src="../scripts/scripts.js"></script>
+	<script>
+		var directory = {
+				valueNames: ["name", "strength"]
+			},
+			directoryTable = new List("directory-table", directory);
+
+		$($('th.sort')[0]).trigger('click', function() {
+			console.log('clicked');
+		});
+
+		$("input.search").on("keyup", function(e) {
+			if (e.keyCode === 27) {
+				$(e.currentTarget).val("");
+				directoryTable.search("");
+			}
+		});
+
+	</script>
 </body>
 
 </html>

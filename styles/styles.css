@@ -148,18 +148,8 @@ body {
 	z-index: 0;
 }
 
-.search {
-	display: flex;
-	width: calc(100% - 16px);
-	background-color: #fff;
-	padding: 16px;
-	border-radius: 32px;
-	margin: 0 auto;
-	font-size: 16px;
-}
-
 .demo-content {
-	margin-top: -28vh;
+	margin-top: -30vh;
 }
 
 .demo-header button {
@@ -436,20 +426,30 @@ th.sort.desc:after {
 	color: rgba(0, 0, 0, 0.68);
 }
 
-.mdl-button--file input {
-	cursor: pointer;
-	height: 100%;
-	right: 0;
-	opacity: 0;
+.ico {
 	position: absolute;
-	top: 0;
-	width: 300px;
-	z-index: 4;
+	margin-top: 13px;
+	margin-left: 24px;
 }
 
-.mdl-textfield--file .mdl-textfield__input {
-	box-sizing: border-box;
-	width: 100%;
+.search {
+	display: flex;
+	width: calc(100% - 16px);
+	background-color: #fff;
+	padding: 16px 16px 16px 46px;
+	border-radius: 32px;
+	margin: 0 auto;
+	font-size: 16px;
+}
+
+.mdl-button--file input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	z-index: 4;
+	opacity: 0;
 }
 
 .mdl-textfield--file .mdl-button--file {

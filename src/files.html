@@ -120,7 +120,10 @@
 				<!--Files table-->
 				<h4 class="heading mdl-cell mdl-cell--12-col">Files</h4>
 				<div id="files-table">
-					<input class="mdl-shadow--3dp search" id="files-search" type="text" placeholder="Search">
+					<div class="table-search">
+						<label for="directory-search" class="ico"><i class="material-icons" role="presentation">search</i></label>
+						<input class="mdl-shadow--3dp search" id="directory-search" type="text">
+					</div>
 					<table class="mdl-data-table mdl-js-data-table mdl-cell mdl-cell--12-col mdl-shadow--3dp">
 						<thead>
 							<tr>
@@ -243,20 +246,18 @@
 		<h4 class="mdl-dialog__title">Upload new file</h4>
 		<div class="mdl-dialog__content">
 			<p>
-				1. Enter file name<br>
-				2. Select your file<br>
-				3. Click Upload
+				Enter a file name
 			</p>
 			<form>
 				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 					<input class="mdl-textfield__input" type="text">
 					<label class="mdl-textfield__label">File name</label>
-					<label class="mdl-textfield__error">File name required! This is what viewers see.</label>
 				</div>
 				<div class="mdl-textfield mdl-js-textfield mdl-textfield--file">
 					<input class="mdl-textfield__input" placeholder="Attach a file to upload" type="text" id="uploadFile" readonly>
-					<div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file">
-						<i class="material-icons">attach_file</i><input type="file" id="uploadBtn">
+					<div class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--primary mdl-button--file">
+						<input type="file" id="uploadBtn">
+						<i class="material-icons">attach_file</i>
 					</div>
 				</div>
 			</form>
@@ -271,6 +272,52 @@
 		<a href="" class="mdl-snackbar__action"></a>
 	</div>
 	<script src="../scripts/scripts.js"></script>
+	<script>
+		var dialog = document.querySelector('#upload');
+		dialog.querySelector('.close').addEventListener('click', function() {
+			dialog.close();
+		});
+		dialog.querySelector('.start-upload').addEventListener('click', function() {
+			dialog.close();
+		});
+
+		var uploadSnackbarContainer = document.querySelector('#snackbar-upload');
+		var showSnackbarButton = document.querySelector('#show-snackbar');
+		var handler = function(event) {
+			location.reload();
+		};
+		showSnackbarButton.addEventListener('click', function() {
+			'use strict';
+			var data = {
+				message: 'File uploaded!',
+				timeout: 5000,
+				actionHandler: handler,
+				actionText: 'Refresh files'
+			};
+			uploadSnackbarContainer.MaterialSnackbar.showSnackbar(data);
+		});
+
+		document.getElementById("uploadBtn").onchange = function() {
+			document.getElementById("uploadFile").value = this.files[0].name;
+		};
+
+		var files = {
+				valueNames: ["name", "department", "uploaded", "date"]
+			},
+			filesTable = new List("files-table", files);
+
+		$($('th.sort')[3]).trigger('click', function() {
+			console.log('clicked');
+		});
+
+		$("input.search").on("keyup", function(e) {
+			if (e.keyCode === 27) {
+				$(e.currentTarget).val("");
+				filesTable.search("");
+			}
+		});
+
+	</script>
 </body>
 
 </html>
