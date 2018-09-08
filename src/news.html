@@ -31,7 +31,7 @@
 	<script src="../scripts/list.min.js"></script>
 </head>
 
-<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-800 mdl-base">
+<body class="mdl-demo mdl-color--grey-200 mdl-color-text--grey-800 mdl-base">
 	<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
 		<header class="demo-header mdl-layout__header">
 			<div class="demo-header-row mdl-layout__header-row">
@@ -65,9 +65,15 @@
 				</ul>
 				<button id="hdrbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon img-bg" style="background-image: url(../images/user.jpg);"></button>
 				<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-					<li class="mdl-menu__item"><i class="material-icons">tag_faces</i>Profile</li>
-					<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">tune</i>Settings</li>
-					<li class="mdl-menu__item"><i class="material-icons">exit_to_app</i>Sign out</li>
+					<a href="profile.html">
+						<li class="mdl-menu__item"><i class="material-icons">tag_faces</i>Profile</li>
+					</a>
+					<a href="settings.html">
+						<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">tune</i>Settings</li>
+					</a>
+					<a href="../index.html">
+						<li class="mdl-menu__item"><i class="material-icons">exit_to_app</i>Sign out</li>
+					</a>
 				</ul>
 			</div>
 		</header>
@@ -82,9 +88,15 @@
 						<span class="visuallyhidden">Accounts</span>
 					</button>
 					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
-						<li class="mdl-menu__item"><i class="material-icons">tag_faces</i>Profile</li>
-						<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">tune</i>Settings</li>
-						<li class="mdl-menu__item"><i class="material-icons">exit_to_app</i>Sign out</li>
+						<a href="profile.html">
+							<li class="mdl-menu__item"><i class="material-icons">tag_faces</i>Profile</li>
+						</a>
+						<a href="settings.html">
+							<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">tune</i>Settings</li>
+						</a>
+						<a href="../index.html">
+							<li class="mdl-menu__item"><i class="material-icons">exit_to_app</i>Sign out</li>
+						</a>
 					</ul>
 				</div>
 			</header>
@@ -109,7 +121,7 @@
 				<div class="mdl-cell mdl-cell--12-col heading">
 					News
 				</div>
-				<div class="section--center mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+				<div class="section--center mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing mdl-shadow--3dp">
 					<header class="section__play-btn mdl-cell mdl-cell--5-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-color--grey-400">
 						<i class="material-icons">play_arrow</i>
 					</header>
@@ -117,15 +129,6 @@
 						<div class="mdl-card__supporting-text">
 							<h4>RUBIX 2K18</h4>
 							<p>National level inter-college tech fest at Nehru College of Engineering and Research Centre.</p>
-							<span class="mdl-chip">
-								<span class="mdl-chip__text">CSE</span>
-							</span>
-							<span class="mdl-chip">
-								<span class="mdl-chip__text">Event</span>
-							</span>
-							<span class="mdl-chip">
-								<span class="mdl-chip__text">NCERC</span>
-							</span>
 						</div>
 						<div class="mdl-card__actions">
 							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
@@ -138,7 +141,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="section--center mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+				<div class="section--center mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing mdl-shadow--3dp">
 					<header class="section__play-btn mdl-cell mdl-cell--5-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-color--grey-400">
 						<i class="material-icons">play_arrow</i>
 					</header>
@@ -146,12 +149,6 @@
 						<div class="mdl-card__supporting-text">
 							<h4>Placements at NCERC</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus perferendis dolorem aspernatur necessitatibus dolorum debitis cumque eum, dicta.</p>
-							<span class="mdl-chip">
-								<span class="mdl-chip__text">NCERC</span>
-							</span>
-							<span class="mdl-chip">
-								<span class="mdl-chip__text">Placement</span>
-							</span>
 						</div>
 						<div class="mdl-card__actions">
 							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
@@ -164,7 +161,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="section--center mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+				<div class="section--center mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing mdl-shadow--3dp">
 					<header class="section__play-btn mdl-cell mdl-cell--5-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-color--grey-400">
 						<i class="material-icons">play_arrow</i>
 					</header>
@@ -172,12 +169,6 @@
 						<div class="mdl-card__supporting-text">
 							<h4>KTU - IIT level university</h4>
 							<p>🤣</p>
-							<span class="mdl-chip">
-								<span class="mdl-chip__text">KTU</span>
-							</span>
-							<span class="mdl-chip">
-								<span class="mdl-chip__text">University</span>
-							</span>
 						</div>
 						<div class="mdl-card__actions">
 							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
@@ -193,30 +184,10 @@
 			</div>
 		</main>
 	</div>
-	<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp show-modal">
-		<i class="material-icons">add</i>
+	<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp show-modal" onclick="location.reload()">
+		<i class="material-icons">refresh</i>
 	</button>
-	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Add</span>
-	<dialog class="mdl-dialog">
-		<h4 class="mdl-dialog__title">Upload new file</h4>
-		<div class="mdl-dialog__content">
-			<p>
-				Allowing us to collect data will let us get you the information you want faster.
-			</p>
-		</div>
-		<div class="mdl-dialog__actions">
-			<button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent close">Upload</button>
-			<button id="demo-show-toast" class="mdl-button">Show Toast</button>
-		</div>
-	</dialog>
-	<div id="demo-snackbar-example" class="mdl-snackbar mdl-js-snackbar">
-		<div class="mdl-snackbar__text"></div>
-		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-snackbar__action"></button>
-	</div>
-	<div id="demo-toast-example" class="mdl-snackbar mdl-js-snackbar">
-		<div class="mdl-snackbar__text"></div>
-		<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-snackbar__action"></button>
-	</div>
+	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Refresh page</span>
 	<script src="../scripts/scripts.js"></script>
 </body>
 

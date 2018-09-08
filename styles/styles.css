@@ -153,7 +153,7 @@ body {
 	width: calc(100% - 16px);
 	background-color: #fff;
 	padding: 16px;
-	border-radius: 2px;
+	border-radius: 32px;
 	margin: 0 auto;
 	font-size: 16px;
 }
@@ -240,9 +240,10 @@ body {
 	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
 	text-transform: none;
 	font-size: 18px;
-	padding: 4px 16px;
+	padding: 4px 24px;
 	margin: 4px;
 	height: auto;
+	border-radius: 24px;
 }
 
 .heading {
@@ -256,11 +257,13 @@ body {
 
 .mdl-card {
 	transition: 200ms ease;
+	border-radius: 8px;
 }
 
 .section--center .mdl-card {
 	padding: 16px;
 	margin: 0;
+	border-radius: 0;
 }
 
 .mdl-card__supporting-text {
@@ -318,6 +321,8 @@ body {
 .mdl-data-table {
 	table-layout: fixed;
 	font-size: 16px;
+	border-radius: 8px;
+	border: none;
 }
 
 .mdl-data-table td,
@@ -429,6 +434,26 @@ th.sort.desc:after {
 .mdl-dialog__content {
 	padding: 8px;
 	color: rgba(0, 0, 0, 0.68);
+}
+
+.mdl-button--file input {
+	cursor: pointer;
+	height: 100%;
+	right: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 300px;
+	z-index: 4;
+}
+
+.mdl-textfield--file .mdl-textfield__input {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.mdl-textfield--file .mdl-button--file {
+	right: 0;
 }
 
 .mdl-snackbar {
