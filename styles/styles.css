@@ -322,6 +322,10 @@ th {
 	text-overflow: ellipsis;
 }
 
+.mdl-data-table th {
+	font-size: 16px;
+}
+
 .mdl-data-table td:first-of-type,
 .mdl-data-table th:first-of-type {
 	text-align: left;
@@ -344,18 +348,16 @@ th.sort:hover {
 }
 
 th.sort:after {
-	font-size: 22px;
-	content: " ·";
+	font-family: 'Material Icons';
+	content: " sort";
 }
 
 th.sort.asc:after {
-	font-size: 22px;
-	content: " ↓";
+	content: " arrow_downward";
 }
 
 th.sort.desc:after {
-	font-size: 22px;
-	content: " ↑";
+	content: " arrow_upward";
 }
 
 .section--footer {
