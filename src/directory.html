@@ -108,7 +108,7 @@
 				<!--Directory table-->
 				<h4 class="heading mdl-cell mdl-cell--12-col">Directory</h4>
 				<div id="directory-table">
-					<input class="mdl-shadow--2dp search" type="text" placeholder="Search">
+					<input class="mdl-shadow--2dp search" id="directory-search" type="text" placeholder="Search">
 					<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-cell mdl-cell--12-col mdl-shadow--2dp">
 						<thead>
 							<tr>
@@ -147,30 +147,10 @@
 			</div>
 		</main>
 	</div>
-	<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp show-modal">
-		<i class="material-icons">add</i>
-	</button>
-	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Add</span>
-	<dialog class="mdl-dialog">
-		<h4 class="mdl-dialog__title">Upload new file</h4>
-		<div class="mdl-dialog__content">
-			<p>
-				Allowing us to collect data will let us get you the information you want faster.
-			</p>
-		</div>
-		<div class="mdl-dialog__actions">
-			<button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent close">Upload</button>
-			<button id="demo-show-toast" class="mdl-button">Show Toast</button>
-		</div>
-	</dialog>
-	<div id="demo-snackbar-example" class="mdl-snackbar mdl-js-snackbar">
-		<div class="mdl-snackbar__text"></div>
-		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-snackbar__action"></button>
-	</div>
-	<div id="demo-toast-example" class="mdl-snackbar mdl-js-snackbar">
-		<div class="mdl-snackbar__text"></div>
-		<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-snackbar__action"></button>
-	</div>
+	<label id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp show-modal" for="directory-search">
+		<i class="material-icons">search</i>
+	</label>
+	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Search</span>
 	<script src="../scripts/scripts.js"></script>
 </body>
 

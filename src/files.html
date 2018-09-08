@@ -108,7 +108,7 @@
 				<!--Files table-->
 				<h4 class="heading mdl-cell mdl-cell--12-col">Files</h4>
 				<div id="files-table">
-					<input class="mdl-shadow--2dp search" type="text" placeholder="Search">
+					<input class="mdl-shadow--2dp search" id="files-search" type="text" placeholder="Search">
 					<table class="mdl-data-table mdl-js-data-table mdl-cell mdl-cell--12-col mdl-shadow--2dp">
 						<thead>
 							<tr>
@@ -209,9 +209,9 @@
 							<tr>
 								<td class="mdl-data-table__cell--non-numeric name"><a href="">Upload new file</a></td>
 								<td class="mdl-data-table__cell--non-numeric">
-									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+									<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank" onclick="upload.showModal()">
 										<i class="material-icons">add</i>
-									</a>
+									</button>
 								</td>
 								<td></td>
 								<td></td>
@@ -223,29 +223,40 @@
 			</div>
 		</main>
 	</div>
-	<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp show-modal">
+	<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp" onclick="upload.showModal()">
 		<i class="material-icons">add</i>
 	</button>
-	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Add</span>
-	<dialog class="mdl-dialog">
+	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Upload new file</span>
+	<dialog class="mdl-dialog" id="upload">
 		<h4 class="mdl-dialog__title">Upload new file</h4>
 		<div class="mdl-dialog__content">
 			<p>
-				Allowing us to collect data will let us get you the information you want faster.
+				1. Enter file name<br>
+				2. Select your file<br>
+				3. Click Upload
 			</p>
+			<form>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input class="mdl-textfield__input" type="text">
+					<label class="mdl-textfield__label">File name</label>
+					<label class="mdl-textfield__error">File name required! This is what viewers see.</label>
+				</div>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--file">
+					<input class="mdl-textfield__input" placeholder="Attach a file to upload" type="text" id="uploadFile" readonly>
+					<div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file">
+						<i class="material-icons">attach_file</i><input type="file" id="uploadBtn">
+					</div>
+				</div>
+			</form>
 		</div>
 		<div class="mdl-dialog__actions">
-			<button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent close">Upload</button>
-			<button id="demo-show-toast" class="mdl-button">Show Toast</button>
+			<button id="show-snackbar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent start-upload">Upload</button>
+			<button id="demo-show-toast" class="mdl-button close">Cancel</button>
 		</div>
 	</dialog>
-	<div id="demo-snackbar-example" class="mdl-snackbar mdl-js-snackbar">
+	<div id="snackbar-upload" class="mdl-snackbar mdl-js-snackbar">
 		<div class="mdl-snackbar__text"></div>
-		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-snackbar__action"></button>
-	</div>
-	<div id="demo-toast-example" class="mdl-snackbar mdl-js-snackbar">
-		<div class="mdl-snackbar__text"></div>
-		<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-snackbar__action"></button>
+		<a href="" class="mdl-snackbar__action"></a>
 	</div>
 	<script src="../scripts/scripts.js"></script>
 </body>
