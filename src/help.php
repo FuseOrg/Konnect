@@ -135,7 +135,7 @@
 					<a href="settings.php">
 						<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">tune</i>Settings</li>
 					</a>
-					<a href="../index.php">
+					<a href="../index.html">
 						<li class="mdl-menu__item"><i class="material-icons">exit_to_app</i>Sign out</li>
 					</a>
 				</ul>
@@ -158,7 +158,7 @@
 						<a href="settings.php">
 							<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">tune</i>Settings</li>
 						</a>
-						<a href="../index.php">
+						<a href="../index.html">
 							<li class="mdl-menu__item"><i class="material-icons">exit_to_app</i>Sign out</li>
 						</a>
 					</ul>
@@ -237,7 +237,7 @@
 			</footer>
 		</main>
 	</div>
-	<a href="../index.php">
+	<a href="../index.html">
 		<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp">
 			<i class="material-icons">exit_to_app</i>
 		</button>
