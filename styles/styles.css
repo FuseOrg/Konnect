@@ -173,7 +173,7 @@ body {
 	min-height: calc(100vh - 53px);
 }
 
-@media (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
 	.search-list {
 		left: 0;
 	}
@@ -476,7 +476,7 @@ th.sort.desc:after {
 	margin: 8px;
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
 	.demo-content {
 		padding: 16px 0 128px 0;
 	}

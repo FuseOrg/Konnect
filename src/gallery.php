@@ -28,6 +28,7 @@
 	<link rel="stylesheet" href="../styles/styles.css">
 	<script src="../scripts/material.min.js"></script>
 	<script src="../scripts/jquery.min.js"></script>
+	<script src="../scripts/list.min.js"></script>
 </head>
 
 <body class="mdl-demo mdl-color--grey-50 mdl-color-text--grey-800 mdl-base">
@@ -36,14 +37,78 @@
 			<div class="demo-header-row mdl-layout__header-row">
 				<span class="mdl-layout-title logo">Konnect</span>
 				<div class="mdl-layout-spacer"></div>
-				<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-					<label class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" for="search">
-						<i class="material-icons">search</i>
-					</label>
-					<div class="mdl-textfield__expandable-holder">
-						<input class="mdl-textfield__input" type="text" id="search">
-						<label class="mdl-textfield__label" for="search">Search</label>
+				<div id="search-list">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+						<label class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" for="search">
+							<i class="material-icons">search</i>
+						</label>
+						<div class="mdl-textfield__expandable-holder">
+							<input class="mdl-textfield__input fuzzy-search" type="text" id="search">
+							<label class="mdl-textfield__label" for="search">Search</label>
+						</div>
 					</div>
+					<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect list search-list" for="search">
+						<a href="dashboard.php">
+							<li class="mdl-menu__item">
+								<i class="material-icons">drag_indicator</i>
+								<span class="name">Dashboard</span>
+							</li>
+						</a>
+						<a href="notifications.php">
+							<li class="mdl-menu__item">
+								<i class="material-icons">notifications_none</i>
+								<span class="name">Notifications</span>
+							</li>
+						</a>
+						<a href="news.php">
+							<li class="mdl-menu__item">
+								<i class="material-icons">outlined_flag</i>
+								<span class="name">News</span>
+							</li>
+						</a>
+						<a href="events.php">
+							<li class="mdl-menu__item">
+								<i class="material-icons">bookmark_border</i>
+								<span class="name">Events</span>
+							</li>
+						</a>
+						<a href="directory.php">
+							<li class="mdl-menu__item">
+								<i class="material-icons">kitchen</i>
+								<span class="name">Directory</span>
+							</li>
+						</a>
+						<a href="files.php">
+							<li class="mdl-menu__item">
+								<i class="material-icons">cloud_queue</i>
+								<span class="name">Files</span>
+							</li>
+						</a>
+						<a href="gallery.php">
+							<li class="mdl-menu__item">
+								<i class="material-icons">crop_original</i>
+								<span class="name">Gallery</span>
+							</li>
+						</a>
+						<a href="profile.php">
+							<li class="mdl-menu__item">
+								<i class="material-icons">tag_faces</i>
+								<span class="name">Profile</span>
+							</li>
+						</a>
+						<a href="settings.php">
+							<li class="mdl-menu__item">
+								<i class="material-icons">tune</i>
+								<span class="name">Settings</span>
+							</li>
+						</a>
+						<a href="help.php">
+							<li class="mdl-menu__item">
+								<i class="material-icons">help_outline</i>
+								<span class="name">Help</span>
+							</li>
+						</a>
+					</ul>
 				</div>
 				<button id="notifications" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">notifications_none</i></button>
 				<span class="mdl-badge mdl-badge--overlap" data-badge="4"></span>
@@ -248,6 +313,12 @@
 	</button>
 	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Refresh page</span>
 	<script src="../scripts/scripts.js"></script>
+	<script>
+		var searchList = new List('search-list', {
+			valueNames: ['name']
+		});
+
+	</script>
 </body>
 
 </html>
