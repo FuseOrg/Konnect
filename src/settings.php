@@ -120,7 +120,7 @@
 			</div>
 		</main>
 	</div>
-	<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp show-modal" onclick="location.reload()">
+	<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp" onclick="location.reload()">
 		<i class="material-icons">save</i>
 	</button>
 	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Save changes</span>

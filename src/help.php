@@ -173,7 +173,7 @@
 		</main>
 	</div>
 	<a href="../index.php">
-		<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp show-modal">
+		<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp">
 			<i class="material-icons">exit_to_app</i>
 		</button>
 	</a>
