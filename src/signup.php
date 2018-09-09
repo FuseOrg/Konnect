@@ -36,7 +36,7 @@
 					<input class="input" type="text" id="uname" name="uname" placeholder="username" required>
 					<input class="input" type="password" id="pwd" name="pwd" placeholder="password" required>
 					<input class="input" type="password" id="cpwd" name="cpwd" placeholder="confirm password" required>
-					<a class="link" href="dashboard.html">Sign Up</a>
+					<a class="link" href="dashboard.php">Sign Up</a>
 				</form>
 			</div>
 		</div>

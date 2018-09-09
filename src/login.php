@@ -31,7 +31,7 @@
                           	$row = $result->fetch_assoc();
                           	if( $row["password"] == $_POST["password"] )
                           	{
-                               header("Location: dashboard.html");
+                               header("Location: dashboard.php");
                           	}
                           	else
                           	{
