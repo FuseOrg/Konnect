@@ -150,6 +150,8 @@ body {
 
 .demo-content {
 	margin-top: -30vh;
+	padding: 32px 32px 128px 32px;
+	max-width: 1080px;
 }
 
 .demo-header button {
@@ -180,11 +182,6 @@ body {
 .mdl-layout-title {
 	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
 	font-size: 22px;
-}
-
-.demo-content {
-	padding: 32px;
-	max-width: 1080px;
 }
 
 .demo-options .mdl-checkbox__box-outline,
@@ -250,27 +247,22 @@ body {
 	border-radius: 8px;
 }
 
-.section--center .mdl-card {
-	padding: 16px;
-	margin: 0;
-	border-radius: 0;
+.demo-card-wide .mdl-card__title {
+	color: #fff;
+	height: 30vh;
+	min-height: 256px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.demo-card-wide > .mdl-card__menu {
+	color: #fff;
 }
 
 .mdl-card__supporting-text {
 	text-overflow: ellipsis;
 	line-height: 1.5;
-}
-
-.section__play-btn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 256px;
-}
-
-.section__play-btn .material-icons {
-	font-size: 3rem;
-	color: #fff;
 }
 
 .demo-card-image.mdl-card {
@@ -466,7 +458,7 @@ th.sort.desc:after {
 
 @media (max-width: 640px) {
 	.demo-content {
-		padding: 16px 0;
+		padding: 16px 0 128px 0;
 	}
 
 	.section--footer {
