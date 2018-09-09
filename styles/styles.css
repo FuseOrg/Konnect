@@ -163,6 +163,22 @@ body {
 	margin: 0 8px 0 0;
 }
 
+.mdl-menu__container {
+	top: 53px !important;
+}
+
+.search-list {
+	width: 100vw;
+	left: 240px;
+	min-height: calc(100vh - 53px);
+}
+
+@media screen and (max-width: 1024px) {
+	.search-list {
+		left: 0;
+	}
+}
+
 .img-bg {
 	background-repeat: no-repeat !important;
 	background-size: cover !important;
@@ -177,6 +193,10 @@ body {
 	margin-right: 28px;
 	margin-bottom: 28px;
 	z-index: 3;
+}
+
+.mdl-list__item {
+	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
 }
 
 .mdl-layout-title {
@@ -230,7 +250,7 @@ body {
 	padding: 4px 24px;
 	margin: 4px;
 	height: auto;
-	border-radius: 24px;
+	border-radius: 8px;
 }
 
 .heading {
@@ -456,7 +476,7 @@ th.sort.desc:after {
 	margin: 8px;
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
 	.demo-content {
 		padding: 16px 0 128px 0;
 	}
