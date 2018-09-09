@@ -31,7 +31,7 @@
 	<script src="../scripts/list.min.js"></script>
 </head>
 
-<body class="mdl-demo mdl-color--grey-200 mdl-color-text--grey-800 mdl-base">
+<body class="mdl-demo mdl-color--grey-50 mdl-color-text--grey-800 mdl-base">
 	<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
 		<header class="demo-header mdl-layout__header">
 			<div class="demo-header-row mdl-layout__header-row">
@@ -58,20 +58,20 @@
 					<a href="">
 						<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">outlined_flag</i>Notification #3</li>
 					</a>
-					<a href="notifications.html">
+					<a href="notifications.php">
 						<li class="mdl-menu__item"><i class="material-icons">notifications_none</i>All notifications</li>
 					</a>
 					<li class="mdl-menu__item"><i class="material-icons">done_all</i>Mark all as read</li>
 				</ul>
 				<button id="hdrbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon img-bg" style="background-image: url(../images/user.jpg);"></button>
 				<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-					<a href="profile.html">
+					<a href="profile.php">
 						<li class="mdl-menu__item"><i class="material-icons">tag_faces</i>Profile</li>
 					</a>
-					<a href="settings.html">
+					<a href="settings.php">
 						<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">tune</i>Settings</li>
 					</a>
-					<a href="../index.html">
+					<a href="../index.php">
 						<li class="mdl-menu__item"><i class="material-icons">exit_to_app</i>Sign out</li>
 					</a>
 				</ul>
@@ -88,30 +88,30 @@
 						<span class="visuallyhidden">Accounts</span>
 					</button>
 					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
-						<a href="profile.html">
+						<a href="profile.php">
 							<li class="mdl-menu__item"><i class="material-icons">tag_faces</i>Profile</li>
 						</a>
-						<a href="settings.html">
+						<a href="settings.php">
 							<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">tune</i>Settings</li>
 						</a>
-						<a href="../index.html">
+						<a href="../index.php">
 							<li class="mdl-menu__item"><i class="material-icons">exit_to_app</i>Sign out</li>
 						</a>
 					</ul>
 				</div>
 			</header>
 			<nav class="demo-navigation mdl-navigation mdl-color--white">
-				<a class="mdl-navigation__link" href="dashboard.html"><i class="material-icons" role="presentation">drag_indicator</i>Dashboard</a>
-				<a class="mdl-navigation__link" href="notifications.html"><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
-				<a class="mdl-navigation__link" href="news.html"><i class="material-icons" role="presentation">outlined_flag</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
-				<a class="mdl-navigation__link" href="events.html"><i class="material-icons" role="presentation">bookmark_border</i><span class="mdl-badge mdl-badge--no-background" data-badge="1">Events</span></a>
-				<a class="mdl-navigation__link" href="directory.html"><i class="material-icons" role="presentation">kitchen</i>Directory</a>
-				<a class="mdl-navigation__link active" href="files.html"><i class="material-icons" role="presentation">cloud_queue</i>Files</a>
-				<a class="mdl-navigation__link" href="gallery.html"><i class="material-icons" role="presentation">crop_original</i>Gallery</a>
-				<a class="mdl-navigation__link" href="profile.html"><i class="material-icons" role="presentation">tag_faces</i>Profile</a>
+				<a class="mdl-navigation__link" href="dashboard.php"><i class="material-icons" role="presentation">drag_indicator</i>Dashboard</a>
+				<a class="mdl-navigation__link" href="notifications.php"><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
+				<a class="mdl-navigation__link" href="news.php"><i class="material-icons" role="presentation">outlined_flag</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
+				<a class="mdl-navigation__link" href="events.php"><i class="material-icons" role="presentation">bookmark_border</i><span class="mdl-badge mdl-badge--no-background" data-badge="1">Events</span></a>
+				<a class="mdl-navigation__link" href="directory.php"><i class="material-icons" role="presentation">kitchen</i>Directory</a>
+				<a class="mdl-navigation__link active" href="files.php"><i class="material-icons" role="presentation">cloud_queue</i>Files</a>
+				<a class="mdl-navigation__link" href="gallery.php"><i class="material-icons" role="presentation">crop_original</i>Gallery</a>
+				<a class="mdl-navigation__link" href="profile.php"><i class="material-icons" role="presentation">tag_faces</i>Profile</a>
 				<div class="mdl-layout-spacer mdl-menu__item--full-bleed-divider"></div>
-				<a class="mdl-navigation__link" href="settings.html"><i class="material-icons" role="presentation">tune</i>Settings</a>
-				<a class="mdl-navigation__link" href="help.html"><i class="material-icons" role="presentation">help_outline</i>Help</a>
+				<a class="mdl-navigation__link" href="settings.php"><i class="material-icons" role="presentation">tune</i>Settings</a>
+				<a class="mdl-navigation__link" href="help.php"><i class="material-icons" role="presentation">help_outline</i>Help</a>
 			</nav>
 		</div>
 		<main class="demo-main mdl-layout__content">
@@ -120,7 +120,10 @@
 				<!--Files table-->
 				<h4 class="heading mdl-cell mdl-cell--12-col">Files</h4>
 				<div id="files-table">
-					<input class="mdl-shadow--3dp search" id="files-search" type="text" placeholder="Search">
+					<div class="table-search">
+						<label for="directory-search" class="ico"><i class="material-icons" role="presentation">search</i></label>
+						<input class="mdl-shadow--3dp search" id="directory-search" type="text">
+					</div>
 					<table class="mdl-data-table mdl-js-data-table mdl-cell mdl-cell--12-col mdl-shadow--3dp">
 						<thead>
 							<tr>
@@ -219,7 +222,7 @@
 						</tbody>
 						<tfoot>
 							<tr>
-								<td class="mdl-data-table__cell--non-numeric name"><a href="">Upload new file</a></td>
+								<td class="mdl-data-table__cell--non-numeric name">Upload new file</td>
 								<td class="mdl-data-table__cell--non-numeric">
 									<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank" onclick="upload.showModal()">
 										<i class="material-icons">add</i>
@@ -243,20 +246,18 @@
 		<h4 class="mdl-dialog__title">Upload new file</h4>
 		<div class="mdl-dialog__content">
 			<p>
-				1. Enter file name<br>
-				2. Select your file<br>
-				3. Click Upload
+				Enter a file name
 			</p>
 			<form>
 				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 					<input class="mdl-textfield__input" type="text">
 					<label class="mdl-textfield__label">File name</label>
-					<label class="mdl-textfield__error">File name required! This is what viewers see.</label>
 				</div>
 				<div class="mdl-textfield mdl-js-textfield mdl-textfield--file">
 					<input class="mdl-textfield__input" placeholder="Attach a file to upload" type="text" id="uploadFile" readonly>
-					<div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file">
-						<i class="material-icons">attach_file</i><input type="file" id="uploadBtn">
+					<div class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--primary mdl-button--file">
+						<input type="file" id="uploadBtn">
+						<i class="material-icons">attach_file</i>
 					</div>
 				</div>
 			</form>
@@ -271,6 +272,52 @@
 		<a href="" class="mdl-snackbar__action"></a>
 	</div>
 	<script src="../scripts/scripts.js"></script>
+	<script>
+		var dialog = document.querySelector('#upload');
+		dialog.querySelector('.close').addEventListener('click', function() {
+			dialog.close();
+		});
+		dialog.querySelector('.start-upload').addEventListener('click', function() {
+			dialog.close();
+		});
+
+		var uploadSnackbarContainer = document.querySelector('#snackbar-upload');
+		var showSnackbarButton = document.querySelector('#show-snackbar');
+		var handler = function(event) {
+			location.reload();
+		};
+		showSnackbarButton.addEventListener('click', function() {
+			'use strict';
+			var data = {
+				message: 'File uploaded!',
+				timeout: 5000,
+				actionHandler: handler,
+				actionText: 'Refresh files'
+			};
+			uploadSnackbarContainer.MaterialSnackbar.showSnackbar(data);
+		});
+
+		document.getElementById("uploadBtn").onchange = function() {
+			document.getElementById("uploadFile").value = this.files[0].name;
+		};
+
+		var files = {
+				valueNames: ["name", "department", "uploaded", "date"]
+			},
+			filesTable = new List("files-table", files);
+
+		$($('th.sort')[3]).trigger('click', function() {
+			console.log('clicked');
+		});
+
+		$("input.search").on("keyup", function(e) {
+			if (e.keyCode === 27) {
+				$(e.currentTarget).val("");
+				filesTable.search("");
+			}
+		});
+
+	</script>
 </body>
 
 </html>

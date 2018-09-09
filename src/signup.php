@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Intranet for NCERC">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Konnect | Sign In</title>
+	<title>Konnect | Sign Up</title>
 	<meta name="theme-color" content="#607d8b">
 	<!-- Add to homescreen for Chrome on Android -->
 	<meta name="mobile-web-app-capable" content="yes">
@@ -31,9 +31,12 @@
 		<div class="container">
 			<div class="content">
 				<form action="" method="post">
+					<input class="input" type="text" id="fname" name="fname" placeholder="name" required>
+					<input class="input" type="email" id="fname" name="email" placeholder="email" required>
 					<input class="input" type="text" id="uname" name="uname" placeholder="username" required>
 					<input class="input" type="password" id="pwd" name="pwd" placeholder="password" required>
-					<a class="link" href="dashboard.html">Sign In</a>
+					<input class="input" type="password" id="cpwd" name="cpwd" placeholder="confirm password" required>
+					<a class="link" href="dashboard.php">Sign Up</a>
 				</form>
 			</div>
 		</div>

@@ -148,18 +148,10 @@ body {
 	z-index: 0;
 }
 
-.search {
-	display: flex;
-	width: calc(100% - 16px);
-	background-color: #fff;
-	padding: 16px;
-	border-radius: 32px;
-	margin: 0 auto;
-	font-size: 16px;
-}
-
 .demo-content {
-	margin-top: -28vh;
+	margin-top: -30vh;
+	padding: 32px 32px 128px 32px;
+	max-width: 1080px;
 }
 
 .demo-header button {
@@ -190,11 +182,6 @@ body {
 .mdl-layout-title {
 	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
 	font-size: 22px;
-}
-
-.demo-content {
-	padding: 32px;
-	max-width: 1080px;
 }
 
 .demo-options .mdl-checkbox__box-outline,
@@ -260,27 +247,22 @@ body {
 	border-radius: 8px;
 }
 
-.section--center .mdl-card {
-	padding: 16px;
-	margin: 0;
-	border-radius: 0;
+.demo-card-wide .mdl-card__title {
+	color: #fff;
+	height: 30vh;
+	min-height: 256px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.demo-card-wide > .mdl-card__menu {
+	color: #fff;
 }
 
 .mdl-card__supporting-text {
 	text-overflow: ellipsis;
 	line-height: 1.5;
-}
-
-.section__play-btn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 256px;
-}
-
-.section__play-btn .material-icons {
-	font-size: 3rem;
-	color: #fff;
 }
 
 .demo-card-image.mdl-card {
@@ -332,6 +314,10 @@ th {
 	text-overflow: ellipsis;
 }
 
+.mdl-data-table th {
+	font-size: 16px;
+}
+
 .mdl-data-table td:first-of-type,
 .mdl-data-table th:first-of-type {
 	text-align: left;
@@ -354,18 +340,16 @@ th.sort:hover {
 }
 
 th.sort:after {
-	font-size: 22px;
-	content: " ·";
+	font-family: 'Material Icons';
+	content: " sort";
 }
 
 th.sort.asc:after {
-	font-size: 22px;
-	content: " ↓";
+	content: " arrow_downward";
 }
 
 th.sort.desc:after {
-	font-size: 22px;
-	content: " ↑";
+	content: " arrow_upward";
 }
 
 .section--footer {
@@ -436,20 +420,30 @@ th.sort.desc:after {
 	color: rgba(0, 0, 0, 0.68);
 }
 
-.mdl-button--file input {
-	cursor: pointer;
-	height: 100%;
-	right: 0;
-	opacity: 0;
+.ico {
 	position: absolute;
-	top: 0;
-	width: 300px;
-	z-index: 4;
+	margin-top: 13px;
+	margin-left: 24px;
 }
 
-.mdl-textfield--file .mdl-textfield__input {
-	box-sizing: border-box;
-	width: 100%;
+.search {
+	display: flex;
+	width: calc(100% - 16px);
+	background-color: #fff;
+	padding: 16px 16px 16px 46px;
+	border-radius: 32px;
+	margin: 0 auto;
+	font-size: 16px;
+}
+
+.mdl-button--file input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	z-index: 4;
+	opacity: 0;
 }
 
 .mdl-textfield--file .mdl-button--file {
@@ -464,7 +458,7 @@ th.sort.desc:after {
 
 @media (max-width: 640px) {
 	.demo-content {
-		padding: 16px 0;
+		padding: 16px 0 128px 0;
 	}
 
 	.section--footer {
