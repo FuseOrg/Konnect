@@ -31,9 +31,9 @@
 	<script src="../scripts/list.min.js"></script>
 </head>
 
-<body class="mdl-demo mdl-color--grey-50 mdl-color-text--grey-800 mdl-base">
+<body class="mdl-demo mdl-base">
 	<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-		<header class="demo-header mdl-layout__header">
+		<header class="demo-header mdl-layout__header mdl-layout__header--waterfall">
 			<div class="demo-header-row mdl-layout__header-row">
 				<span class="mdl-layout-title logo">Konnect</span>
 				<div class="mdl-layout-spacer"></div>
@@ -141,7 +141,7 @@
 				</ul>
 			</div>
 		</header>
-		<div class="demo-drawer mdl-layout__drawer mdl-color--grey-100 mdl-shadow--6dp">
+		<div class="demo-drawer mdl-layout__drawer">
 			<header class="demo-drawer-header">
 				<img src="../images/user.jpg" class="demo-avatar avatar">
 				<div class="demo-avatar-dropdown">
@@ -164,7 +164,7 @@
 					</ul>
 				</div>
 			</header>
-			<nav class="demo-navigation mdl-navigation mdl-color--white">
+			<nav class="demo-navigation mdl-navigation">
 				<a class="mdl-navigation__link" href="dashboard.php"><i class="material-icons" role="presentation">drag_indicator</i>Dashboard</a>
 				<a class="mdl-navigation__link" href="notifications.php"><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
 				<a class="mdl-navigation__link" href="news.php"><i class="material-icons" role="presentation">outlined_flag</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
@@ -179,13 +179,12 @@
 			</nav>
 		</div>
 		<main class="demo-main mdl-layout__content">
-			<div class="demo-ribbon mdl-color--accent mdl-shadow--2dp"></div>
 			<div class="demo-content mdl-grid">
 				<!--Event cards-->
 				<div class="mdl-cell mdl-cell--12-col heading">
 					Events
 				</div>
-				<div class="demo-card-event mdl-card mdl-shadow--3dp mdl-color--red-700 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+				<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
 					<div class="mdl-card__title mdl-card--expand">
 						<h4>
 							RUBIX 2K18<br> May 24, 2018<br> 10AM - 5PM @ NCERC
@@ -207,8 +206,8 @@
 							</li>
 						</ul>
 					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+					<div class="mdl-card__actions">
+						<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
 							Add to Calendar
 						</button>
 						<div class="mdl-layout-spacer"></div>
@@ -222,7 +221,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-event mdl-card mdl-shadow--3dp mdl-color--amber-700 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+				<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
 					<div class="mdl-card__title mdl-card--expand">
 						<h4>
 							BLOOM 2K18<br> December 3, 2018<br> 9AM - 11PM
@@ -244,8 +243,8 @@
 							</li>
 						</ul>
 					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+					<div class="mdl-card__actions">
+						<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
 							Add to Calendar
 						</button>
 						<div class="mdl-layout-spacer"></div>
@@ -259,7 +258,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-event mdl-card mdl-shadow--3dp mdl-color--green-700 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+				<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
 					<div class="mdl-card__title mdl-card--expand">
 						<h4>
 							Event<br> May 24, 2018<br> 7-11PM
@@ -281,8 +280,8 @@
 							</li>
 						</ul>
 					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+					<div class="mdl-card__actions">
+						<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
 							Add to Calendar
 						</button>
 						<div class="mdl-layout-spacer"></div>
@@ -296,7 +295,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-event mdl-card mdl-shadow--3dp mdl-color--blue-700 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+				<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
 					<div class="mdl-card__title mdl-card--expand">
 						<h4>
 							Event<br> May 24, 2018<br> 7-11PM
@@ -318,8 +317,8 @@
 							</li>
 						</ul>
 					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+					<div class="mdl-card__actions">
+						<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
 							Add to Calendar
 						</button>
 						<div class="mdl-layout-spacer"></div>
@@ -333,7 +332,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-event mdl-card mdl-shadow--3dp mdl-color--cyan-700 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+				<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
 					<div class="mdl-card__title mdl-card--expand">
 						<h4>
 							Event<br> May 24, 2018<br> 7-11PM
@@ -355,8 +354,8 @@
 							</li>
 						</ul>
 					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+					<div class="mdl-card__actions">
+						<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
 							Add to Calendar
 						</button>
 						<div class="mdl-layout-spacer"></div>
@@ -370,7 +369,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-event mdl-card mdl-shadow--3dp mdl-color--teal-700 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+				<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
 					<div class="mdl-card__title mdl-card--expand">
 						<h4>
 							Event<br> May 24, 2018<br> 7-11PM
@@ -392,8 +391,8 @@
 							</li>
 						</ul>
 					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+					<div class="mdl-card__actions">
+						<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
 							Add to Calendar
 						</button>
 						<div class="mdl-layout-spacer"></div>

@@ -31,9 +31,9 @@
 	<script src="../scripts/list.min.js"></script>
 </head>
 
-<body class="mdl-demo mdl-color--grey-50 mdl-color-text--grey-800 mdl-base">
+<body class="mdl-demo mdl-base">
 	<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-		<header class="demo-header mdl-layout__header">
+		<header class="demo-header mdl-layout__header mdl-layout__header--waterfall">
 			<div class="demo-header-row mdl-layout__header-row">
 				<span class="mdl-layout-title logo">Konnect</span>
 				<div class="mdl-layout-spacer"></div>
@@ -141,7 +141,7 @@
 				</ul>
 			</div>
 		</header>
-		<div class="demo-drawer mdl-layout__drawer mdl-color--grey-100 mdl-shadow--6dp">
+		<div class="demo-drawer mdl-layout__drawer">
 			<header class="demo-drawer-header">
 				<img src="../images/user.jpg" class="demo-avatar avatar">
 				<div class="demo-avatar-dropdown">
@@ -164,7 +164,7 @@
 					</ul>
 				</div>
 			</header>
-			<nav class="demo-navigation mdl-navigation mdl-color--white">
+			<nav class="demo-navigation mdl-navigation">
 				<a class="mdl-navigation__link" href="dashboard.php"><i class="material-icons" role="presentation">drag_indicator</i>Dashboard</a>
 				<a class="mdl-navigation__link" href="notifications.php"><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
 				<a class="mdl-navigation__link" href="news.php"><i class="material-icons" role="presentation">outlined_flag</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
@@ -179,8 +179,9 @@
 			</nav>
 		</div>
 		<main class="demo-main mdl-layout__content">
-			<!--Profile-->
-			<div class="section--footer mdl-color--grey-200 mdl-grid">
+			<div class="section--footer mdl-grid">
+				<!--Profile-->
+				<h4 class="heading mdl-cell mdl-cell--12-col">Profile</h4>
 				<div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
 					<div class="mdl-color--accent section__circle"></div>
 				</div>

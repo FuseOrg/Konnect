@@ -31,9 +31,9 @@
 	<script src="../scripts/list.min.js"></script>
 </head>
 
-<body class="mdl-demo mdl-color--grey-50 mdl-color-text--grey-800 mdl-base">
+<body class="mdl-demo mdl-base">
 	<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-		<header class="demo-header mdl-layout__header">
+		<header class="demo-header mdl-layout__header mdl-layout__header--waterfall">
 			<div class="demo-header-row mdl-layout__header-row">
 				<span class="mdl-layout-title logo">Konnect</span>
 				<div class="mdl-layout-spacer"></div>
@@ -141,7 +141,7 @@
 				</ul>
 			</div>
 		</header>
-		<div class="demo-drawer mdl-layout__drawer mdl-color--grey-100 mdl-shadow--6dp">
+		<div class="demo-drawer mdl-layout__drawer">
 			<header class="demo-drawer-header">
 				<img src="../images/user.jpg" class="demo-avatar avatar">
 				<div class="demo-avatar-dropdown">
@@ -164,7 +164,7 @@
 					</ul>
 				</div>
 			</header>
-			<nav class="demo-navigation mdl-navigation mdl-color--white">
+			<nav class="demo-navigation mdl-navigation">
 				<a class="mdl-navigation__link" href="dashboard.php"><i class="material-icons" role="presentation">drag_indicator</i>Dashboard</a>
 				<a class="mdl-navigation__link" href="notifications.php"><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
 				<a class="mdl-navigation__link" href="news.php"><i class="material-icons" role="presentation">outlined_flag</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
@@ -179,13 +179,12 @@
 			</nav>
 		</div>
 		<main class="demo-main mdl-layout__content">
-			<div class="demo-ribbon mdl-color--accent mdl-shadow--2dp"></div>
 			<div class="demo-content mdl-grid">
 				<!--Gallery cards-->
 				<div class="mdl-cell mdl-cell--12-col heading">
 					Gallery
 				</div>
-				<div class="demo-card-image mdl-card mdl-shadow--3dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg1.jpg)">
+				<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg1.jpg)">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions">
 						<span>Image</span>
@@ -200,7 +199,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-shadow--3dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg2.jpg)">
+				<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg2.jpg)">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions">
 						<span>Image</span>
@@ -215,7 +214,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-shadow--3dp mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg3.jpg)">
+				<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg3.jpg)">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions">
 						<span>Image</span>
@@ -230,7 +229,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-shadow--3dp mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg4.jpg)">
+				<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg4.jpg)">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions">
 						<span>Image</span>
@@ -245,7 +244,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-shadow--3dp mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg1.jpg)">
+				<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg1.jpg)">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions">
 						<span>Image</span>
@@ -260,7 +259,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-shadow--3dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg2.jpg)">
+				<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg2.jpg)">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions">
 						<span>Image</span>
@@ -275,7 +274,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-shadow--3dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg3.jpg)">
+				<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg3.jpg)">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions">
 						<span>Image</span>
@@ -290,7 +289,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-shadow--3dp mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg4.jpg)">
+				<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="background: url(../images/bg4.jpg)">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions">
 						<span>Image</span>

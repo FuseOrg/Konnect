@@ -31,9 +31,9 @@
 	<script src="../scripts/list.min.js"></script>
 </head>
 
-<body class="mdl-demo mdl-color--grey-50 mdl-color-text--grey-800 mdl-base">
+<body class="mdl-demo mdl-base">
 	<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-		<header class="demo-header mdl-layout__header">
+		<header class="demo-header mdl-layout__header mdl-layout__header--waterfall">
 			<div class="demo-header-row mdl-layout__header-row">
 				<span class="mdl-layout-title logo">Konnect</span>
 				<div class="mdl-layout-spacer"></div>
@@ -133,7 +133,7 @@
 				</ul>
 			</div>
 		</header>
-		<div class="demo-drawer mdl-layout__drawer mdl-color--grey-100 mdl-shadow--6dp">
+		<div class="demo-drawer mdl-layout__drawer">
 			<header class="demo-drawer-header">
 				<img src="../images/user.jpg" class="demo-avatar avatar">
 				<div class="demo-avatar-dropdown">
@@ -156,7 +156,7 @@
 					</ul>
 				</div>
 			</header>
-			<nav class="demo-navigation mdl-navigation mdl-color--white">
+			<nav class="demo-navigation mdl-navigation">
 				<a class="mdl-navigation__link" href="dashboard.php"><i class="material-icons" role="presentation">drag_indicator</i>Dashboard</a>
 				<a class="mdl-navigation__link active" href="notifications.php"><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
 				<a class="mdl-navigation__link" href="news.php"><i class="material-icons" role="presentation">outlined_flag</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
@@ -171,13 +171,12 @@
 			</nav>
 		</div>
 		<main class="demo-main mdl-layout__content">
-			<div class="demo-ribbon mdl-color--accent mdl-shadow--2dp"></div>
 			<div class="demo-content mdl-grid">
 				<!--Notifications-->
 				<div class="mdl-cell mdl-cell--12-col heading">
 					Notifications
 				</div>
-				<ul class="demo-list-three mdl-list mdl-card mdl-cell mdl-cell--12-col mdl-list mdl-shadow--3dp">
+				<ul class="demo-list-three mdl-list mdl-card mdl-cell mdl-cell--12-col mdl-list mdl-shadow--2dp">
 					<li class="mdl-list__item mdl-list__item--three-line">
 						<span class="mdl-list__item-primary-content">
 							<i class="material-icons mdl-list__item-avatar">flag</i>

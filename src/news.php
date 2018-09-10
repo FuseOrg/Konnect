@@ -31,9 +31,9 @@
 	<script src="../scripts/list.min.js"></script>
 </head>
 
-<body class="mdl-demo mdl-color--grey-50 mdl-color-text--grey-800 mdl-base">
+<body class="mdl-demo mdl-base">
 	<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-		<header class="demo-header mdl-layout__header">
+		<header class="demo-header mdl-layout__header mdl-layout__header--waterfall">
 			<div class="demo-header-row mdl-layout__header-row">
 				<span class="mdl-layout-title logo">Konnect</span>
 				<div class="mdl-layout-spacer"></div>
@@ -141,7 +141,7 @@
 				</ul>
 			</div>
 		</header>
-		<div class="demo-drawer mdl-layout__drawer mdl-color--grey-100 mdl-shadow--6dp">
+		<div class="demo-drawer mdl-layout__drawer">
 			<header class="demo-drawer-header">
 				<img src="../images/user.jpg" class="demo-avatar avatar">
 				<div class="demo-avatar-dropdown">
@@ -164,7 +164,7 @@
 					</ul>
 				</div>
 			</header>
-			<nav class="demo-navigation mdl-navigation mdl-color--white">
+			<nav class="demo-navigation mdl-navigation">
 				<a class="mdl-navigation__link" href="dashboard.php"><i class="material-icons" role="presentation">drag_indicator</i>Dashboard</a>
 				<a class="mdl-navigation__link" href="notifications.php"><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
 				<a class="mdl-navigation__link active" href="news.php"><i class="material-icons" role="presentation">outlined_flag</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
@@ -179,13 +179,12 @@
 			</nav>
 		</div>
 		<main class="demo-main mdl-layout__content">
-			<div class="demo-ribbon mdl-color--accent mdl-shadow--2dp"></div>
 			<div class="demo-content mdl-grid">
 				<!--News cards-->
 				<div class="mdl-cell mdl-cell--12-col heading">
 					News
 				</div>
-				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--3dp">
+				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
 					<div class="mdl-card__title" style="background-image: url('../images/bg1.jpg');">
 						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
 					</div>
@@ -194,7 +193,7 @@
 					</div>
 					<div class="mdl-card__actions mdl-card--border">
 						<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
-						<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Read more</a>
+						<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Read more</a>
 					</div>
 					<div class="mdl-card__menu">
 						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
@@ -202,7 +201,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--3dp">
+				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
 					<div class="mdl-card__title" style="background-image: url('../images/bg2.jpg');">
 						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
 					</div>
@@ -211,7 +210,7 @@
 					</div>
 					<div class="mdl-card__actions mdl-card--border">
 						<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
-						<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Read more</a>
+						<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Read more</a>
 					</div>
 					<div class="mdl-card__menu">
 						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
@@ -219,7 +218,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--3dp">
+				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
 					<div class="mdl-card__title" style="background-image: url('../images/bg3.jpg');">
 						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
 					</div>
@@ -228,7 +227,7 @@
 					</div>
 					<div class="mdl-card__actions mdl-card--border">
 						<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
-						<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Read more</a>
+						<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Read more</a>
 					</div>
 					<div class="mdl-card__menu">
 						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
@@ -236,7 +235,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--3dp">
+				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
 					<div class="mdl-card__title" style="background-image: url('../images/bg4.jpg');">
 						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
 					</div>
@@ -245,7 +244,7 @@
 					</div>
 					<div class="mdl-card__actions mdl-card--border">
 						<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
-						<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Read more</a>
+						<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Read more</a>
 					</div>
 					<div class="mdl-card__menu">
 						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
