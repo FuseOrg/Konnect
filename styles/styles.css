@@ -173,9 +173,26 @@ body {
 	min-height: calc(100vh - 53px);
 }
 
+#search-list .mdl-textfield.is-focused {
+	position: absolute;
+	width: 100vw;
+	left: 252px;
+	top: -6px;
+	background-color: #fff;
+	z-index: 9999;
+}
+
+.mdl-textfield .mdl-button--icon {
+	background-color: #fff;
+}
+
 @media screen and (max-width: 1024px) {
 	.search-list {
 		left: 0;
+	}
+
+	#search-list .mdl-textfield.is-focused {
+		left: 12px;
 	}
 }
 
