@@ -11,24 +11,24 @@
 	<!-- Add to homescreen for Chrome on Android -->
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="application-name" content="Konnect">
-	<link rel="icon" sizes="192x192" href="../images/android-desktop.png">
+	<link rel="icon" sizes="192x192" href="../../../images/android-desktop.png">
 	<!-- Add to homescreen for Safari on iOS -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="white">
 	<meta name="apple-mobile-web-app-title" content="Konnect">
-	<link rel="apple-touch-icon-precomposed" href="../images/ios-desktop.png">
+	<link rel="apple-touch-icon-precomposed" href="../../../images/ios-desktop.png">
 	<!-- Tile icon for Win8 (144x144 + tile color) -->
-	<meta name="msapplication-TileImage" content="../images/ios-desktop.png">
+	<meta name="msapplication-TileImage" content="../../../images/ios-desktop.png">
 	<meta name="msapplication-TileColor" content="#fff">
-	<link rel="shortcut icon" href="../images/favicon.png">
+	<link rel="shortcut icon" href="../../../images/favicon.png">
 	<!--	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="../styles/material.min.css">
-	<link rel="stylesheet" href="../styles/styles.css">
-	<script src="../scripts/material.min.js"></script>
-	<script src="../scripts/jquery.min.js"></script>
-	<script src="../scripts/list.min.js"></script>
+	<link rel="stylesheet" href="../../../styles/material.min.css">
+	<link rel="stylesheet" href="../../../styles/styles.css">
+	<script src="../../../scripts/material.min.js"></script>
+	<script src="../../../scripts/jquery.min.js"></script>
+	<script src="../../../scripts/list.min.js"></script>
 </head>
 
 <body class="mdl-demo mdl-base">
