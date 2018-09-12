@@ -127,7 +127,7 @@
 					</a>
 					<li class="mdl-menu__item"><i class="material-icons">done_all</i>Mark all as read</li>
 				</ul>
-				<button id="hdrbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon img-bg" style="background-image: url(../images/user.jpg);"></button>
+				<button id="hdrbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon img-bg" style="background-image: url(../../../images/user.jpg);"></button>
 				<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
 					<a href="profile.php">
 						<li class="mdl-menu__item"><i class="material-icons">tag_faces</i>Profile</li>
@@ -143,7 +143,7 @@
 		</header>
 		<div class="demo-drawer mdl-layout__drawer">
 			<header class="demo-drawer-header">
-				<img src="../images/user.jpg" class="demo-avatar avatar">
+				<img src="../../../images/user.jpg" class="demo-avatar avatar">
 				<div class="demo-avatar-dropdown">
 					<span>User name</span>
 					<div class="mdl-layout-spacer"></div>
