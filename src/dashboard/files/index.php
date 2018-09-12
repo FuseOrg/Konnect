@@ -6,29 +6,29 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Intranet for NCERC">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Konnect | Directory</title>
+	<title>Konnect | Files</title>
 	<meta name="theme-color" content="#fff">
 	<!-- Add to homescreen for Chrome on Android -->
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="application-name" content="Konnect">
-	<link rel="icon" sizes="192x192" href="../images/android-desktop.png">
+	<link rel="icon" sizes="192x192" href="../../../images/android-desktop.png">
 	<!-- Add to homescreen for Safari on iOS -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="white">
 	<meta name="apple-mobile-web-app-title" content="Konnect">
-	<link rel="apple-touch-icon-precomposed" href="../images/ios-desktop.png">
+	<link rel="apple-touch-icon-precomposed" href="../../../images/ios-desktop.png">
 	<!-- Tile icon for Win8 (144x144 + tile color) -->
-	<meta name="msapplication-TileImage" content="../images/ios-desktop.png">
+	<meta name="msapplication-TileImage" content="../../../images/ios-desktop.png">
 	<meta name="msapplication-TileColor" content="#fff">
-	<link rel="shortcut icon" href="../images/favicon.png">
+	<link rel="shortcut icon" href="../../../images/favicon.png">
 	<!--	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="../styles/material.min.css">
-	<link rel="stylesheet" href="../styles/styles.css">
-	<script src="../scripts/material.min.js"></script>
-	<script src="../scripts/jquery.min.js"></script>
-	<script src="../scripts/list.min.js"></script>
+	<link rel="stylesheet" href="../../../styles/material.min.css">
+	<link rel="stylesheet" href="../../../styles/styles.css">
+	<script src="../../../scripts/material.min.js"></script>
+	<script src="../../../scripts/jquery.min.js"></script>
+	<script src="../../../scripts/list.min.js"></script>
 </head>
 
 <body class="mdl-demo mdl-base">
@@ -169,8 +169,8 @@
 				<a class="mdl-navigation__link" href="notifications.php"><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
 				<a class="mdl-navigation__link" href="news.php"><i class="material-icons" role="presentation">outlined_flag</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
 				<a class="mdl-navigation__link" href="events.php"><i class="material-icons" role="presentation">bookmark_border</i><span class="mdl-badge mdl-badge--no-background" data-badge="1">Events</span></a>
-				<a class="mdl-navigation__link active" href="directory.php"><i class="material-icons" role="presentation">kitchen</i>Directory</a>
-				<a class="mdl-navigation__link" href="files.php"><i class="material-icons" role="presentation">cloud_queue</i>Files</a>
+				<a class="mdl-navigation__link" href="directory.php"><i class="material-icons" role="presentation">kitchen</i>Directory</a>
+				<a class="mdl-navigation__link active" href="files.php"><i class="material-icons" role="presentation">cloud_queue</i>Files</a>
 				<a class="mdl-navigation__link" href="gallery.php"><i class="material-icons" role="presentation">crop_original</i>Gallery</a>
 				<a class="mdl-navigation__link" href="profile.php"><i class="material-icons" role="presentation">tag_faces</i>Profile</a>
 				<div class="mdl-layout-spacer mdl-menu__item--full-bleed-divider"></div>
@@ -180,9 +180,9 @@
 		</div>
 		<main class="demo-main mdl-layout__content">
 			<div class="demo-content mdl-grid">
-				<!--Directory table-->
-				<h4 class="heading mdl-cell mdl-cell--12-col">Directory</h4>
-				<div id="directory-table">
+				<!--Files table-->
+				<h4 class="heading mdl-cell mdl-cell--12-col">Files</h4>
+				<div id="files-table">
 					<div class="table-search">
 						<label for="directory-search" class="ico"><i class="material-icons" role="presentation">search</i></label>
 						<input class="search" id="directory-search" type="text">
@@ -190,51 +190,110 @@
 					<table class="mdl-data-table mdl-js-data-table mdl-cell mdl-cell--12-col">
 						<thead>
 							<tr>
-								<th class="mdl-data-table__cell--non-numeric sort" data-sort="name">Name</th>
-								<th class="sort" data-sort="strength">Strength</th>
+								<th class="mdl-data-table__cell--non-numeric sort" data-sort="name">File name</th>
+								<th class="mdl-data-table__cell--non-numeric">Actions</th>
+								<th class="sort" data-sort="department">Department</th>
+								<th class="sort" data-sort="uploaded">Uploaded by</th>
+								<th class="sort" data-sort="date">Date</th>
 							</tr>
 						</thead>
 						<tbody class="list">
 							<tr>
-								<td class="mdl-data-table__cell--non-numeric name"><a href="">CSE</a></td>
-								<td class="strength">642</td>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">Admit Card.pdf</a></td>
+								<td class="mdl-data-table__cell--non-numeric">
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">save_alt</i>
+									</a>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
+										<i class="material-icons">delete_outline</i>
+									</a>
+								</td>
+								<td class="department">Administrative Office</td>
+								<td class="uploaded">CMO</td>
+								<td class="date">1/5/18</td>
 							</tr>
 							<tr>
-								<td class="mdl-data-table__cell--non-numeric name"><a href="">MTR</a></td>
-								<td class="strength">566</td>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">Progress Card.docx</a></td>
+								<td class="mdl-data-table__cell--non-numeric">
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">save_alt</i>
+									</a>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
+										<i class="material-icons">delete_outline</i>
+									</a>
+								</td>
+								<td class="department">Principal</td>
+								<td class="uploaded">Principal</td>
+								<td class="date">8/5/18</td>
 							</tr>
 							<tr>
-								<td class="mdl-data-table__cell--non-numeric name"><a href="">EEE</a></td>
-								<td class="strength">596</td>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">Notice.pdf</a></td>
+								<td class="mdl-data-table__cell--non-numeric">
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">save_alt</i>
+									</a>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
+										<i class="material-icons">delete_outline</i>
+									</a>
+								</td>
+								<td class="department">CSE</td>
+								<td class="uploaded">HOD</td>
+								<td class="date">1/5/18</td>
 							</tr>
 							<tr>
-								<td class="mdl-data-table__cell--non-numeric name"><a href="">ME</a></td>
-								<td class="strength">544</td>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">Overall Report.pdf</a></td>
+								<td class="mdl-data-table__cell--non-numeric">
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">save_alt</i>
+									</a>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
+										<i class="material-icons">delete_outline</i>
+									</a>
+								</td>
+								<td class="department">CSE</td>
+								<td class="uploaded">Silja Varghees</td>
+								<td class="date">2/5/18</td>
 							</tr>
 							<tr>
-								<td class="mdl-data-table__cell--non-numeric name"><a href="">AUE</a></td>
-								<td class="strength">546</td>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">S3 Report.xcl</a></td>
+								<td class="mdl-data-table__cell--non-numeric">
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">save_alt</i>
+									</a>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
+										<i class="material-icons">delete_outline</i>
+									</a>
+								</td>
+								<td class="department">CSE</td>
+								<td class="uploaded">Sruthy M R</td>
+								<td class="date">7/6/18</td>
 							</tr>
 							<tr>
-								<td class="mdl-data-table__cell--non-numeric name"><a href="">ECE</a></td>
-								<td class="strength">556</td>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">S2 Report.xcl</a></td>
+								<td class="mdl-data-table__cell--non-numeric">
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+										<i class="material-icons">save_alt</i>
+									</a>
+									<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon del" target="_blank">
+										<i class="material-icons">delete_outline</i>
+									</a>
+								</td>
+								<td class="department">CSE</td>
+								<td class="uploaded">Shiji S</td>
+								<td class="date">8/6/18</td>
 							</tr>
 						</tbody>
 						<tfoot>
 							<tr>
-								<td colspan=2 class="mdl-data-table__cell--non-numeric">
-									Rows per page: 10
-									<button id="per-row" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">arrow_drop_up</i></button>
-									<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--top-left" for="per-row">
-										<li data-value="10" class="mdl-menu__item">10</li>
-										<li data-value="50" class="mdl-menu__item">50</li>
-										<li data-value="100" class="mdl-menu__item">100</li>
-										<li data-value="*" class="mdl-menu__item">All</li>
-									</ul>
-									Showing 1-6 of 6
-									<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">keyboard_arrow_left</i></button>
-									<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">keyboard_arrow_right</i></button>
+								<td class="mdl-data-table__cell--non-numeric name">Upload new file</td>
+								<td class="mdl-data-table__cell--non-numeric">
+									<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank" onclick="upload.showModal()">
+										<i class="material-icons">add</i>
+									</button>
 								</td>
+								<td></td>
+								<td></td>
+								<td class="date"></td>
 							</tr>
 						</tfoot>
 					</table>
@@ -242,29 +301,86 @@
 			</div>
 		</main>
 	</div>
-	<label id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp" for="directory-search">
-		<i class="material-icons">search</i>
-	</label>
-	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Search</span>
+	<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp" onclick="upload.showModal()">
+		<i class="material-icons">add</i>
+	</button>
+	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Upload new file</span>
+	<dialog class="mdl-dialog" id="upload">
+		<h4 class="mdl-dialog__title">Upload new file</h4>
+		<div class="mdl-dialog__content">
+			<p>
+				Enter a file name
+			</p>
+			<form>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input class="mdl-textfield__input" type="text">
+					<label class="mdl-textfield__label">File name</label>
+				</div>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--file">
+					<input class="mdl-textfield__input" placeholder="Attach a file to upload" type="text" id="uploadFile" readonly>
+					<div class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--primary mdl-button--file">
+						<input type="file" id="uploadBtn">
+						<i class="material-icons">attach_file</i>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="mdl-dialog__actions">
+			<button id="show-snackbar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent start-upload">Upload</button>
+			<button id="demo-show-toast" class="mdl-button close">Cancel</button>
+		</div>
+	</dialog>
+	<div id="snackbar-upload" class="mdl-snackbar mdl-js-snackbar">
+		<div class="mdl-snackbar__text"></div>
+		<a href="" class="mdl-snackbar__action"></a>
+	</div>
 	<script src="../scripts/scripts.js"></script>
 	<script>
 		var searchList = new List('search-list', {
 			valueNames: ['name']
 		});
 
-		var directory = {
-				valueNames: ["name", "strength"]
-			},
-			directoryTable = new List("directory-table", directory);
+		var dialog = document.querySelector('#upload');
+		dialog.querySelector('.close').addEventListener('click', function() {
+			dialog.close();
+		});
+		dialog.querySelector('.start-upload').addEventListener('click', function() {
+			dialog.close();
+		});
 
-		$($('th.sort')[0]).trigger('click', function() {
+		var uploadSnackbarContainer = document.querySelector('#snackbar-upload');
+		var showSnackbarButton = document.querySelector('#show-snackbar');
+		var handler = function(event) {
+			location.reload();
+		};
+		showSnackbarButton.addEventListener('click', function() {
+			'use strict';
+			var data = {
+				message: 'File uploaded!',
+				timeout: 5000,
+				actionHandler: handler,
+				actionText: 'Refresh files'
+			};
+			uploadSnackbarContainer.MaterialSnackbar.showSnackbar(data);
+		});
+
+		document.getElementById("uploadBtn").onchange = function() {
+			document.getElementById("uploadFile").value = this.files[0].name;
+		};
+
+		var files = {
+				valueNames: ["name", "department", "uploaded", "date"]
+			},
+			filesTable = new List("files-table", files);
+
+		$($('th.sort')[3]).trigger('click', function() {
 			console.log('clicked');
 		});
 
 		$("input.search").on("keyup", function(e) {
 			if (e.keyCode === 27) {
 				$(e.currentTarget).val("");
-				directoryTable.search("");
+				filesTable.search("");
 			}
 		});
 
