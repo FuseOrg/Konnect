@@ -6,29 +6,29 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Intranet for NCERC">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Konnect | Notifications</title>
+	<title>Konnect | Directory</title>
 	<meta name="theme-color" content="#fff">
 	<!-- Add to homescreen for Chrome on Android -->
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="application-name" content="Konnect">
-	<link rel="icon" sizes="192x192" href="../images/android-desktop.png">
+	<link rel="icon" sizes="192x192" href="../../../images/android-desktop.png">
 	<!-- Add to homescreen for Safari on iOS -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="white">
 	<meta name="apple-mobile-web-app-title" content="Konnect">
-	<link rel="apple-touch-icon-precomposed" href="../images/ios-desktop.png">
+	<link rel="apple-touch-icon-precomposed" href="../../../images/ios-desktop.png">
 	<!-- Tile icon for Win8 (144x144 + tile color) -->
-	<meta name="msapplication-TileImage" content="../images/ios-desktop.png">
+	<meta name="msapplication-TileImage" content="../../../images/ios-desktop.png">
 	<meta name="msapplication-TileColor" content="#fff">
-	<link rel="shortcut icon" href="../images/favicon.png">
+	<link rel="shortcut icon" href="../../../images/favicon.png">
 	<!--	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="../styles/material.min.css">
-	<link rel="stylesheet" href="../styles/styles.css">
-	<script src="../scripts/material.min.js"></script>
-	<script src="../scripts/jquery.min.js"></script>
-	<script src="../scripts/list.min.js"></script>
+	<link rel="stylesheet" href="../../../styles/material.min.css">
+	<link rel="stylesheet" href="../../../styles/styles.css">
+	<script src="../../../scripts/material.min.js"></script>
+	<script src="../../../scripts/jquery.min.js"></script>
+	<script src="../../../scripts/list.min.js"></script>
 </head>
 
 <body class="mdl-demo mdl-base">
@@ -113,10 +113,18 @@
 				<button id="notifications" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">notifications_none</i></button>
 				<span class="mdl-badge mdl-badge--overlap" data-badge="4"></span>
 				<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="notifications">
-					<li class="mdl-menu__item"><i class="material-icons">outlined_flag</i>Notification #1</li>
-					<li class="mdl-menu__item"><i class="material-icons">bookmark_border</i>Notification #2</li>
-					<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">outlined_flag</i>Notification #3</li>
-					<li class="mdl-menu__item"><i class="material-icons">notifications_none</i>All notifications</li>
+					<a href="">
+						<li class="mdl-menu__item"><i class="material-icons">outlined_flag</i>Notification #1</li>
+					</a>
+					<a href="">
+						<li class="mdl-menu__item"><i class="material-icons">bookmark_border</i>Notification #2</li>
+					</a>
+					<a href="">
+						<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">outlined_flag</i>Notification #3</li>
+					</a>
+					<a href="notifications.php">
+						<li class="mdl-menu__item"><i class="material-icons">notifications_none</i>All notifications</li>
+					</a>
 					<li class="mdl-menu__item"><i class="material-icons">done_all</i>Mark all as read</li>
 				</ul>
 				<button id="hdrbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon img-bg" style="background-image: url(../images/user.jpg);"></button>
@@ -158,10 +166,10 @@
 			</header>
 			<nav class="demo-navigation mdl-navigation">
 				<a class="mdl-navigation__link" href="dashboard.php"><i class="material-icons" role="presentation">drag_indicator</i>Dashboard</a>
-				<a class="mdl-navigation__link active" href="notifications.php"><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
+				<a class="mdl-navigation__link" href="notifications.php"><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
 				<a class="mdl-navigation__link" href="news.php"><i class="material-icons" role="presentation">outlined_flag</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
 				<a class="mdl-navigation__link" href="events.php"><i class="material-icons" role="presentation">bookmark_border</i><span class="mdl-badge mdl-badge--no-background" data-badge="1">Events</span></a>
-				<a class="mdl-navigation__link" href="directory.php"><i class="material-icons" role="presentation">kitchen</i>Directory</a>
+				<a class="mdl-navigation__link active" href="directory.php"><i class="material-icons" role="presentation">kitchen</i>Directory</a>
 				<a class="mdl-navigation__link" href="files.php"><i class="material-icons" role="presentation">cloud_queue</i>Files</a>
 				<a class="mdl-navigation__link" href="gallery.php"><i class="material-icons" role="presentation">crop_original</i>Gallery</a>
 				<a class="mdl-navigation__link" href="profile.php"><i class="material-icons" role="presentation">tag_faces</i>Profile</a>
@@ -172,71 +180,92 @@
 		</div>
 		<main class="demo-main mdl-layout__content">
 			<div class="demo-content mdl-grid">
-				<!--Notifications-->
-				<div class="mdl-cell mdl-cell--12-col heading">
-					Notifications
+				<!--Directory table-->
+				<h4 class="heading mdl-cell mdl-cell--12-col">Directory</h4>
+				<div id="directory-table">
+					<div class="table-search">
+						<label for="directory-search" class="ico"><i class="material-icons" role="presentation">search</i></label>
+						<input class="search" id="directory-search" type="text">
+					</div>
+					<table class="mdl-data-table mdl-js-data-table mdl-cell mdl-cell--12-col">
+						<thead>
+							<tr>
+								<th class="mdl-data-table__cell--non-numeric sort" data-sort="name">Name</th>
+								<th class="sort" data-sort="strength">Strength</th>
+							</tr>
+						</thead>
+						<tbody class="list">
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">CSE</a></td>
+								<td class="strength">642</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">MTR</a></td>
+								<td class="strength">566</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">EEE</a></td>
+								<td class="strength">596</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">ME</a></td>
+								<td class="strength">544</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">AUE</a></td>
+								<td class="strength">546</td>
+							</tr>
+							<tr>
+								<td class="mdl-data-table__cell--non-numeric name"><a href="">ECE</a></td>
+								<td class="strength">556</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan=2 class="mdl-data-table__cell--non-numeric">
+									Rows per page: 10
+									<button id="per-row" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">arrow_drop_up</i></button>
+									<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--top-left" for="per-row">
+										<li data-value="10" class="mdl-menu__item">10</li>
+										<li data-value="50" class="mdl-menu__item">50</li>
+										<li data-value="100" class="mdl-menu__item">100</li>
+										<li data-value="*" class="mdl-menu__item">All</li>
+									</ul>
+									Showing 1-6 of 6
+									<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">keyboard_arrow_left</i></button>
+									<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">keyboard_arrow_right</i></button>
+								</td>
+							</tr>
+						</tfoot>
+					</table>
 				</div>
-				<ul class="demo-list-three mdl-list mdl-card mdl-cell mdl-cell--12-col mdl-list mdl-shadow--2dp">
-					<li class="mdl-list__item mdl-list__item--three-line">
-						<span class="mdl-list__item-primary-content">
-							<i class="material-icons mdl-list__item-avatar">flag</i>
-							<span>Notification #1</span>
-							<span class="mdl-list__item-text-body">
-								Bob stars in his own show now, called "Better Call Saul".
-							</span>
-						</span>
-						<span class="mdl-list__item-secondary-content">
-							<a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#"><i class="material-icons">done</i></a>
-						</span>
-					</li>
-					<li class="mdl-list__item mdl-list__item--three-line">
-						<span class="mdl-list__item-primary-content">
-							<i class="material-icons mdl-list__item-avatar">bookmark</i>
-							<span>Notification #2</span>
-							<span class="mdl-list__item-text-body">
-								Bob Odinkrik played the role of Saul in Breaking Bad. Due to public fondness for the character, Bob stars in his own show now, called "Better Call Saul".
-							</span>
-						</span>
-						<span class="mdl-list__item-secondary-content">
-							<a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#"><i class="material-icons">done</i></a>
-						</span>
-					</li>
-					<li class="mdl-list__item mdl-list__item--three-line">
-						<span class="mdl-list__item-primary-content">
-							<i class="material-icons mdl-list__item-avatar">flag</i>
-							<span>Notification #3</span>
-							<span class="mdl-list__item-text-body">
-								Bryan Cranston played the role of Walter in Breaking Bad. He is also known for playing Hal in Malcom in the Middle.
-							</span>
-						</span>
-						<span class="mdl-list__item-secondary-content">
-							<a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#"><i class="material-icons">done</i></a>
-						</span>
-					</li>
-					<li class="mdl-list__item mdl-list__item--three-line">
-						<span class="mdl-list__item-primary-content">
-							<i class="material-icons mdl-list__item-avatar">flag</i>
-							<span>Notification #4</span>
-							<span class="mdl-list__item-text-body">
-								Aaron Paul played the role of Jesse in Breaking Bad. He also featured in the "Need For Speed" Movie.
-							</span>
-						</span>
-						<span class="mdl-list__item-secondary-content">
-							<a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#"><i class="material-icons">done</i></a>
-						</span>
-					</li>
-				</ul>
 			</div>
 		</main>
 	</div>
-	<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp" onclick="location.reload()">
-		<i class="material-icons">done_all</i>
-	</button>
-	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Mark all as read</span>
+	<label id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp" for="directory-search">
+		<i class="material-icons">search</i>
+	</label>
+	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Search</span>
 	<script src="../scripts/scripts.js"></script>
 	<script>
 		var searchList = new List('search-list', {
 			valueNames: ['name']
+		});
+
+		var directory = {
+				valueNames: ["name", "strength"]
+			},
+			directoryTable = new List("directory-table", directory);
+
+		$($('th.sort')[0]).trigger('click', function() {
+			console.log('clicked');
+		});
+
+		$("input.search").on("keyup", function(e) {
+			if (e.keyCode === 27) {
+				$(e.currentTarget).val("");
+				directoryTable.search("");
+			}
 		});
 
 	</script>

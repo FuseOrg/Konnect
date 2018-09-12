@@ -6,29 +6,29 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Intranet for NCERC">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Konnect | News</title>
+	<title>Konnect | Profile</title>
 	<meta name="theme-color" content="#fff">
 	<!-- Add to homescreen for Chrome on Android -->
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="application-name" content="Konnect">
-	<link rel="icon" sizes="192x192" href="../images/android-desktop.png">
+	<link rel="icon" sizes="192x192" href="../../../images/android-desktop.png">
 	<!-- Add to homescreen for Safari on iOS -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="white">
 	<meta name="apple-mobile-web-app-title" content="Konnect">
-	<link rel="apple-touch-icon-precomposed" href="../images/ios-desktop.png">
+	<link rel="apple-touch-icon-precomposed" href="../../../images/ios-desktop.png">
 	<!-- Tile icon for Win8 (144x144 + tile color) -->
-	<meta name="msapplication-TileImage" content="../images/ios-desktop.png">
+	<meta name="msapplication-TileImage" content="../../../images/ios-desktop.png">
 	<meta name="msapplication-TileColor" content="#fff">
-	<link rel="shortcut icon" href="../images/favicon.png">
+	<link rel="shortcut icon" href="../../../images/favicon.png">
 	<!--	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="../styles/material.min.css">
-	<link rel="stylesheet" href="../styles/styles.css">
-	<script src="../scripts/material.min.js"></script>
-	<script src="../scripts/jquery.min.js"></script>
-	<script src="../scripts/list.min.js"></script>
+	<link rel="stylesheet" href="../../../styles/material.min.css">
+	<link rel="stylesheet" href="../../../styles/styles.css">
+	<script src="../../../scripts/material.min.js"></script>
+	<script src="../../../scripts/jquery.min.js"></script>
+	<script src="../../../scripts/list.min.js"></script>
 </head>
 
 <body class="mdl-demo mdl-base">
@@ -167,98 +167,58 @@
 			<nav class="demo-navigation mdl-navigation">
 				<a class="mdl-navigation__link" href="dashboard.php"><i class="material-icons" role="presentation">drag_indicator</i>Dashboard</a>
 				<a class="mdl-navigation__link" href="notifications.php"><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
-				<a class="mdl-navigation__link active" href="news.php"><i class="material-icons" role="presentation">outlined_flag</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
+				<a class="mdl-navigation__link" href="news.php"><i class="material-icons" role="presentation">outlined_flag</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
 				<a class="mdl-navigation__link" href="events.php"><i class="material-icons" role="presentation">bookmark_border</i><span class="mdl-badge mdl-badge--no-background" data-badge="1">Events</span></a>
 				<a class="mdl-navigation__link" href="directory.php"><i class="material-icons" role="presentation">kitchen</i>Directory</a>
 				<a class="mdl-navigation__link" href="files.php"><i class="material-icons" role="presentation">cloud_queue</i>Files</a>
 				<a class="mdl-navigation__link" href="gallery.php"><i class="material-icons" role="presentation">crop_original</i>Gallery</a>
-				<a class="mdl-navigation__link" href="profile.php"><i class="material-icons" role="presentation">tag_faces</i>Profile</a>
+				<a class="mdl-navigation__link active" href="profile.php"><i class="material-icons" role="presentation">tag_faces</i>Profile</a>
 				<div class="mdl-layout-spacer mdl-menu__item--full-bleed-divider"></div>
 				<a class="mdl-navigation__link" href="settings.php"><i class="material-icons" role="presentation">tune</i>Settings</a>
 				<a class="mdl-navigation__link" href="help.php"><i class="material-icons" role="presentation">help_outline</i>Help</a>
 			</nav>
 		</div>
 		<main class="demo-main mdl-layout__content">
-			<div class="demo-content mdl-grid">
-				<!--News cards-->
-				<div class="mdl-cell mdl-cell--12-col heading">
-					News
+			<div class="section--footer mdl-grid">
+				<!--Profile-->
+				<h4 class="heading mdl-cell mdl-cell--12-col">Profile</h4>
+				<div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
+					<div class="mdl-color--accent section__circle"></div>
 				</div>
-				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
-					<div class="mdl-card__title" style="background-image: url('../images/bg1.jpg');">
-						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
-					</div>
-					<div class="mdl-card__supporting-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
-					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
-						<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Read more</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
-					</div>
+				<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+					<h4>Username</h4>
+					Bio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus perferendis dolorem aspernatur necessitatibus dolorum debitis cumque eum, dicta.
 				</div>
-				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
-					<div class="mdl-card__title" style="background-image: url('../images/bg2.jpg');">
-						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
-					</div>
-					<div class="mdl-card__supporting-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
-					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
-						<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Read more</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
-					</div>
+				<div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
+					<div class="mdl-color--primary section__circle"></div>
 				</div>
-				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
-					<div class="mdl-card__title" style="background-image: url('../images/bg3.jpg');">
-						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
-					</div>
-					<div class="mdl-card__supporting-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
-					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
-						<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Read more</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
-					</div>
+				<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+					<h4>NCE15CS037</h4>
+					Department: CSE<br> Division: A<br> Semester: S7
 				</div>
-				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
-					<div class="mdl-card__title" style="background-image: url('../images/bg4.jpg');">
-						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
-					</div>
-					<div class="mdl-card__supporting-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
-					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
-						<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Read more</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
-					</div>
+				<div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
+					<div class="mdl-color--primary section__circle"></div>
+				</div>
+				<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+					<h4>Excellence</h4>
+					Subject #1: A+<br> Subject #2: C<br> Subject #3: B+<br> Subject #4: D<br> Subject #5: F<br> Subject #6: O
+				</div>
+				<div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
+					<div class="mdl-color--primary section__circle"></div>
+				</div>
+				<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+					<h4>Progress</h4>
+					Subject #1: A+<br> Subject #2: C<br> Subject #3: B+<br> Subject #4: D<br> Subject #5: F<br> Subject #6: O
 				</div>
 			</div>
 		</main>
 	</div>
-	<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp" onclick="location.reload()">
-		<i class="material-icons">refresh</i>
-	</button>
-	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Refresh page</span>
+	<a href="settings.php">
+		<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp">
+			<i class="material-icons">tune</i>
+		</button>
+		<span class="mdl-tooltip mdl-tooltip--left" for="fab">Settings</span>
+	</a>
 	<script src="../scripts/scripts.js"></script>
 	<script>
 		var searchList = new List('search-list', {
