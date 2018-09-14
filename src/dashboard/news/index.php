@@ -173,7 +173,7 @@
 				<a class="mdl-navigation__link" href="files.php"><i class="material-icons" role="presentation">cloud_queue</i>Files</a>
 				<a class="mdl-navigation__link" href="gallery.php"><i class="material-icons" role="presentation">crop_original</i>Gallery</a>
 				<a class="mdl-navigation__link" href="profile.php"><i class="material-icons" role="presentation">tag_faces</i>Profile</a>
-				<div class="mdl-layout-spacer mdl-menu__item--full-bleed-divider"></div>
+				<div class="mdl-layout-spacer"></div>
 				<a class="mdl-navigation__link" href="settings.php"><i class="material-icons" role="presentation">tune</i>Settings</a>
 				<a class="mdl-navigation__link" href="help.php"><i class="material-icons" role="presentation">help_outline</i>Help</a>
 			</nav>
@@ -185,7 +185,7 @@
 					News
 				</div>
 				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
-					<div class="mdl-card__title" style="background-image: url('../images/bg1.jpg');">
+					<div class="mdl-card__title" style="background-image: url(../../../images/bg1.jpg);">
 						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
 					</div>
 					<div class="mdl-card__supporting-text">
@@ -202,7 +202,7 @@
 					</div>
 				</div>
 				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
-					<div class="mdl-card__title" style="background-image: url('../images/bg2.jpg');">
+					<div class="mdl-card__title" style="background-image: url(../../../images/bg2.jpg);">
 						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
 					</div>
 					<div class="mdl-card__supporting-text">
@@ -219,7 +219,7 @@
 					</div>
 				</div>
 				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
-					<div class="mdl-card__title" style="background-image: url('../images/bg3.jpg');">
+					<div class="mdl-card__title" style="background-image: url(../../../images/bg3.jpg);">
 						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
 					</div>
 					<div class="mdl-card__supporting-text">
@@ -236,7 +236,7 @@
 					</div>
 				</div>
 				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
-					<div class="mdl-card__title" style="background-image: url('../images/bg4.jpg');">
+					<div class="mdl-card__title" style="background-image: url(../../../images/bg4.jpg);">
 						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
 					</div>
 					<div class="mdl-card__supporting-text">
