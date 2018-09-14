@@ -173,7 +173,7 @@
 				<a class="mdl-navigation__link" href="files.php"><i class="material-icons" role="presentation">cloud_queue</i>Files</a>
 				<a class="mdl-navigation__link" href="gallery.php"><i class="material-icons" role="presentation">crop_original</i>Gallery</a>
 				<a class="mdl-navigation__link" href="profile.php"><i class="material-icons" role="presentation">tag_faces</i>Profile</a>
-				<div class="mdl-layout-spacer mdl-menu__item--full-bleed-divider"></div>
+				<div class="mdl-layout-spacer"></div>
 				<a class="mdl-navigation__link" href="settings.php"><i class="material-icons" role="presentation">tune</i>Settings</a>
 				<a class="mdl-navigation__link active" href="help.php"><i class="material-icons" role="presentation">help_outline</i>Help</a>
 			</nav>
