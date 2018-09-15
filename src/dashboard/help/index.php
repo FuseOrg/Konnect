@@ -196,58 +196,6 @@
 					</div>
 				</div>
 			</div>
-			<footer class="mdl-mega-footer">
-				<div class="mdl-mega-footer--middle-section">
-					<div class="mdl-mega-footer--drop-down-section">
-						<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-						<h1 class="mdl-mega-footer--heading">Features</h1>
-						<ul class="mdl-mega-footer--link-list">
-							<li><a href="#">About</a></li>
-							<li><a href="#">Terms</a></li>
-							<li><a href="#">Partners</a></li>
-							<li><a href="#">Updates</a></li>
-						</ul>
-					</div>
-					<div class="mdl-mega-footer--drop-down-section">
-						<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-						<h1 class="mdl-mega-footer--heading">Details</h1>
-						<ul class="mdl-mega-footer--link-list">
-							<li><a href="#">Spec</a></li>
-							<li><a href="#">Tools</a></li>
-							<li><a href="#">Resources</a></li>
-						</ul>
-					</div>
-					<div class="mdl-mega-footer--drop-down-section">
-						<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-						<h1 class="mdl-mega-footer--heading">FAQ</h1>
-						<ul class="mdl-mega-footer--link-list">
-							<li><a href="#">Questions</a></li>
-							<li><a href="#">Answers</a></li>
-							<li><a href="#">Contact us</a></li>
-						</ul>
-					</div>
-					<div class="mdl-mega-footer--drop-down-section">
-						<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-						<h1 class="mdl-mega-footer--heading">Quick Links</h1>
-						<ul class="mdl-mega-footer--link-list">
-							<li><a href="#">Link #1</a></li>
-							<li><a href="#">Link #2</a></li>
-							<li><a href="#">Link #3</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="mdl-mega-footer--bottom-section">
-					<div class="mdl-logo logo">
-						Konnect
-					</div>
-					<ul class="mdl-mega-footer--link-list">
-						<li><i class="material-icons">favorite</i></li>
-						<li><a href="https://fuse-org.firebaseapp.com">&copy;Fuse Org</a></li>
-						<li><a href="#">Help</a></li>
-						<li><a href="#">Privacy and Terms</a></li>
-					</ul>
-				</div>
-			</footer>
 		</main>
 	</div>
 	<a href="../index.html">

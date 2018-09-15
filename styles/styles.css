@@ -318,20 +318,6 @@ th.sort:hover {
 	cursor: pointer;
 }
 
-.section--footer {
-	padding: 32px;
-}
-
-.section--footer .section__circle {
-	width: 64px;
-	height: 64px;
-	border-radius: 100%;
-}
-
-.mdl-mega-footer--link-list a:hover {
-	color: #fff;
-}
-
 .mdl-dialog__content {
 	padding: 16px;
 }
