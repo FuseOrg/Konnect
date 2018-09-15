@@ -66,12 +66,6 @@
 								<span class="name">News</span>
 							</li>
 						</a>
-						<a href="events.php">
-							<li class="mdl-menu__item">
-								<i class="material-icons">bookmark_border</i>
-								<span class="name">Events</span>
-							</li>
-						</a>
 						<a href="directory.php">
 							<li class="mdl-menu__item">
 								<i class="material-icons">kitchen</i>
@@ -168,7 +162,6 @@
 				<a class="mdl-navigation__link" href="dashboard.php"><i class="material-icons" role="presentation">drag_indicator</i>Dashboard</a>
 				<a class="mdl-navigation__link" href="notifications.php"><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
 				<a class="mdl-navigation__link" href="news.php"><i class="material-icons" role="presentation">outlined_flag</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
-				<a class="mdl-navigation__link" href="events.php"><i class="material-icons" role="presentation">bookmark_border</i><span class="mdl-badge mdl-badge--no-background" data-badge="1">Events</span></a>
 				<a class="mdl-navigation__link active" href="directory.php"><i class="material-icons" role="presentation">kitchen</i>Directory</a>
 				<a class="mdl-navigation__link" href="files.php"><i class="material-icons" role="presentation">cloud_queue</i>Files</a>
 				<a class="mdl-navigation__link" href="gallery.php"><i class="material-icons" role="presentation">crop_original</i>Gallery</a>
@@ -190,7 +183,7 @@
 					<table class="mdl-data-table mdl-js-data-table mdl-cell mdl-cell--12-col">
 						<thead>
 							<tr>
-								<th class="mdl-data-table__cell--non-numeric sort" data-sort="name">Name</th>
+								<th class="mdl-data-table__cell--non-numeric mdl-data-table__header--sorted-ascending sort" data-sort="name">Name</th>
 								<th class="sort" data-sort="strength">Strength</th>
 							</tr>
 						</thead>
@@ -259,6 +252,15 @@
 
 		$($('th.sort')[0]).trigger('click', function() {
 			console.log('clicked');
+		});
+
+		$(document).on('click', '.sort', function() {
+			$('.sort').removeClass('mdl-data-table__header--sorted-ascending mdl-data-table__header--sorted-descending');
+			if ($(this).hasClass('asc')) {
+				$(this).addClass('mdl-data-table__header--sorted-ascending')
+			} else if ($(this).hasClass('desc')) {
+				$(this).addClass('mdl-data-table__header--sorted-descending')
+			}
 		});
 
 		$("input.search").on("keyup", function(e) {
