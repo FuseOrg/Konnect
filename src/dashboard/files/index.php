@@ -194,7 +194,7 @@
 								<th class="mdl-data-table__cell--non-numeric">Actions</th>
 								<th class="sort" data-sort="department">Department</th>
 								<th class="sort" data-sort="uploaded">Uploaded by</th>
-								<th class="sort" data-sort="date">Date</th>
+								<th class="sort mdl-data-table__header--sorted-ascending" data-sort="date">Date</th>
 							</tr>
 						</thead>
 						<tbody class="list">
@@ -375,6 +375,15 @@
 
 		$($('th.sort')[3]).trigger('click', function() {
 			console.log('clicked');
+		});
+
+		$(document).on('click', '.sort', function() {
+			$('.sort').removeClass('mdl-data-table__header--sorted-ascending mdl-data-table__header--sorted-descending');
+			if ($(this).hasClass('asc')) {
+				$(this).addClass('mdl-data-table__header--sorted-ascending')
+			} else if ($(this).hasClass('desc')) {
+				$(this).addClass('mdl-data-table__header--sorted-descending')
+			}
 		});
 
 		$("input.search").on("keyup", function(e) {

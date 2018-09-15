@@ -190,7 +190,7 @@
 					<table class="mdl-data-table mdl-js-data-table mdl-cell mdl-cell--12-col">
 						<thead>
 							<tr>
-								<th class="mdl-data-table__cell--non-numeric sort" data-sort="name">Name</th>
+								<th class="mdl-data-table__cell--non-numeric mdl-data-table__header--sorted-ascending sort" data-sort="name">Name</th>
 								<th class="sort" data-sort="strength">Strength</th>
 							</tr>
 						</thead>
@@ -259,6 +259,15 @@
 
 		$($('th.sort')[0]).trigger('click', function() {
 			console.log('clicked');
+		});
+
+		$(document).on('click', '.sort', function() {
+			$('.sort').removeClass('mdl-data-table__header--sorted-ascending mdl-data-table__header--sorted-descending');
+			if ($(this).hasClass('asc')) {
+				$(this).addClass('mdl-data-table__header--sorted-ascending')
+			} else if ($(this).hasClass('desc')) {
+				$(this).addClass('mdl-data-table__header--sorted-descending')
+			}
 		});
 
 		$("input.search").on("keyup", function(e) {
