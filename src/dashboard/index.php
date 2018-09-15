@@ -152,7 +152,7 @@
 						<span class="visuallyhidden">Accounts</span>
 					</button>
 					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
-						<a href="profile.php">
+						<a href="profile">
 							<li class="mdl-menu__item"><i class="material-icons">tag_faces</i>Profile</li>
 						</a>
 						<a href="settings.php">
