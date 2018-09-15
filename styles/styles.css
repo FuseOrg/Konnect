@@ -62,7 +62,7 @@ body {
 	height: 100%;
 }
 
-.mdl-list__item--three-line .mdl-list__item-text-body {
+.mdl-list__item-text-body {
 	padding: 8px;
 }
 

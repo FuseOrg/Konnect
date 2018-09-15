@@ -181,9 +181,7 @@
 		<main class="demo-main mdl-layout__content">
 			<div class="demo-content mdl-grid">
 				<!--Event cards-->
-				<div class="mdl-cell mdl-cell--12-col heading">
-					Events
-				</div>
+				<div class="mdl-cell mdl-cell--12-col heading">Events</div>
 				<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
 					<div class="mdl-card__title mdl-card--expand">
 						<h4>

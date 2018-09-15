@@ -173,9 +173,7 @@
 		<main class="demo-main mdl-layout__content">
 			<div class="demo-content mdl-grid">
 				<!--Notifications-->
-				<div class="mdl-cell mdl-cell--12-col heading">
-					Notifications
-				</div>
+				<div class="mdl-cell mdl-cell--12-col heading">Notifications</div>
 				<ul class="demo-list-three mdl-list mdl-card mdl-cell mdl-cell--12-col mdl-list mdl-shadow--2dp">
 					<li class="mdl-list__item mdl-list__item--three-line">
 						<span class="mdl-list__item-primary-content">
