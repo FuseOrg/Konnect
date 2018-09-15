@@ -66,12 +66,6 @@
 								<span class="name">News</span>
 							</li>
 						</a>
-						<a href="events.php">
-							<li class="mdl-menu__item">
-								<i class="material-icons">bookmark_border</i>
-								<span class="name">Events</span>
-							</li>
-						</a>
 						<a href="directory.php">
 							<li class="mdl-menu__item">
 								<i class="material-icons">kitchen</i>
@@ -168,7 +162,6 @@
 				<a class="mdl-navigation__link" href="dashboard.php"><i class="material-icons" role="presentation">drag_indicator</i>Dashboard</a>
 				<a class="mdl-navigation__link" href="notifications.php"><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
 				<a class="mdl-navigation__link" href="news.php"><i class="material-icons" role="presentation">outlined_flag</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
-				<a class="mdl-navigation__link" href="events.php"><i class="material-icons" role="presentation">bookmark_border</i><span class="mdl-badge mdl-badge--no-background" data-badge="1">Events</span></a>
 				<a class="mdl-navigation__link" href="directory.php"><i class="material-icons" role="presentation">kitchen</i>Directory</a>
 				<a class="mdl-navigation__link" href="files.php"><i class="material-icons" role="presentation">cloud_queue</i>Files</a>
 				<a class="mdl-navigation__link active" href="gallery.php"><i class="material-icons" role="presentation">crop_original</i>Gallery</a>
