@@ -182,7 +182,7 @@
 			<div class="demo-content mdl-grid">
 				<!--Gallery cards-->
 				<div class="mdl-cell mdl-cell--12-col heading">Gallery</div>
-				<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg1.jpg)">
+				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg1.jpg)">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions">
 						<span>Image</span>
@@ -197,7 +197,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg2.jpg)">
+				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg2.jpg)">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions">
 						<span>Image</span>
@@ -212,7 +212,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg3.jpg)">
+				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg3.jpg)">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions">
 						<span>Image</span>
@@ -227,7 +227,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg4.jpg)">
+				<div class="demo-card-image mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg4.jpg)">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions">
 						<span>Image</span>
@@ -242,7 +242,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg1.jpg)">
+				<div class="demo-card-image mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg1.jpg)">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions">
 						<span>Image</span>
@@ -257,7 +257,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg2.jpg)">
+				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg2.jpg)">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions">
 						<span>Image</span>
@@ -272,7 +272,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg3.jpg)">
+				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg3.jpg)">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions">
 						<span>Image</span>
@@ -287,7 +287,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg4.jpg)">
+				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg4.jpg)">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions">
 						<span>Image</span>

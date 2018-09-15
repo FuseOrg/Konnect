@@ -182,7 +182,7 @@
 			<div class="demo-content mdl-grid">
 				<!--Help-->
 				<div class="mdl-cell mdl-cell--12-col heading">Help</div>
-				<div class="mdl-card mdl-cell mdl-cell--12-col mdl-list mdl-shadow--2dp">
+				<div class="mdl-card mdl-cell mdl-cell--12-col mdl-list">
 					<div class="mdl-card__title">
 						<h2 class="mdl-card__title-text">Konnect v0.7.4 beta</h2>
 					</div>

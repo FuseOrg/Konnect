@@ -182,7 +182,7 @@
 			<div class="demo-content mdl-grid">
 				<!--Settings-->
 				<h4 class="heading mdl-cell mdl-cell--12-col">Settings</h4>
-				<ul class="demo-list-two mdl-list mdl-card mdl-cell mdl-cell--12-col mdl-list mdl-shadow--2dp">
+				<ul class="demo-list-two mdl-list mdl-card mdl-cell mdl-cell--12-col">
 					<li class="mdl-list__item mdl-list__item--two-line">
 						<span class="mdl-list__item-primary-content">
 							<i class="material-icons mdl-list__item-avatar">settings</i>

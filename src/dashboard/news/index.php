@@ -182,7 +182,7 @@
 			<div class="demo-content mdl-grid">
 				<!--News cards-->
 				<div class="mdl-cell mdl-cell--12-col heading">News</div>
-				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col">
 					<div class="mdl-card__title" style="background-image: url(../../../images/bg1.jpg);">
 						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
 					</div>
@@ -199,7 +199,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col">
 					<div class="mdl-card__title" style="background-image: url(../../../images/bg2.jpg);">
 						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
 					</div>
@@ -216,7 +216,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col">
 					<div class="mdl-card__title" style="background-image: url(../../../images/bg3.jpg);">
 						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
 					</div>
@@ -233,7 +233,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--12-col">
 					<div class="mdl-card__title" style="background-image: url(../../../images/bg4.jpg);">
 						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
 					</div>
