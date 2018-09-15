@@ -119,7 +119,7 @@
 					<li class="mdl-menu__item"><i class="material-icons">notifications_none</i>All notifications</li>
 					<li class="mdl-menu__item"><i class="material-icons">done_all</i>Mark all as read</li>
 				</ul>
-				<button id="hdrbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon img-bg" style="background-image: url(../images/user.jpg);"></button>
+				<button id="hdrbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon img-bg" style="background-image: url(../../../images/user.jpg);"></button>
 				<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
 					<a href="profile.php">
 						<li class="mdl-menu__item"><i class="material-icons">tag_faces</i>Profile</li>
@@ -135,7 +135,7 @@
 		</header>
 		<div class="demo-drawer mdl-layout__drawer">
 			<header class="demo-drawer-header">
-				<img src="../images/user.jpg" class="demo-avatar avatar">
+				<img src="../../../images/user.jpg" class="demo-avatar avatar">
 				<div class="demo-avatar-dropdown">
 					<span>User name</span>
 					<div class="mdl-layout-spacer"></div>
@@ -165,7 +165,7 @@
 				<a class="mdl-navigation__link" href="files.php"><i class="material-icons" role="presentation">cloud_queue</i>Files</a>
 				<a class="mdl-navigation__link" href="gallery.php"><i class="material-icons" role="presentation">crop_original</i>Gallery</a>
 				<a class="mdl-navigation__link" href="profile.php"><i class="material-icons" role="presentation">tag_faces</i>Profile</a>
-				<div class="mdl-layout-spacer mdl-menu__item--full-bleed-divider"></div>
+				<div class="mdl-layout-spacer"></div>
 				<a class="mdl-navigation__link" href="settings.php"><i class="material-icons" role="presentation">tune</i>Settings</a>
 				<a class="mdl-navigation__link" href="help.php"><i class="material-icons" role="presentation">help_outline</i>Help</a>
 			</nav>
@@ -173,9 +173,7 @@
 		<main class="demo-main mdl-layout__content">
 			<div class="demo-content mdl-grid">
 				<!--Notifications-->
-				<div class="mdl-cell mdl-cell--12-col heading">
-					Notifications
-				</div>
+				<div class="mdl-cell mdl-cell--12-col heading">Notifications</div>
 				<ul class="demo-list-three mdl-list mdl-card mdl-cell mdl-cell--12-col mdl-list mdl-shadow--2dp">
 					<li class="mdl-list__item mdl-list__item--three-line">
 						<span class="mdl-list__item-primary-content">
