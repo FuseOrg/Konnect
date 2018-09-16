@@ -235,10 +235,6 @@
 			</div>
 		</main>
 	</div>
-	<label id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp" for="directory-search">
-		<i class="material-icons">search</i>
-	</label>
-	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Search</span>
 	<script src="../scripts/scripts.js"></script>
 	<script>
 		var searchList = new List('search-list', {

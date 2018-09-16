@@ -169,9 +169,10 @@ body {
 	margin: 4px;
 	height: auto;
 	border-radius: 8px;
+	
 }
 
-.mdl-button:not(.mdl-button--colored):not(.mdl-button--accent):not(.mdl-button--icon):not(.mdl-button--fab) {
+.mdl-button:not(.mdl-button--colored):not(.mdl-button--raised):not(.mdl-button--icon):not(.mdl-button--fab) {
 	border: 1px solid rgba(0, 0, 0, .12);
 }
 

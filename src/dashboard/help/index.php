@@ -191,12 +191,6 @@
 			</div>
 		</main>
 	</div>
-	<a href="../index.html">
-		<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp">
-			<i class="material-icons">exit_to_app</i>
-		</button>
-	</a>
-	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Sign out</span>
 	<dialog class="mdl-dialog">
 		<h4 class="mdl-dialog__title">Upload new file</h4>
 		<div class="mdl-dialog__content">
