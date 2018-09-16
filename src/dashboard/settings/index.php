@@ -66,12 +66,6 @@
 								<span class="name">News</span>
 							</li>
 						</a>
-						<a href="events.php">
-							<li class="mdl-menu__item">
-								<i class="material-icons">bookmark_border</i>
-								<span class="name">Events</span>
-							</li>
-						</a>
 						<a href="directory.php">
 							<li class="mdl-menu__item">
 								<i class="material-icons">kitchen</i>
@@ -168,7 +162,6 @@
 				<a class="mdl-navigation__link" href="dashboard.php"><i class="material-icons" role="presentation">drag_indicator</i>Dashboard</a>
 				<a class="mdl-navigation__link" href="notifications.php"><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
 				<a class="mdl-navigation__link" href="news.php"><i class="material-icons" role="presentation">outlined_flag</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
-				<a class="mdl-navigation__link" href="events.php"><i class="material-icons" role="presentation">bookmark_border</i><span class="mdl-badge mdl-badge--no-background" data-badge="1">Events</span></a>
 				<a class="mdl-navigation__link" href="directory.php"><i class="material-icons" role="presentation">kitchen</i>Directory</a>
 				<a class="mdl-navigation__link" href="files.php"><i class="material-icons" role="presentation">cloud_queue</i>Files</a>
 				<a class="mdl-navigation__link" href="gallery.php"><i class="material-icons" role="presentation">crop_original</i>Gallery</a>
@@ -182,44 +175,96 @@
 			<div class="demo-content mdl-grid">
 				<!--Settings-->
 				<h4 class="heading mdl-cell mdl-cell--12-col">Settings</h4>
-				<ul class="demo-list-two mdl-list mdl-card mdl-cell mdl-cell--12-col mdl-list mdl-shadow--2dp">
+				<ul class="demo-list-two mdl-list mdl-card mdl-cell mdl-cell--12-col">
+					<li class="mdl-list__item mdl-list__item--two-line">
+						<span class="mdl-list__item-primary-content">
+							<i class="material-icons mdl-list__item-avatar">face</i>
+							<span>Name</span>
+							<span class="mdl-list__item-sub-title">Display name</span>
+						</span>
+						<span class="mdl-list__item-secondary-content">
+							<span class="mdl-list__item-secondary-action">
+								<form action="#">
+									<div class="mdl-textfield mdl-js-textfield">
+										<input class="mdl-textfield__input" type="text" id="name" pattern="[a-z,A-Z, ]*">
+										<label class="mdl-textfield__label" for="name">Name</label>
+										<span class="mdl-textfield__error">Letters and spaces only!</span>
+									</div>
+								</form>
+							</span>
+						</span>
+					</li>
+					<li class="mdl-list__item mdl-list__item--two-line">
+						<span class="mdl-list__item-primary-content">
+							<i class="material-icons mdl-list__item-avatar">alternate_email</i>
+							<span>User name</span>
+							<span class="mdl-list__item-sub-title">Registration number</span>
+						</span>
+						<span class="mdl-list__item-secondary-content">
+							<span class="mdl-list__item-secondary-action">
+								<form action="#">
+									<div class="mdl-textfield mdl-js-textfield">
+										<input class="mdl-textfield__input" type="text" pattern="[a-z,A-Z,0-9,_]*" id="uname">
+										<label class="mdl-textfield__label" for="uname">Username</label>
+										<span class="mdl-textfield__error">Letters, digits and underscore only!</span>
+									</div>
+								</form>
+							</span>
+						</span>
+					</li>
+					<li class="mdl-list__item mdl-list__item--two-line">
+						<span class="mdl-list__item-primary-content">
+							<i class="material-icons mdl-list__item-avatar">phone</i>
+							<span>Phone</span>
+							<span class="mdl-list__item-sub-title">Contact number</span>
+						</span>
+						<span class="mdl-list__item-secondary-content">
+							<span class="mdl-list__item-secondary-action">
+								<form action="#">
+									<div class="mdl-textfield mdl-js-textfield">
+										<input class="mdl-textfield__input" type="tel" pattern="[0-9]*" id="number">
+										<label class="mdl-textfield__label" for="number">
+											Number...</label>
+										<span class="mdl-textfield__error">Invalid number!</span>
+									</div>
+								</form>
+							</span>
+						</span>
+					</li>
+					<li class="mdl-list__item mdl-list__item--two-line">
+						<span class="mdl-list__item-primary-content">
+							<i class="material-icons mdl-list__item-avatar">email</i>
+							<span>Email</span>
+							<span class="mdl-list__item-sub-title">Contact email</span>
+						</span>
+						<span class="mdl-list__item-secondary-content">
+							<span class="mdl-list__item-secondary-action">
+								<form action="#">
+									<div class="mdl-textfield mdl-js-textfield">
+										<input class="mdl-textfield__input" type="email" id="email">
+										<label class="mdl-textfield__label" for="email">Email</label>
+										<span class="mdl-textfield__error">Invalid email!</span>
+									</div>
+								</form>
+							</span>
+						</span>
+					</li>
+					<li class="mdl-list__item mdl-list__item--two-line">
+						<span class="mdl-list__item-primary-content">
+							<i class="material-icons mdl-list__item-avatar">tag_faces</i>
+							<span>Profile picture</span>
+							<span class="mdl-list__item-sub-title">Display picture</span>
+						</span>
+						<span class="mdl-list__item-secondary-content">
+							<span class="mdl-list__item-secondary-action">
+								<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">add_circle</i></button>
+								<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">delete</i></button>
+							</span>
+						</span>
+					</li>
 					<li class="mdl-list__item mdl-list__item--two-line">
 						<span class="mdl-list__item-primary-content">
 							<i class="material-icons mdl-list__item-avatar">settings</i>
-							<span>Option</span>
-							<span class="mdl-list__item-sub-title">Description</span>
-						</span>
-						<span class="mdl-list__item-secondary-content">
-							<span class="mdl-list__item-secondary-action">
-								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-									<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
-									<span class="mdl-checkbox__label">ON / OFF</span>
-								</label>
-							</span>
-						</span>
-					</li>
-					<li class="mdl-list__item mdl-list__item--two-line">
-						<span class="mdl-list__item-primary-content">
-							<i class="material-icons mdl-list__item-avatar">person</i>
-							<span>Option</span>
-							<span class="mdl-list__item-sub-title">Description</span>
-						</span>
-						<span class="mdl-list__item-secondary-content">
-							<span class="mdl-list__item-secondary-action">
-								<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-									<input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
-									<span class="mdl-radio__label">ON</span>
-								</label>
-								<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-									<input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
-									<span class="mdl-radio__label">OFF</span>
-								</label>
-							</span>
-						</span>
-					</li>
-					<li class="mdl-list__item mdl-list__item--two-line">
-						<span class="mdl-list__item-primary-content">
-							<i class="material-icons mdl-list__item-avatar">notifications</i>
 							<span>Option</span>
 							<span class="mdl-list__item-sub-title">Description</span>
 						</span>
@@ -232,26 +277,53 @@
 							</span>
 						</span>
 					</li>
+					<li class="mdl-list__item mdl-list__item--two-line">
+						<span class="mdl-list__item-primary-content">
+							<i class="material-icons mdl-list__item-avatar">person</i>
+							<span>Option</span>
+							<span class="mdl-list__item-sub-title">Description</span>
+						</span>
+						<span class="mdl-list__item-secondary-content">
+							<span class="mdl-list__item-secondary-action">
+								<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+									<input type="checkbox" id="switch-2" class="mdl-switch__input">
+									<span class="mdl-switch__label">&nbsp;&nbsp;</span>
+								</label>
+							</span>
+						</span>
+					</li>
+					<li class="mdl-list__item mdl-list__item--two-line">
+						<span class="mdl-list__item-primary-content">
+							<i class="material-icons mdl-list__item-avatar">notifications</i>
+							<span>Notifications</span>
+							<span class="mdl-list__item-sub-title">Get notified on latest updates</span>
+						</span>
+						<span class="mdl-list__item-secondary-content">
+							<span class="mdl-list__item-secondary-action">
+								<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-3">
+									<input type="checkbox" id="switch-3" class="mdl-switch__input" checked>
+									<span class="mdl-switch__label">&nbsp;&nbsp;</span>
+								</label>
+							</span>
+						</span>
+					</li>
+					<li class="mdl-list__item mdl-list__item--two-line">
+						<span class="mdl-list__item-primary-content">
+							<i class="material-icons mdl-list__item-avatar">save</i>
+							<span>Save changes</span>
+							<span class="mdl-list__item-sub-title">Or cancel</span>
+						</span>
+						<span class="mdl-list__item-secondary-content">
+							<span class="mdl-list__item-secondary-action">
+								<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Cancel</button>
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Save</button>
+							</span>
+						</span>
+					</li>
 				</ul>
 			</div>
 		</main>
 	</div>
-	<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp" onclick="location.reload()">
-		<i class="material-icons">save</i>
-	</button>
-	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Save changes</span>
-	<dialog class="mdl-dialog">
-		<h4 class="mdl-dialog__title">Upload new file</h4>
-		<div class="mdl-dialog__content">
-			<p>
-				Allowing us to collect data will let us get you the information you want faster.
-			</p>
-		</div>
-		<div class="mdl-dialog__actions">
-			<button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent close">Upload</button>
-			<button id="demo-show-toast" class="mdl-button">Show Toast</button>
-		</div>
-	</dialog>
 	<div id="demo-snackbar-example" class="mdl-snackbar mdl-js-snackbar">
 		<div class="mdl-snackbar__text"></div>
 		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-snackbar__action"></button>
