@@ -298,10 +298,6 @@
 			</div>
 		</main>
 	</div>
-	<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp" onclick="location.reload()">
-		<i class="material-icons">refresh</i>
-	</button>
-	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Refresh page</span>
 	<script src="../scripts/scripts.js"></script>
 	<script>
 		var searchList = new List('search-list', {
