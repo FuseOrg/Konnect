@@ -11,6 +11,11 @@
 	--accent-color: #2979FF;
 }
 
+a {
+	text-decoration: none;
+	color: #21A6EE;
+}
+
 h1,
 h2,
 h3,
@@ -33,9 +38,6 @@ body {
 	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
 	font-size: 18px;
 	line-height: 1.5;
-	-webkit-tap-highlight-color: transparent;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
 	user-select: none;
 }
 
@@ -320,14 +322,8 @@ th.sort:hover {
 
 .mdl-dialog__actions {
 	padding: 16px;
-	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-flex-direction: row-reverse;
-	-ms-flex-direction: row-reverse;
 	flex-direction: row-reverse;
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 

@@ -175,14 +175,14 @@
 			<div class="demo-content mdl-grid">
 				<!--Help-->
 				<div class="mdl-cell mdl-cell--12-col heading">Help</div>
-				<div class="mdl-card mdl-cell mdl-cell--12-col mdl-list">
+				<div class="mdl-card mdl-cell mdl-cell--12-col">
 					<div class="mdl-card__title">
 						<h2 class="mdl-card__title-text">Konnect v0.7.4 beta</h2>
 					</div>
 					<div class="mdl-card__supporting-text">
 						Built and maintained by <a href="https://github.com/FuseOrg">Fuse Org</a> at Nehru College of Engineering and Research Centre, Pampady.
 					</div>
-					<div class="mdl-card__actions mdl-card--border">
+					<div class="mdl-card__actions">
 						<a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">
 							Buy us a coffee!
 						</a>
