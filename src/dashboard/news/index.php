@@ -171,300 +171,308 @@
 				<a class="mdl-navigation__link" href="help.php"><i class="material-icons" role="presentation">help_outline</i>Help</a>
 			</nav>
 		</div>
-		<main class="demo-main mdl-layout__content">
-			<div class="demo-content mdl-grid">
-				<!--Event cards-->
-				<div class="mdl-cell mdl-cell--12-col heading">Events</div>
-				<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-					<div class="mdl-card__title mdl-card--expand">
-						<h4>
-							RUBIX 2K18<br> May 24, 2018<br> 10AM - 5PM @ NCERC
-						</h4>
+		<main class=" mdl-layout__content">
+			<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+				<div class="mdl-tabs__tab-bar">
+					<a href="#events" class="mdl-tabs__tab is-active">Events</a>
+					<a href="#news" class="mdl-tabs__tab">News</a>
+				</div>
+				<div class="mdl-tabs__panel is-active demo-content mdl-grid" id="events">
+					<!--Event cards-->
+					<div class="mdl-cell mdl-cell--12-col heading">Events</div>
+					<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title mdl-card--expand">
+							<h4>
+								RUBIX 2K18<br> May 24, 2018<br> 10AM - 5PM @ NCERC
+							</h4>
+						</div>
+						<div class="demo-options">
+							<ul>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+										<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+										<span class="mdl-checkbox__label">Attending</span>
+									</label>
+								</li>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+										<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
+										<span class="mdl-checkbox__label">Notify</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="mdl-card__actions">
+							<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
+								Add to Calendar
+							</button>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">calendar_today</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
 					</div>
-					<div class="demo-options">
-						<ul>
-							<li>
-								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-									<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-									<span class="mdl-checkbox__label">Attending</span>
-								</label>
-							</li>
-							<li>
-								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-									<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
-									<span class="mdl-checkbox__label">Notify</span>
-								</label>
-							</li>
-						</ul>
+					<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title mdl-card--expand">
+							<h4>
+								BLOOM 2K18<br> December 3, 2018<br> 9AM - 11PM
+							</h4>
+						</div>
+						<div class="demo-options">
+							<ul>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+										<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+										<span class="mdl-checkbox__label">Attending</span>
+									</label>
+								</li>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+										<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
+										<span class="mdl-checkbox__label">Notify</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="mdl-card__actions">
+							<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
+								Add to Calendar
+							</button>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">calendar_today</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
 					</div>
-					<div class="mdl-card__actions">
-						<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
-							Add to Calendar
-						</button>
-						<div class="mdl-layout-spacer"></div>
-						<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-							<i class="material-icons">calendar_today</i>
-						</a>
+					<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title mdl-card--expand">
+							<h4>
+								Event<br> May 24, 2018<br> 7-11PM
+							</h4>
+						</div>
+						<div class="demo-options">
+							<ul>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+										<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+										<span class="mdl-checkbox__label">Attending</span>
+									</label>
+								</li>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+										<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
+										<span class="mdl-checkbox__label">Notify</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="mdl-card__actions">
+							<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
+								Add to Calendar
+							</button>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">calendar_today</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
 					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
+					<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title mdl-card--expand">
+							<h4>
+								Event<br> May 24, 2018<br> 7-11PM
+							</h4>
+						</div>
+						<div class="demo-options">
+							<ul>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+										<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+										<span class="mdl-checkbox__label">Attending</span>
+									</label>
+								</li>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+										<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
+										<span class="mdl-checkbox__label">Notify</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="mdl-card__actions">
+							<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
+								Add to Calendar
+							</button>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">calendar_today</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+					<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title mdl-card--expand">
+							<h4>
+								Event<br> May 24, 2018<br> 7-11PM
+							</h4>
+						</div>
+						<div class="demo-options">
+							<ul>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+										<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+										<span class="mdl-checkbox__label">Attending</span>
+									</label>
+								</li>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+										<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
+										<span class="mdl-checkbox__label">Notify</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="mdl-card__actions">
+							<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
+								Add to Calendar
+							</button>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">calendar_today</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+					<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title mdl-card--expand">
+							<h4>
+								Event<br> May 24, 2018<br> 7-11PM
+							</h4>
+						</div>
+						<div class="demo-options">
+							<ul>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+										<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+										<span class="mdl-checkbox__label">Attending</span>
+									</label>
+								</li>
+								<li>
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+										<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
+										<span class="mdl-checkbox__label">Notify</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="mdl-card__actions">
+							<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
+								Add to Calendar
+							</button>
+							<div class="mdl-layout-spacer"></div>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
+								<i class="material-icons">calendar_today</i>
+							</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
 					</div>
 				</div>
-				<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-					<div class="mdl-card__title mdl-card--expand">
-						<h4>
-							BLOOM 2K18<br> December 3, 2018<br> 9AM - 11PM
-						</h4>
+				<div class="mdl-tabs__panel demo-content mdl-grid" id="news">
+					<!--News cards-->
+					<div class="mdl-cell mdl-cell--12-col heading">News</div>
+					<div class="demo-card-wide mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title" style="background-image: url(../../../images/bg1.jpg);">
+							<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
+						</div>
+						<div class="mdl-card__actions">
+							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
+							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Read more</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
 					</div>
-					<div class="demo-options">
-						<ul>
-							<li>
-								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-									<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-									<span class="mdl-checkbox__label">Attending</span>
-								</label>
-							</li>
-							<li>
-								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-									<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
-									<span class="mdl-checkbox__label">Notify</span>
-								</label>
-							</li>
-						</ul>
+					<div class="demo-card-wide mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title" style="background-image: url(../../../images/bg2.jpg);">
+							<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
+						</div>
+						<div class="mdl-card__actions">
+							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
+							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Read more</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
 					</div>
-					<div class="mdl-card__actions">
-						<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
-							Add to Calendar
-						</button>
-						<div class="mdl-layout-spacer"></div>
-						<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-							<i class="material-icons">calendar_today</i>
-						</a>
+					<div class="demo-card-wide mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title" style="background-image: url(../../../images/bg3.jpg);">
+							<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
+						</div>
+						<div class="mdl-card__actions">
+							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
+							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Read more</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
 					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
-					</div>
-				</div>
-				<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-					<div class="mdl-card__title mdl-card--expand">
-						<h4>
-							Event<br> May 24, 2018<br> 7-11PM
-						</h4>
-					</div>
-					<div class="demo-options">
-						<ul>
-							<li>
-								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-									<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-									<span class="mdl-checkbox__label">Attending</span>
-								</label>
-							</li>
-							<li>
-								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-									<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
-									<span class="mdl-checkbox__label">Notify</span>
-								</label>
-							</li>
-						</ul>
-					</div>
-					<div class="mdl-card__actions">
-						<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
-							Add to Calendar
-						</button>
-						<div class="mdl-layout-spacer"></div>
-						<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-							<i class="material-icons">calendar_today</i>
-						</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
-					</div>
-				</div>
-				<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-					<div class="mdl-card__title mdl-card--expand">
-						<h4>
-							Event<br> May 24, 2018<br> 7-11PM
-						</h4>
-					</div>
-					<div class="demo-options">
-						<ul>
-							<li>
-								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-									<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-									<span class="mdl-checkbox__label">Attending</span>
-								</label>
-							</li>
-							<li>
-								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-									<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
-									<span class="mdl-checkbox__label">Notify</span>
-								</label>
-							</li>
-						</ul>
-					</div>
-					<div class="mdl-card__actions">
-						<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
-							Add to Calendar
-						</button>
-						<div class="mdl-layout-spacer"></div>
-						<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-							<i class="material-icons">calendar_today</i>
-						</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
-					</div>
-				</div>
-				<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-					<div class="mdl-card__title mdl-card--expand">
-						<h4>
-							Event<br> May 24, 2018<br> 7-11PM
-						</h4>
-					</div>
-					<div class="demo-options">
-						<ul>
-							<li>
-								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-									<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-									<span class="mdl-checkbox__label">Attending</span>
-								</label>
-							</li>
-							<li>
-								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-									<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
-									<span class="mdl-checkbox__label">Notify</span>
-								</label>
-							</li>
-						</ul>
-					</div>
-					<div class="mdl-card__actions">
-						<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
-							Add to Calendar
-						</button>
-						<div class="mdl-layout-spacer"></div>
-						<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-							<i class="material-icons">calendar_today</i>
-						</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
-					</div>
-				</div>
-				<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-					<div class="mdl-card__title mdl-card--expand">
-						<h4>
-							Event<br> May 24, 2018<br> 7-11PM
-						</h4>
-					</div>
-					<div class="demo-options">
-						<ul>
-							<li>
-								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-									<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-									<span class="mdl-checkbox__label">Attending</span>
-								</label>
-							</li>
-							<li>
-								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-									<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
-									<span class="mdl-checkbox__label">Notify</span>
-								</label>
-							</li>
-						</ul>
-					</div>
-					<div class="mdl-card__actions">
-						<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
-							Add to Calendar
-						</button>
-						<div class="mdl-layout-spacer"></div>
-						<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-							<i class="material-icons">calendar_today</i>
-						</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
-					</div>
-				</div>
-				<!--News cards-->
-				<div class="mdl-cell mdl-cell--12-col heading">News</div>
-				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-					<div class="mdl-card__title" style="background-image: url(../../../images/bg1.jpg);">
-						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
-					</div>
-					<div class="mdl-card__supporting-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
-					</div>
-					<div class="mdl-card__actions">
-						<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
-						<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Read more</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
-					</div>
-				</div>
-				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-					<div class="mdl-card__title" style="background-image: url(../../../images/bg2.jpg);">
-						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
-					</div>
-					<div class="mdl-card__supporting-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
-					</div>
-					<div class="mdl-card__actions">
-						<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
-						<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Read more</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
-					</div>
-				</div>
-				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-					<div class="mdl-card__title" style="background-image: url(../../../images/bg3.jpg);">
-						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
-					</div>
-					<div class="mdl-card__supporting-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
-					</div>
-					<div class="mdl-card__actions">
-						<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
-						<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Read more</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
-					</div>
-				</div>
-				<div class="demo-card-wide mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-					<div class="mdl-card__title" style="background-image: url(../../../images/bg4.jpg);">
-						<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
-					</div>
-					<div class="mdl-card__supporting-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
-					</div>
-					<div class="mdl-card__actions">
-						<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
-						<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Read more</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
+					<div class="demo-card-wide mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title" style="background-image: url(../../../images/bg4.jpg);">
+							<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
+						</div>
+						<div class="mdl-card__actions">
+							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
+							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Read more</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -18,6 +18,7 @@ h4,
 h5,
 h6 {
 	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
+	margin: 0;
 }
 
 a {
@@ -169,7 +170,6 @@ body {
 	margin: 4px;
 	height: auto;
 	border-radius: 8px;
-	
 }
 
 .mdl-button:not(.mdl-button--colored):not(.mdl-button--raised):not(.mdl-button--icon):not(.mdl-button--fab) {
@@ -231,6 +231,15 @@ body {
 	right: 28px;
 	bottom: 28px;
 	z-index: 3;
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__panel.is-active {
+	display: flex;
+}
+
+.mdl-tabs__tab-bar {
+	justify-content: flex-start;
+	padding: 0 32px;
 }
 
 .mdl-list__item {
@@ -392,6 +401,12 @@ th.sort:hover {
 	margin: 8px;
 }
 
+.section__circle {
+	height: 64px;
+	width: 64px;
+	border-radius: 100%;
+}
+
 @media screen and (max-width: 1024px) {
 	.search-list {
 		left: 0;
@@ -405,6 +420,10 @@ th.sort:hover {
 @media screen and (max-width: 640px) {
 	.demo-content {
 		padding: 16px 0 128px 0;
+	}
+
+	.mdl-tabs__tab-bar {
+		padding: 0 8px;
 	}
 
 	.section--footer {
