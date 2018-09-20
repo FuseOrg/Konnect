@@ -29,6 +29,102 @@
 	<script src="../../scripts/material.min.js"></script>
 	<script src="../../scripts/jquery.min.js"></script>
 	<script src="../../scripts/list.min.js"></script>
+	<style>
+		.chart {
+			position: relative;
+			padding: 32px;
+			margin: 0 auto;
+		}
+
+		.chart::before {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			content: "$4k \a$3k \a$2k \a$1k \a 0";
+			white-space: pre;
+			height: 100%;
+			line-height: 5.5;
+		}
+
+		.chart::after {
+			content: "July August September October November December";
+			width: 100%;
+			word-spacing: 5vw;
+			padding-top: 32px;
+		}
+
+		.dataset {
+			fill-opacity: 0.8;
+			filter: url(#dropshadow);
+		}
+
+		#dataset-1 {
+			fill: #50E3C2;
+		}
+
+		#dataset-2 {
+			fill: #21A6EE;
+		}
+
+		#dataset-3 {
+			fill: #807CCC;
+		}
+
+		.chart button {
+			float: right;
+		}
+
+		@-webkit-keyframes raise {
+			0% {
+				transform: scaleY(0.01);
+			}
+
+			75% {
+				transform: scaleY(1.1);
+			}
+
+			100% {
+				transform: scaleY(1);
+			}
+		}
+
+		@keyframes raise {
+			0% {
+				transform: scaleY(0.01);
+			}
+
+			75% {
+				transform: scaleY(1.1);
+			}
+
+			100% {
+				transform: scaleY(1);
+			}
+		}
+
+		.dataset {
+			transform-origin: bottom;
+			transform: scaleY(0.01);
+			opacity: 0.5;
+		}
+
+		.loaded .dataset {
+			opacity: 1;
+			animation: raise 0.5s ease 0.2s forwards;
+		}
+
+		.loaded #dataset-1 {
+			animation-delay: 0.2s;
+		}
+
+		.loaded #dataset-2 {
+			animation-delay: 0.1s;
+		}
+
+		.loaded #dataset-3 {
+			animation-delay: 0s;
+		}
+	</style>
 </head>
 
 <body class="mdl-demo mdl-base">
@@ -172,9 +268,89 @@
 			</nav>
 		</div>
 		<main class="demo-main mdl-layout__content">
+			<div class="mdl-tabs mdl-js-tabs">
+				<div class="mdl-tabs__tab-bar">
+					<a href="#insight" class="mdl-tabs__tab is-active">Insight</a>
+					<a href="#all" class="mdl-tabs__tab">All</a>
+				</div>
+				<div class="mdl-tabs__panel is-active demo-content mdl-grid" id="insight">
+					<!--Insight cards-->
+					<div class="mdl-cell mdl-cell--12-col heading">Insight</div>
+					<div class="chart mdl-cell mdl-cell--12-col">
+						<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon js-do-it-again">
+							<i class="material-icons ion-loop">refresh</i>
+						</button>
+						<svg viewbox='0 0 560 260'>
+							<defs>
+								<filter id='dropshadow'>
+									<feGaussianBlur in='SourceAlpha' stdDeviation='3'></feGaussianBlur>
+									<feOffset dx='0' dy='0' result='offsetblur'></feOffset>
+									<feComponentTransfer>
+										<feFuncA slope='0.2' type='linear'></feFuncA>
+									</feComponentTransfer>
+									<feMerge>
+										<feMergeNode></feMergeNode>
+										<feMergeNode in='SourceGraphic'></feMergeNode>
+									</feMerge>
+								</filter>
+							</defs>
+							<g class='datasets'>
+								<path class='dataset' d='M0,260 C0,260 4,252 7,252 C66,252 90,102 139,102 C188,102 205,135 252,135 C299,135 309,89 330,89 C350,89 366,122 404,122 C442,122 431,98 451,98 C470,98 499,213 560,260 L0,259 Z' id='dataset-3'></path>
+								<path class='dataset' d='M0,260 C35,254 63,124 88,124 C114,124 148,163 219,163 C290,163 315,100 359,100 C402,100 520,244 560,259 C560,259 0,259 0,260 Z' id='dataset-2'></path>
+								<path class='dataset' d='M0,260 C0,260 22,199 64,199 C105,199 112,144 154,144 C195,144 194,126 216,126 C237,126 263,184 314,184 C365,183 386,128 434,129 C483,130 511,240 560,260 L0,260 Z' id='dataset-1'></path>
+							</g>
+						</svg>
+					</div>
+					<script>
+						(function() {
+							var load_chart;
+
+							load_chart = function() {
+								$("body").removeClass("loaded");
+								return setTimeout(function() {
+									return $("body").addClass("loaded");
+								}, 500);
+							};
+
+							$(".js-do-it-again").on("click", function() {
+								return load_chart();
+							});
+
+							load_chart();
+
+						}).call(this);
+
+					</script>
+				</div>
+				<div class="mdl-tabs__panel demo-content mdl-grid" id="all">
+					<!--All cards-->
+					<div class="mdl-cell mdl-cell--12-col heading">All</div>
+				</div>
+			</div>
 			<div class="demo-content mdl-grid">
 				<!--Dashboard-->
 				<h4 class="heading mdl-cell mdl-cell--12-col">Dashboard</h4>
+				<div class="mdl-card mdl-cell mdl-cell--12-col">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Welcome to Konnect!</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						Built and maintained by <a href="https://github.com/FuseOrg">Fuse Org</a> at Nehru College of Engineering and Research Centre, Pampady.
+					</div>
+					<div class="mdl-card__actions">
+						<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="settings/index.php">
+							Complete your profile
+						</a>
+						<a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">
+							Buy us a coffee!
+						</a>
+					</div>
+					<div class="mdl-card__menu">
+						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+							<i class="material-icons">close</i>
+						</button>
+					</div>
+				</div>
 			</div>
 		</main>
 	</div>

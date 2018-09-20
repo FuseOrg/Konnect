@@ -172,7 +172,7 @@
 			</nav>
 		</div>
 		<main class=" mdl-layout__content">
-			<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+			<div class="mdl-tabs mdl-js-tabs">
 				<div class="mdl-tabs__tab-bar">
 					<a href="#events" class="mdl-tabs__tab is-active">Events</a>
 					<a href="#news" class="mdl-tabs__tab">News</a>
