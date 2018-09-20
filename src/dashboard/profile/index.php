@@ -172,46 +172,13 @@
 			</nav>
 		</div>
 		<main class="demo-main mdl-layout__content">
-			<div class="section--footer mdl-grid">
+			<div class="demo-content section--footer mdl-grid">
 				<!--Profile-->
 				<h4 class="heading mdl-cell mdl-cell--12-col">Profile</h4>
-				<div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
-					<div class="mdl-color--accent section__circle"></div>
-				</div>
-				<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-					<h4>Username</h4>
-					Bio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus perferendis dolorem aspernatur necessitatibus dolorum debitis cumque eum, dicta.
-				</div>
-				<div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
-					<div class="mdl-color--primary section__circle"></div>
-				</div>
-				<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-					<h4>NCE15CS037</h4>
-					Department: CSE<br> Division: A<br> Semester: S7
-				</div>
-				<div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
-					<div class="mdl-color--primary section__circle"></div>
-				</div>
-				<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-					<h4>Excellence</h4>
-					Subject #1: A+<br> Subject #2: C<br> Subject #3: B+<br> Subject #4: D<br> Subject #5: F<br> Subject #6: O
-				</div>
-				<div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
-					<div class="mdl-color--primary section__circle"></div>
-				</div>
-				<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-					<h4>Progress</h4>
-					Subject #1: A+<br> Subject #2: C<br> Subject #3: B+<br> Subject #4: D<br> Subject #5: F<br> Subject #6: O
-				</div>
+
 			</div>
 		</main>
 	</div>
-	<a href="settings.php">
-		<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accentmdl-shadow--6dp">
-			<i class="material-icons">tune</i>
-		</button>
-		<span class="mdl-tooltip mdl-tooltip--left" for="fab">Settings</span>
-	</a>
 	<script src="../scripts/scripts.js"></script>
 	<script>
 		var searchList = new List('search-list', {
