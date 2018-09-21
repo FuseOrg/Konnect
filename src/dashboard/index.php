@@ -29,65 +29,6 @@
 	<script src="../../scripts/material.min.js"></script>
 	<script src="../../scripts/jquery.min.js"></script>
 	<script src="../../scripts/list.min.js"></script>
-	<style>
-		.dataset {
-			fill-opacity: 0.8;
-			filter: url(#dropshadow);
-		}
-
-		#dataset-1 {
-			fill: #50E3C2;
-		}
-
-		#dataset-2 {
-			fill: #21A6EE;
-		}
-
-		#dataset-3 {
-			fill: #807CCC;
-		}
-
-		.chart button {
-			float: right;
-		}
-
-		@keyframes raise {
-			0% {
-				transform: scaleY(0.01);
-			}
-
-			75% {
-				transform: scaleY(1.1);
-			}
-
-			100% {
-				transform: scaleY(1);
-			}
-		}
-
-		.dataset {
-			transform-origin: bottom;
-			transform: scaleY(0.01);
-			opacity: 0.5;
-		}
-
-		.loaded .dataset {
-			opacity: 1;
-			animation: raise 0.5s ease 0.2s forwards;
-		}
-
-		.loaded #dataset-1 {
-			animation-delay: 0.2s;
-		}
-
-		.loaded #dataset-2 {
-			animation-delay: 0.1s;
-		}
-
-		.loaded #dataset-3 {
-			animation-delay: 0s;
-		}
-	</style>
 </head>
 
 <body class="mdl-demo mdl-base">
@@ -238,120 +179,712 @@
 				</div>
 				<div class="mdl-tabs__panel is-active demo-content mdl-grid" id="insight">
 					<!--Insight cards-->
-					<div class="mdl-cell mdl-cell--12-col heading">Insight</div>
-					<div class="chart mdl-card mdl-cell mdl-cell--12-col">
-						<svg viewbox="0 0 560 260">
-							<defs>
-								<filter id="dropshadow">
-									<feGaussianBlur in="SourceAlpha" stdDeviation="3"></feGaussianBlur>
-									<feOffset dx="0" dy="0" result="offsetblur"></feOffset>
-									<feComponentTransfer>
-										<feFuncA slope="0.2" type="linear"></feFuncA>
-									</feComponentTransfer>
-									<feMerge>
-										<feMergeNode></feMergeNode>
-										<feMergeNode in="SourceGraphic"></feMergeNode>
-									</feMerge>
-								</filter>
-							</defs>
-							<g class="datasets">
-								<path class="dataset" d="M0,260 C0,260 4,252 7,252 C66,252 90,102 139,102 C188,102 205,135 252,135 C299,135 309,89 330,89 C350,89 366,122 404,122 C442,122 431,98 451,98 C470,98 499,213 560,260 L0,259 Z" id="dataset-3"></path>
-								<path class="dataset" d="M0,260 C35,254 63,124 88,124 C114,124 148,163 219,163 C290,163 315,100 359,100 C402,100 520,244 560,259 C560,259 0,259 0,260 Z" id="dataset-2"></path>
-								<path class="dataset" d="M0,260 C0,260 22,199 64,199 C105,199 112,144 154,144 C195,144 194,126 216,126 C237,126 263,184 314,184 C365,183 386,128 434,129 C483,130 511,240 560,260 L0,260 Z" id="dataset-1"></path>
-							</g>
-						</svg>
-						<div class="mdl-card__menu">
-							<button class="js-do-it-again mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-								<i class="material-icons ion-loop">refresh</i>
-							</button>
-						</div>
+					<div class="mdl-cell mdl-cell--12-col heading">Attendance</div>
+					<div class="mdl-cell mdl-cell--12-col">
+						<script>
+							window.onload = function() {
+
+								var chart1 = new CanvasJS.Chart("chartContainer1", {
+									animationEnabled: true,
+									theme: "light2",
+									axisY: {
+										suffix: "%",
+										labelFontSize: 16,
+										minimum: 0,
+										maximum: 100,
+										interval: 10,
+										lineColor: "grey",
+										labelFontColor: "grey",
+										labelFontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif",
+										lineThickness: 1,
+										tickColor: "rgba(0, 0, 0, .12)",
+										gridColor: "rgba(0, 0, 0, .12)",
+										gridThickness: 1,
+										stripLines: [{
+											value: 45,
+											label: "Minimum",
+											labelFontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif"
+										}]
+									},
+									axisX: {
+										labelFontSize: 16,
+										lineColor: "grey",
+										labelFontColor: "grey",
+										labelFontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif",
+										lineThickness: 1,
+										tickColor: "rgba(0, 0, 0, .12)",
+										gridColor: "rgba(0, 0, 0, .12)",
+										gridThickness: 1
+									},
+									toolTip: {
+										shared: true,
+										fontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif"
+									},
+									legend: {
+										cursor: "pointer",
+										itemclick: toggleDataSeries,
+										fontSize: 16,
+										fontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif",
+										fontColor: "grey"
+									},
+									data: [{
+											type: "spline",
+											name: "S7",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 78
+												},
+												{
+													label: "Sep",
+													y: 75
+												},
+												{
+													label: "Oct",
+													y: 67
+												},
+												{
+													label: "Nov",
+													y: 98
+												},
+												{
+													label: "Dec",
+													y: 89
+												},
+												{
+													label: "Jan",
+													y: 87
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "S8",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 97
+												},
+												{
+													label: "Sep",
+													y: 78
+												},
+												{
+													label: "Oct",
+													y: 58
+												},
+												{
+													label: "Nov",
+													y: 78
+												},
+												{
+													label: "Dec",
+													y: 74
+												},
+												{
+													label: "Jan",
+													y: 57
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "4th year",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 57
+												},
+												{
+													label: "Sep",
+													y: 58
+												},
+												{
+													label: "Oct",
+													y: 79
+												},
+												{
+													label: "Nov",
+													y: 98
+												},
+												{
+													label: "Dec",
+													y: 89
+												},
+												{
+													label: "Jan",
+													y: 85
+												}
+											]
+										}
+									]
+								});
+
+								var chart2 = new CanvasJS.Chart("chartContainer2", {
+									animationEnabled: true,
+									theme: "light2",
+									axisY: {
+										suffix: "%",
+										labelFontSize: 16,
+										minimum: 0,
+										maximum: 100,
+										interval: 10,
+										lineColor: "grey",
+										labelFontColor: "grey",
+										labelFontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif",
+										lineThickness: 1,
+										tickColor: "rgba(0, 0, 0, .12)",
+										gridColor: "rgba(0, 0, 0, .12)",
+										gridThickness: 1,
+										stripLines: [{
+											value: 45,
+											label: "Minimum",
+											labelFontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif"
+										}]
+									},
+									axisX: {
+										labelFontSize: 16,
+										lineColor: "grey",
+										labelFontColor: "grey",
+										labelFontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif",
+										lineThickness: 1,
+										tickColor: "rgba(0, 0, 0, .12)",
+										gridColor: "rgba(0, 0, 0, .12)",
+										gridThickness: 1
+									},
+									toolTip: {
+										shared: true,
+										fontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif"
+									},
+									legend: {
+										cursor: "pointer",
+										itemclick: toggleDataSeries,
+										fontSize: 16,
+										fontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif",
+										fontColor: "grey"
+									},
+									data: [{
+											type: "spline",
+											name: "CS401",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 78
+												},
+												{
+													label: "Sep",
+													y: 75
+												},
+												{
+													label: "Oct",
+													y: 67
+												},
+												{
+													label: "Nov",
+													y: 98
+												},
+												{
+													label: "Dec",
+													y: 89
+												},
+												{
+													label: "Jan",
+													y: 87
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS403",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 97
+												},
+												{
+													label: "Sep",
+													y: 78
+												},
+												{
+													label: "Oct",
+													y: 58
+												},
+												{
+													label: "Nov",
+													y: 78
+												},
+												{
+													label: "Dec",
+													y: 74
+												},
+												{
+													label: "Jan",
+													y: 57
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS405",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 57
+												},
+												{
+													label: "Sep",
+													y: 58
+												},
+												{
+													label: "Oct",
+													y: 79
+												},
+												{
+													label: "Nov",
+													y: 98
+												},
+												{
+													label: "Dec",
+													y: 89
+												},
+												{
+													label: "Jan",
+													y: 85
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS407",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 82
+												},
+												{
+													label: "Sep",
+													y: 94
+												},
+												{
+													label: "Oct",
+													y: 87
+												},
+												{
+													label: "Nov",
+													y: 65
+												},
+												{
+													label: "Dec",
+													y: 67
+												},
+												{
+													label: "Jan",
+													y: 69
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS409",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 89
+												},
+												{
+													label: "Sep",
+													y: 87
+												},
+												{
+													label: "Oct",
+													y: 75
+												},
+												{
+													label: "Nov",
+													y: 85
+												},
+												{
+													label: "Dec",
+													y: 65
+												},
+												{
+													label: "Jan",
+													y: 82
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS411",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 24
+												},
+												{
+													label: "Sep",
+													y: 84
+												},
+												{
+													label: "Oct",
+													y: 87
+												},
+												{
+													label: "Nov",
+													y: 85
+												},
+												{
+													label: "Dec",
+													y: 87
+												},
+												{
+													label: "Jan",
+													y: 85
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "S7",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 57
+												},
+												{
+													label: "Sep",
+													y: 45
+												},
+												{
+													label: "Oct",
+													y: 56
+												},
+												{
+													label: "Nov",
+													y: 45
+												},
+												{
+													label: "Dec",
+													y: 48
+												},
+												{
+													label: "Jan",
+													y: 45
+												}
+											]
+										}
+									]
+								});
+
+								var chart3 = new CanvasJS.Chart("chartContainer3", {
+									animationEnabled: true,
+									theme: "light2",
+									axisY: {
+										suffix: "%",
+										labelFontSize: 16,
+										minimum: 0,
+										maximum: 100,
+										interval: 10,
+										lineColor: "grey",
+										labelFontColor: "grey",
+										labelFontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif",
+										lineThickness: 1,
+										tickColor: "rgba(0, 0, 0, .12)",
+										gridColor: "rgba(0, 0, 0, .12)",
+										gridThickness: 1,
+										stripLines: [{
+											value: 45,
+											label: "Minimum",
+											labelFontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif"
+										}]
+									},
+									axisX: {
+										labelFontSize: 16,
+										lineColor: "grey",
+										labelFontColor: "grey",
+										labelFontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif",
+										lineThickness: 1,
+										tickColor: "rgba(0, 0, 0, .12)",
+										gridColor: "rgba(0, 0, 0, .12)",
+										gridThickness: 1
+									},
+									toolTip: {
+										shared: true,
+										fontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif"
+									},
+									legend: {
+										cursor: "pointer",
+										itemclick: toggleDataSeries,
+										fontSize: 16,
+										fontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif",
+										fontColor: "grey"
+									},
+									data: [{
+											type: "spline",
+											name: "CS401",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 78
+												},
+												{
+													label: "Sep",
+													y: 75
+												},
+												{
+													label: "Oct",
+													y: 67
+												},
+												{
+													label: "Nov",
+													y: 98
+												},
+												{
+													label: "Dec",
+													y: 89
+												},
+												{
+													label: "Jan",
+													y: 87
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS403",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 97
+												},
+												{
+													label: "Sep",
+													y: 78
+												},
+												{
+													label: "Oct",
+													y: 58
+												},
+												{
+													label: "Nov",
+													y: 78
+												},
+												{
+													label: "Dec",
+													y: 74
+												},
+												{
+													label: "Jan",
+													y: 57
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS405",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 57
+												},
+												{
+													label: "Sep",
+													y: 58
+												},
+												{
+													label: "Oct",
+													y: 79
+												},
+												{
+													label: "Nov",
+													y: 98
+												},
+												{
+													label: "Dec",
+													y: 89
+												},
+												{
+													label: "Jan",
+													y: 85
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS407",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 82
+												},
+												{
+													label: "Sep",
+													y: 94
+												},
+												{
+													label: "Oct",
+													y: 87
+												},
+												{
+													label: "Nov",
+													y: 65
+												},
+												{
+													label: "Dec",
+													y: 67
+												},
+												{
+													label: "Jan",
+													y: 69
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS409",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 89
+												},
+												{
+													label: "Sep",
+													y: 87
+												},
+												{
+													label: "Oct",
+													y: 75
+												},
+												{
+													label: "Nov",
+													y: 85
+												},
+												{
+													label: "Dec",
+													y: 65
+												},
+												{
+													label: "Jan",
+													y: 82
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS411",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 24
+												},
+												{
+													label: "Sep",
+													y: 84
+												},
+												{
+													label: "Oct",
+													y: 87
+												},
+												{
+													label: "Nov",
+													y: 85
+												},
+												{
+													label: "Dec",
+													y: 87
+												},
+												{
+													label: "Jan",
+													y: 85
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "S7",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 57
+												},
+												{
+													label: "Sep",
+													y: 45
+												},
+												{
+													label: "Oct",
+													y: 56
+												},
+												{
+													label: "Nov",
+													y: 45
+												},
+												{
+													label: "Dec",
+													y: 48
+												},
+												{
+													label: "Jan",
+													y: 45
+												}
+											]
+										}
+									]
+								});
+
+								chart1.render();
+								chart2.render();
+								chart3.render();
+
+								function toggleDataSeries(e) {
+									if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+										e.dataSeries.visible = false;
+									} else {
+										e.dataSeries.visible = true;
+									}
+									chart1.render();
+									chart2.render();
+									chart3.render();
+								}
+
+							}
+
+						</script>
+						<div id="chartContainer1" style="height: 60vh; width: 100%;"></div>
+						<script src="../../scripts/canvasjs.min.js"></script>
 					</div>
-					<div class="chart mdl-card mdl-cell mdl-cell--12-col">
-						<svg viewbox="0 0 560 260">
-							<defs>
-								<filter id="dropshadow">
-									<feGaussianBlur in="SourceAlpha" stdDeviation="3"></feGaussianBlur>
-									<feOffset dx="0" dy="0" result="offsetblur"></feOffset>
-									<feComponentTransfer>
-										<feFuncA slope="0.2" type="linear"></feFuncA>
-									</feComponentTransfer>
-									<feMerge>
-										<feMergeNode></feMergeNode>
-										<feMergeNode in="SourceGraphic"></feMergeNode>
-									</feMerge>
-								</filter>
-							</defs>
-							<g class="datasets">
-								<path class="dataset" d="M0,260 C0,260 4,252 7,252 C66,252 90,102 139,102 C188,102 205,135 252,135 C299,135 309,89 330,89 C350,89 366,122 404,122 C442,122 431,98 451,98 C470,98 499,213 560,260 L0,259 Z" id="dataset-3"></path>
-								<path class="dataset" d="M0,260 C0,260 22,199 64,199 C105,199 112,144 154,144 C195,144 194,126 216,126 C237,126 263,184 314,184 C365,183 386,128 434,129 C483,130 511,240 560,260 L0,260 Z" id="dataset-1"></path>
-								<path class="dataset" d="M0,260 C35,254 63,124 88,124 C114,124 148,163 219,163 C290,163 315,100 359,100 C402,100 520,244 560,259 C560,259 0,259 0,260 Z" id="dataset-2"></path>
-							</g>
-						</svg>
-						<div class="mdl-card__menu">
-							<button class="js-do-it-again mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-								<i class="material-icons ion-loop">refresh</i>
-							</button>
-						</div>
+					<div class="mdl-cell mdl-cell--12-col heading">Semester</div>
+					<div class="mdl-cell mdl-cell--12-col">
+						<div id="chartContainer2" style="height: 60vh; width: 100%;"></div>
 					</div>
-					<div class="chart mdl-card mdl-cell mdl-cell--12-col">
-						<svg viewbox="0 0 560 260">
-							<defs>
-								<filter id="dropshadow">
-									<feGaussianBlur in="SourceAlpha" stdDeviation="3"></feGaussianBlur>
-									<feOffset dx="0" dy="0" result="offsetblur"></feOffset>
-									<feComponentTransfer>
-										<feFuncA slope="0.2" type="linear"></feFuncA>
-									</feComponentTransfer>
-									<feMerge>
-										<feMergeNode></feMergeNode>
-										<feMergeNode in="SourceGraphic"></feMergeNode>
-									</feMerge>
-								</filter>
-							</defs>
-							<g class="datasets">
-								<path class="dataset" d="M0,260 C35,254 63,124 88,124 C114,124 148,163 219,163 C290,163 315,100 359,100 C402,100 520,244 560,259 C560,259 0,259 0,260 Z" id="dataset-2"></path>
-								<path class="dataset" d="M0,260 C0,260 4,252 7,252 C66,252 90,102 139,102 C188,102 205,135 252,135 C299,135 309,89 330,89 C350,89 366,122 404,122 C442,122 431,98 451,98 C470,98 499,213 560,260 L0,259 Z" id="dataset-3"></path>
-								<path class="dataset" d="M0,260 C0,260 22,199 64,199 C105,199 112,144 154,144 C195,144 194,126 216,126 C237,126 263,184 314,184 C365,183 386,128 434,129 C483,130 511,240 560,260 L0,260 Z" id="dataset-1"></path>
-							</g>
-						</svg>
-						<div class="mdl-card__menu">
-							<button class="js-do-it-again mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-								<i class="material-icons ion-loop">refresh</i>
-							</button>
-						</div>
-					</div>
-					<script>
-						(function() {
-							var load_chart;
-
-							load_chart = function() {
-								$("body").removeClass("loaded");
-								return setTimeout(function() {
-									return $("body").addClass("loaded");
-								}, 500);
-							};
-
-							$(".js-do-it-again").on("click", function() {
-								return load_chart();
-							});
-
-							load_chart();
-
-						}).call(this);
-
-					</script>
 				</div>
 				<div class="mdl-tabs__panel demo-content mdl-grid" id="all">
 					<!--All cards-->
-					<div class="mdl-cell mdl-cell--12-col heading">All</div>
+					<div class="mdl-cell mdl-cell--12-col heading">Subjects</div>
+					<div class="mdl-cell mdl-cell--12-col">
+						<div id="chartContainer3" style="height: 60vh; width: 100%;"></div>
+					</div>
 				</div>
 			</div>
 		</main>
 	</div>
-	<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp" onclick="location.reload()">
-		<i class="material-icons">refresh</i>
-	</button>
-	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Refresh page</span>
 	<script src="../scripts/scripts.js"></script>
 	<script>
 		var searchList = new List('search-list', {
