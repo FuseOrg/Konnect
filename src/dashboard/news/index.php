@@ -180,6 +180,19 @@
 				<div class="mdl-tabs__panel is-active demo-content mdl-grid" id="events">
 					<!--Event cards-->
 					<div class="mdl-cell mdl-cell--12-col heading">Events</div>
+					<div class="mdl-color--green-A200 mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">What's happening around?</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Involve in events, workshops, activities and more!
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../notifications/index.php">
+								See notifications
+							</a>
+						</div>
+					</div>
 					<div class="demo-card-event mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
 						<div class="mdl-card__title mdl-card--expand">
 							<h4>

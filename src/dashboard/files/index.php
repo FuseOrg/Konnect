@@ -291,6 +291,19 @@
 						</tfoot>
 					</table>
 				</div>
+				<div class="mdl-color--orange-A200 mdl-cell mdl-cell--12-col">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">We got our eyes on you!</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						Every file you upload will be examined by your current tutor before appearing here. Please don't spam.
+					</div>
+					<div class="mdl-card__actions">
+						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../events/index.php">
+							See rules
+						</a>
+					</div>
+				</div>
 			</div>
 		</main>
 	</div>

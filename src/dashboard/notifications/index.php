@@ -217,6 +217,19 @@
 						</span>
 					</li>
 				</ul>
+				<div class="mdl-color--amber-A200 mdl-cell mdl-cell--12-col">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Didn't found what you were looking for?</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						Notifications are sent by college, check out news and events page for other announcements!
+					</div>
+					<div class="mdl-card__actions">
+						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../events/index.php">
+							See news
+						</a>
+					</div>
+				</div>
 			</div>
 		</main>
 	</div>

@@ -867,19 +867,58 @@
 							}
 
 						</script>
-						<div id="chartContainer1" style="height: 60vh; width: 100%;"></div>
+						<div id="chartContainer1" class="chart" style="height: 60vh; width: 100%;"></div>
 						<script src="../../scripts/canvasjs.min.js"></script>
+					</div>
+					<div class="mdl-color--cyan-A200 mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								View my profile
+							</a>
+						</div>
 					</div>
 					<div class="mdl-cell mdl-cell--12-col heading">Semester</div>
 					<div class="mdl-cell mdl-cell--12-col">
-						<div id="chartContainer2" style="height: 60vh; width: 100%;"></div>
+						<div id="chartContainer2" class="chart" style="height: 60vh; width: 100%;"></div>
+					</div>
+					<div class="mdl-color--amber-A200 mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance(semester wise).
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								View my profile
+							</a>
+						</div>
 					</div>
 				</div>
 				<div class="mdl-tabs__panel demo-content mdl-grid" id="all">
 					<!--All cards-->
 					<div class="mdl-cell mdl-cell--12-col heading">Subjects</div>
 					<div class="mdl-cell mdl-cell--12-col">
-						<div id="chartContainer3" style="height: 60vh; width: 100%;"></div>
+						<div id="chartContainer3" class="chart" style="height: 60vh; width: 100%;"></div>
+					</div>
+					<div class="mdl-color--teal-A200 mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance(semester wise).
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								View my profile
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
