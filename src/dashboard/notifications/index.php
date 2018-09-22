@@ -225,7 +225,7 @@
 						Notifications are sent by college, check out news and events page for other announcements!
 					</div>
 					<div class="mdl-card__actions">
-						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../events/index.php">
+						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../news/index.php">
 							See news
 						</a>
 					</div>

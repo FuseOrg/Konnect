@@ -879,7 +879,7 @@
 						</div>
 						<div class="mdl-card__actions">
 							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
-								View my profile
+								See my profile
 							</a>
 						</div>
 					</div>
@@ -896,7 +896,7 @@
 						</div>
 						<div class="mdl-card__actions">
 							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
-								View my profile
+								See my profile
 							</a>
 						</div>
 					</div>

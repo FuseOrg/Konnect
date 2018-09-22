@@ -299,7 +299,7 @@
 						Every file you upload will be examined by your current tutor before appearing here. Please don't spam.
 					</div>
 					<div class="mdl-card__actions">
-						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../events/index.php">
+						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../help/index.php">
 							See rules
 						</a>
 					</div>
