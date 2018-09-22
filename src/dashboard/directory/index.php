@@ -232,6 +232,19 @@
 						</tfoot>
 					</table>
 				</div>
+				<div class="mdl-color--blue-grey-200 mdl-cell mdl-cell--12-col">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Find and be found!</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						Browse through our public directory of students and staffs.
+					</div>
+					<div class="mdl-card__actions">
+						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../profile/index.php">
+							See my profile
+						</a>
+					</div>
+				</div>
 			</div>
 		</main>
 	</div>

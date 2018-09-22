@@ -23,8 +23,6 @@ h4,
 h5,
 h6 {
 	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
-	margin: 0;
-	font-weight: 600;
 }
 
 a {
@@ -148,9 +146,17 @@ body {
 	text-align: center;
 }
 
+.canvasjs-chart-credit {
+	display: none;
+}
+
 .mdl-card {
 	border-radius: 8px;
 	border: 1px solid rgba(0, 0, 0, .12);
+}
+
+.mdl-cell {
+	border-radius: 8px;
 }
 
 .logo {
@@ -223,6 +229,10 @@ body {
 .demo-options ul {
 	padding: 16px;
 	list-style-type: none;
+}
+
+.mdl-card__title-text {
+	margin-top: 16px;
 }
 
 .mdl-card__actions {
