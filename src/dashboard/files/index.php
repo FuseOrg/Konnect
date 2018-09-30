@@ -291,16 +291,29 @@
 						</tfoot>
 					</table>
 				</div>
-				<div class="mdl-color--orange-A200 mdl-cell mdl-cell--12-col">
+				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg11.png); background-color: #f7f9fa;">
 					<div class="mdl-card__title">
-						<h2 class="mdl-card__title-text">We got our eyes on you!</h2>
+						<h2 class="mdl-card__title-text">Didn't found what you were looking for?</h2>
 					</div>
 					<div class="mdl-card__supporting-text">
-						Every file you upload will be examined by your current tutor before appearing here. Please don't spam.
+						Notifications are sent by college, check out news and events page for other announcements!
 					</div>
 					<div class="mdl-card__actions">
-						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../help/index.php">
-							See rules
+						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../news/index.php">
+							See news
+						</a>
+					</div>
+				</div>
+				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg9.png);">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">What's happening around?</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						Involve in events, workshops, activities and more!
+					</div>
+					<div class="mdl-card__actions">
+						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../notifications/index.php">
+							See notifications
 						</a>
 					</div>
 				</div>
