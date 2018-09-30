@@ -232,15 +232,28 @@
 						</tfoot>
 					</table>
 				</div>
-				<div class="mdl-color--blue-grey-200 mdl-cell mdl-cell--12-col">
+				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg4.png);">
 					<div class="mdl-card__title">
-						<h2 class="mdl-card__title-text">Find and be found!</h2>
+						<h2 class="mdl-card__title-text">Attendance</h2>
 					</div>
 					<div class="mdl-card__supporting-text">
-						Browse through our public directory of students and staffs.
+						Insights of current academic year attendance.
 					</div>
 					<div class="mdl-card__actions">
-						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../profile/index.php">
+						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							See my profile
+						</a>
+					</div>
+				</div>
+				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg6.jpg); background-color: #efe9f5;">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Attendance</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						Insights of current academic year attendance.
+					</div>
+					<div class="mdl-card__actions">
+						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
 							See my profile
 						</a>
 					</div>

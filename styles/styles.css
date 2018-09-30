@@ -193,9 +193,9 @@ body {
 }
 
 .img-bg {
-	background-repeat: no-repeat !important;
-	background-size: cover !important;
 	background-position: center !important;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
 }
 
 #fab {
@@ -259,7 +259,6 @@ body {
 }
 
 .demo-card-image.mdl-card {
-	min-height: 256px;
 	background-position: center !important;
 	background-size: cover !important;
 	background-repeat: no-repeat !important;

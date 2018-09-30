@@ -192,6 +192,32 @@
 				<div class="mdl-tabs__panel is-active demo-content mdl-grid" id="insight">
 					<!--Insight cards-->
 					<div class="mdl-cell mdl-cell--12-col heading">Attendance</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg1.png); background-color: #f9f1ff;">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg3.png)">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
 					<div class="mdl-cell mdl-cell--12-col">
 						<script>
 							window.onload = function() {
@@ -882,7 +908,7 @@
 						<div id="chartContainer1" class="chart" style="height: 60vh; width: 100%;"></div>
 						<script src="../../scripts/canvasjs.min.js"></script>
 					</div>
-					<div class="mdl-color--cyan-A200 mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg2.jpg); background-color: #f7f7f7;">
 						<div class="mdl-card__title">
 							<h2 class="mdl-card__title-text">Attendance</h2>
 						</div>
@@ -895,25 +921,12 @@
 							</a>
 						</div>
 					</div>
-					<div class="mdl-color--grey-200 mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg4.png);">
 						<div class="mdl-card__title">
 							<h2 class="mdl-card__title-text">Attendance</h2>
 						</div>
 						<div class="mdl-card__supporting-text">
 							Insights of current academic year attendance.
-						</div>
-						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
-								See my profile
-							</a>
-						</div>
-					</div>
-					<div class="mdl-color--amber-A200 mdl-cell mdl-cell--12-col">
-						<div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">Attendance</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Insights of current academic year attendance(semester wise).
 						</div>
 						<div class="mdl-card__actions">
 							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
@@ -925,12 +938,25 @@
 					<div class="mdl-cell mdl-cell--12-col">
 						<div id="chartContainer2" class="chart" style="height: 60vh; width: 100%;"></div>
 					</div>
-					<div class="mdl-color--teal-A200 mdl-cell mdl-cell--12-col">
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg5.jpg); background-color: #c2e3f6;">
 						<div class="mdl-card__title">
 							<h2 class="mdl-card__title-text">Attendance</h2>
 						</div>
 						<div class="mdl-card__supporting-text">
-							Insights of current academic year attendance(semester wise).
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg6.jpg); background-color: #efe9f5;">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
 							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">

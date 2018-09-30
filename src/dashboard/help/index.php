@@ -175,9 +175,9 @@
 			<div class="demo-content mdl-grid">
 				<!--Help-->
 				<div class="mdl-cell mdl-cell--12-col heading">Help</div>
-				<div class="mdl-card mdl-cell mdl-cell--12-col">
+				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/f-logo.png);">
 					<div class="mdl-card__title">
-						<h2 class="mdl-card__title-text">Konnect v0.7.4 beta</h2>
+						<h2 class="mdl-card__title-text">Konnect v1.0.0</h2>
 					</div>
 					<div class="mdl-card__supporting-text">
 						Built and maintained by <a href="https://github.com/FuseOrg">Fuse Org</a> at Nehru College of Engineering and Research Centre, Pampady.
@@ -185,6 +185,19 @@
 					<div class="mdl-card__actions">
 						<a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">
 							Buy us a coffee!
+						</a>
+					</div>
+				</div>
+				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg3.png);">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">NCERC</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						Get help from Nehru College of Engineering and Research Centre, Pampady.
+					</div>
+					<div class="mdl-card__actions">
+						<a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">
+							Go!
 						</a>
 					</div>
 				</div>

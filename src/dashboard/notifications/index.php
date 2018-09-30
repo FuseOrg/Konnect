@@ -167,6 +167,32 @@
 			<div class="demo-content mdl-grid">
 				<!--Notifications-->
 				<div class="mdl-cell mdl-cell--12-col heading">Notifications</div>
+				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg7.png);">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Didn't found what you were looking for?</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						Notifications are sent by college, check out news and events page for other announcements!
+					</div>
+					<div class="mdl-card__actions">
+						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../news/index.php">
+							See news
+						</a>
+					</div>
+				</div>
+				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg8.png);">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Attendance</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						Insights of current academic year attendance.
+					</div>
+					<div class="mdl-card__actions">
+						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							See my profile
+						</a>
+					</div>
+				</div>
 				<ul class="demo-list-three mdl-list mdl-card mdl-cell mdl-cell--12-col mdl-list">
 					<li class="mdl-list__item mdl-list__item--three-line">
 						<span class="mdl-list__item-primary-content">
@@ -217,19 +243,6 @@
 						</span>
 					</li>
 				</ul>
-				<div class="mdl-color--amber-A200 mdl-cell mdl-cell--12-col">
-					<div class="mdl-card__title">
-						<h2 class="mdl-card__title-text">Didn't found what you were looking for?</h2>
-					</div>
-					<div class="mdl-card__supporting-text">
-						Notifications are sent by college, check out news and events page for other announcements!
-					</div>
-					<div class="mdl-card__actions">
-						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../news/index.php">
-							See news
-						</a>
-					</div>
-				</div>
 			</div>
 		</main>
 	</div>
