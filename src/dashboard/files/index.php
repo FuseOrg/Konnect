@@ -353,12 +353,11 @@
 		<div class="mdl-snackbar__text"></div>
 		<a href="" class="mdl-snackbar__action"></a>
 	</div>
-	<script src="../scripts/scripts.js"></script>
+	<!--	<script src="../scripts/scripts.js"></script>-->
 	<script>
 		var searchList = new List('search-list', {
 			valueNames: ['name']
 		});
-
 		var dialog = document.querySelector('#upload');
 		dialog.querySelector('.close').addEventListener('click', function() {
 			dialog.close();
@@ -366,7 +365,6 @@
 		dialog.querySelector('.start-upload').addEventListener('click', function() {
 			dialog.close();
 		});
-
 		var uploadSnackbarContainer = document.querySelector('#snackbar-upload');
 		var showSnackbarButton = document.querySelector('#show-snackbar');
 		var handler = function(event) {
@@ -382,20 +380,16 @@
 			};
 			uploadSnackbarContainer.MaterialSnackbar.showSnackbar(data);
 		});
-
 		document.getElementById("uploadBtn").onchange = function() {
 			document.getElementById("uploadFile").value = this.files[0].name;
 		};
-
 		var files = {
 				valueNames: ["name", "department", "uploaded", "date"]
 			},
 			filesTable = new List("files-table", files);
-
 		$($('th.sort')[3]).trigger('click', function() {
 			console.log('clicked');
 		});
-
 		$(document).on('click', '.sort', function() {
 			$('.sort').removeClass('mdl-data-table__header--sorted-ascending mdl-data-table__header--sorted-descending');
 			if ($(this).hasClass('asc')) {
@@ -404,7 +398,6 @@
 				$(this).addClass('mdl-data-table__header--sorted-descending')
 			}
 		});
-
 		$("input.search").on("keyup", function(e) {
 			if (e.keyCode === 27) {
 				$(e.currentTarget).val("");
