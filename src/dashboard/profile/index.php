@@ -175,7 +175,7 @@
 			<div class="demo-content section--footer mdl-grid">
 				<!--Profile-->
 				<div class="mdl-cell mdl-cell--12-col heading">Profile</div>
-				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg1.png); background-color: #f9f1ff;">
+				<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg1.png); background-color: #f9f1ff;">
 					<div class="mdl-card__title">
 						<h2 class="mdl-card__title-text">Attendance</h2>
 					</div>
@@ -188,7 +188,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg2.jpg); background-color: #f7f7f7;">
+				<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg2.jpg); background-color: #f7f7f7;">
 					<div class="mdl-card__title">
 						<h2 class="mdl-card__title-text">Attendance</h2>
 					</div>
@@ -201,7 +201,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg3.png)">
+				<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg3.png)">
 					<div class="mdl-card__title">
 						<h2 class="mdl-card__title-text">Attendance</h2>
 					</div>
@@ -240,7 +240,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg6.jpg); background-color: #efe9f5;">
+				<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg6.jpg); background-color: #efe9f5;">
 					<div class="mdl-card__title">
 						<h2 class="mdl-card__title-text">Attendance</h2>
 					</div>
@@ -253,7 +253,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg7.png);">
+				<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg7.png);">
 					<div class="mdl-card__title">
 						<h2 class="mdl-card__title-text">Didn't found what you were looking for?</h2>
 					</div>
@@ -266,7 +266,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg8.png);">
+				<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg8.png);">
 					<div class="mdl-card__title">
 						<h2 class="mdl-card__title-text">Attendance</h2>
 					</div>
