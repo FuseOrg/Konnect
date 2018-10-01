@@ -345,8 +345,9 @@
 			</form>
 		</div>
 		<div class="mdl-dialog__actions">
-			<button id="show-snackbar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent start-upload">Upload</button>
-			<button id="demo-show-toast" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent close">Cancel</button>
+			<button id="show-snackbar" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent start-upload">Send</button>
+			<div class="mdl-layout-spacer"></div>
+			<button id="demo-show-toast" class="mdl-button mdl-js-button mdl-js-ripple-effect close">Close</button>
 		</div>
 	</dialog>
 	<div id="snackbar-upload" class="mdl-snackbar mdl-js-snackbar">
