@@ -175,7 +175,7 @@
 			<div class="demo-content mdl-grid">
 				<!--Help-->
 				<div class="mdl-cell mdl-cell--12-col heading">Help</div>
-				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/f-logo.png);">
+				<div class="mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
 					<div class="mdl-card__title">
 						<h2 class="mdl-card__title-text">Konnect v1.0.0</h2>
 					</div>
@@ -188,7 +188,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg3.png);">
+				<div class="mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
 					<div class="mdl-card__title">
 						<h2 class="mdl-card__title-text">NCERC</h2>
 					</div>
@@ -224,7 +224,7 @@
 		<div class="mdl-snackbar__text"></div>
 		<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-snackbar__action"></button>
 	</div>
-	<script src="../scripts/scripts.js"></script>
+	<!--	<script src="../scripts/scripts.js"></script>-->
 	<script>
 		var searchList = new List('search-list', {
 			valueNames: ['name']

@@ -18,7 +18,7 @@
 	<meta name="apple-mobile-web-app-title" content="Konnect">
 	<link rel="apple-touch-icon-precomposed" href="../../../images/ios-desktop.png">
 	<!-- Tile icon for Win8 (144x144 + tile color) -->
-	<meta name="msapplication-TileImage" content="../images/ios-desktop.png">
+	<meta name="msapplication-TileImage" content="../../../images/ios-desktop.png">
 	<meta name="msapplication-TileColor" content="#fff">
 	<link rel="shortcut icon" href="../../../images/favicon.png">
 	<!--	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">-->
@@ -332,7 +332,7 @@
 		<div class="mdl-snackbar__text"></div>
 		<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-snackbar__action"></button>
 	</div>
-	<script src="../scripts/scripts.js"></script>
+	<!--	<script src="../scripts/scripts.js"></script>-->
 	<script>
 		var searchList = new List('search-list', {
 			valueNames: ['name']

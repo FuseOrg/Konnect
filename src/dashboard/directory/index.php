@@ -261,21 +261,18 @@
 			</div>
 		</main>
 	</div>
-	<script src="../scripts/scripts.js"></script>
+	<!--	<script src="../scripts/scripts.js"></script>-->
 	<script>
 		var searchList = new List('search-list', {
 			valueNames: ['name']
 		});
-
 		var directory = {
 				valueNames: ["name", "strength"]
 			},
 			directoryTable = new List("directory-table", directory);
-
 		$($('th.sort')[0]).trigger('click', function() {
 			console.log('clicked');
 		});
-
 		$(document).on('click', '.sort', function() {
 			$('.sort').removeClass('mdl-data-table__header--sorted-ascending mdl-data-table__header--sorted-descending');
 			if ($(this).hasClass('asc')) {
@@ -284,7 +281,6 @@
 				$(this).addClass('mdl-data-table__header--sorted-descending')
 			}
 		});
-
 		$("input.search").on("keyup", function(e) {
 			if (e.keyCode === 27) {
 				$(e.currentTarget).val("");

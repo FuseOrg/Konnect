@@ -11,9 +11,13 @@
 	--accent-color: #2979FF;
 }
 
-a {
-	text-decoration: none;
-	color: #21A6EE;
+html,
+body {
+	margin: 0;
+	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	user-select: none;
 }
 
 h1,
@@ -28,15 +32,6 @@ h6 {
 a {
 	text-decoration: none;
 	color: var(--accent-color);
-}
-
-html,
-body {
-	margin: 0;
-	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
-	font-size: 18px;
-	line-height: 1.5;
-	user-select: none;
 }
 
 .demo-avatar {
@@ -140,7 +135,7 @@ body {
 }
 
 .heading {
-	padding: 16px 0;
+	padding: 16px;
 	font-size: 24px;
 	font-weight: 600;
 	text-align: center;
@@ -224,11 +219,6 @@ body {
 
 .mdl-list__item {
 	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
-}
-
-.demo-options ul {
-	padding: 16px;
-	list-style-type: none;
 }
 
 .mdl-card__title-text {

@@ -27,6 +27,10 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="../../styles/material.min.css">
 	<link rel="stylesheet" href="../../styles/styles.css">
+	<script src="../../scripts/material.min.js"></script>
+	<script src="../../scripts/jquery.min.js"></script>
+	<script src="../../scripts/list.min.js"></script>
+	<!--
 	<script>
 		if ('serviceWorker' in navigator) {
 			window.addEventListener('load', function() {
@@ -38,9 +42,7 @@
 			});
 		}
 	</script>
-	<script src="../../scripts/material.min.js"></script>
-	<script src="../../scripts/jquery.min.js"></script>
-	<script src="../../scripts/list.min.js"></script>
+-->
 </head>
 
 <body class="mdl-demo mdl-base">
@@ -221,7 +223,6 @@
 					<div class="mdl-cell mdl-cell--12-col">
 						<script>
 							window.onload = function() {
-
 								var chart1 = new CanvasJS.Chart("chartContainer1", {
 									animationEnabled: true,
 									theme: "light2",
@@ -360,7 +361,6 @@
 										}
 									]
 								});
-
 								var chart2 = new CanvasJS.Chart("chartContainer2", {
 									animationEnabled: true,
 									theme: "light2",
@@ -623,7 +623,6 @@
 										}
 									]
 								});
-
 								var chart3 = new CanvasJS.Chart("chartContainer3", {
 									animationEnabled: true,
 									theme: "light2",
@@ -886,7 +885,6 @@
 										}
 									]
 								});
-
 								chart1.render();
 								chart2.render();
 								chart3.render();
@@ -901,7 +899,6 @@
 									chart2.render();
 									chart3.render();
 								}
-
 							}
 
 						</script>
@@ -988,7 +985,7 @@
 			</div>
 		</main>
 	</div>
-	<script src="../scripts/scripts.js"></script>
+	<!--	<script src="../scripts/scripts.js"></script>-->
 	<script>
 		var searchList = new List('search-list', {
 			valueNames: ['name']
