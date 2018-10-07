@@ -36,8 +36,40 @@
 					<input class="input" type="text" id="uname" name="uname" placeholder="username" required>
 					<input class="input" type="password" id="pwd" name="pwd" placeholder="password" required>
 					<input class="input" type="password" id="cpwd" name="cpwd" placeholder="confirm password" required>
-					<a class="link" href="../dashboard">Sign Up</a>
-				</form>
+					<label style="color: red;">
+						<?php
+						  $servername = "127.0.0.1";
+                          $username = "root";
+                          $password = "";
+                          $dbname = "konnect_base";
+            
+                          if ( isset($_POST["pwd"]) AND isset($_POST["cpwd"]) AND isset($_POST["fname"]) AND isset($_POST["email"]) AND isset($_POST["uname"]) ){
+
+                            if ( $_POST["pwd"] == $_POST["cpwd"] ){
+
+                              $conn = new mysqli($servername, $username, $password, $dbname);
+
+                              $sql = "INSERT INTO users (full_name, username, password, email_id) VALUES ('".$_POST["fname"]."', '".$_POST["uname"]."', '".$_POST["pwd"]."', '".$_POST["email"]."')";
+                              $result = $conn->query($sql);
+
+                              if(!$result){
+                              	echo "Something went wrong ! Please try again later";
+                              }
+                              else{
+                              	echo "Sign up done successfully";
+                              	header("Location: ../dashboard/");
+                              }
+                            }
+
+                            else {
+                          	  echo "Incorrect password";
+                            }
+
+                          }
+                          
+						?>
+					</label>
+					<input class="link" type="submit" value="Sign Up">
 			</div>
 		</div>
 	</main>
