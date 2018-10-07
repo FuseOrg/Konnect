@@ -33,7 +33,40 @@
 				<form action="" method="post">
 					<input class="input" type="text" id="uname" name="uname" placeholder="username" required>
 					<input class="input" type="password" id="pwd" name="pwd" placeholder="password" required>
-					<a class="link" href="../dashboard">Sign In</a>
+					<label>
+						<?php
+						  $servername = "127.0.0.1";
+                          $username = "root";
+                          $password = "";
+                          $dbname = "konnect_base";
+            
+                          if (isset($_POST["uname"]) AND isset($_POST["pwd"])){
+                          // Create connection
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+
+                            $sql = "SELECT username, password FROM users WHERE username = '".$_POST["uname"]."'";
+                            $result = $conn->query($sql);
+
+                            if ($result->num_rows > 0) {
+                              // output data of each row
+                              $row = $result->fetch_assoc();
+                              if( $_POST["pwd"] == $row["password"] ){
+                                echo "Logging you in..";    
+                                session_start();
+                                $_SESSION["username"] = $row["username"];
+                                header("Location: ../dashboard/");  // lines
+                              }
+                              else
+                                echo "Password incorrect!";
+                              } 
+                            else {
+                                echo "Unknown Username!";
+                            }
+                            $conn->close();
+                          }
+						?>
+					</label>
+					<input class="link" type="submit" value="Sign In">
 				</form>
 			</div>
 		</div>
