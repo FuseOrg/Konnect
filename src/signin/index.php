@@ -33,7 +33,7 @@
 				<form action="" method="post">
 					<input class="input" type="text" id="uname" name="uname" placeholder="username" required>
 					<input class="input" type="password" id="pwd" name="pwd" placeholder="password" required>
-					<label>
+					<label style="color: red;">
 						<?php
 						  $servername = "127.0.0.1";
                           $username = "root";
