@@ -158,16 +158,16 @@
 				</div>
 			</header>
 			<nav class="demo-navigation mdl-navigation">
-				<a class="mdl-navigation__link" href="dashboard.php"><i class="material-icons" role="presentation">drag_indicator</i>Dashboard</a>
-				<a class="mdl-navigation__link" href="notifications.php"><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
-				<a class="mdl-navigation__link" href="news.php"><i class="material-icons" role="presentation">outlined_flag</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
-				<a class="mdl-navigation__link" href="directory.php"><i class="material-icons" role="presentation">kitchen</i>Directory</a>
-				<a class="mdl-navigation__link" href="files.php"><i class="material-icons" role="presentation">cloud_queue</i>Files</a>
-				<a class="mdl-navigation__link" href="gallery.php"><i class="material-icons" role="presentation">crop_original</i>Gallery</a>
-				<a class="mdl-navigation__link" href="profile.php"><i class="material-icons" role="presentation">tag_faces</i>Profile</a>
+				<a class="mdl-navigation__link" href="../"><i class="material-icons" role="presentation">drag_indicator</i>Dashboard</a>
+				<a class="mdl-navigation__link" href="../notifications"><i class="material-icons" role="presentation">notifications_none</i><span class="mdl-badge" data-badge="4">Notifications</span></a>
+				<a class="mdl-navigation__link" href="../news"><i class="material-icons" role="presentation">outlined_flag</i><span class="mdl-badge mdl-badge--no-background" data-badge="3">News</span></a>
+				<a class="mdl-navigation__link" href="../directory"><i class="material-icons" role="presentation">kitchen</i>Directory</a>
+				<a class="mdl-navigation__link" href="../files"><i class="material-icons" role="presentation">cloud_queue</i>Files</a>
+				<a class="mdl-navigation__link" href="../gallery"><i class="material-icons" role="presentation">crop_original</i>Gallery</a>
+				<a class="mdl-navigation__link" href="../profile"><i class="material-icons" role="presentation">tag_faces</i>Profile</a>
 				<div class="mdl-layout-spacer"></div>
-				<a class="mdl-navigation__link" href="settings.php"><i class="material-icons" role="presentation">tune</i>Settings</a>
-				<a class="mdl-navigation__link active" href="help.php"><i class="material-icons" role="presentation">help_outline</i>Help</a>
+				<a class="mdl-navigation__link" href="../settings"><i class="material-icons" role="presentation">tune</i>Settings</a>
+				<a class="mdl-navigation__link active" href=""><i class="material-icons" role="presentation">help_outline</i>Help</a>
 			</nav>
 		</div>
 		<main class="demo-main mdl-layout__content">
