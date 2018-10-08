@@ -21,7 +21,6 @@
 	<meta name="msapplication-TileImage" content="../../../images/ios-desktop.png">
 	<meta name="msapplication-TileColor" content="#fff">
 	<link rel="shortcut icon" href="../../../images/favicon.png">
-	<!--	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="../../../styles/material.min.css">
@@ -175,16 +174,29 @@
 			<div class="demo-content mdl-grid">
 				<!--Help-->
 				<div class="mdl-cell mdl-cell--12-col heading">Help</div>
-				<div class="mdl-card mdl-cell mdl-cell--12-col mdl-list">
+				<div class="mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
 					<div class="mdl-card__title">
-						<h2 class="mdl-card__title-text">Konnect v0.7.4 beta</h2>
+						<h2 class="mdl-card__title-text">Konnect v1.0.0</h2>
 					</div>
 					<div class="mdl-card__supporting-text">
 						Built and maintained by <a href="https://github.com/FuseOrg">Fuse Org</a> at Nehru College of Engineering and Research Centre, Pampady.
 					</div>
-					<div class="mdl-card__actions mdl-card--border">
+					<div class="mdl-card__actions">
 						<a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">
 							Buy us a coffee!
+						</a>
+					</div>
+				</div>
+				<div class="mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">NCERC</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						Get help from Nehru College of Engineering and Research Centre, Pampady.
+					</div>
+					<div class="mdl-card__actions">
+						<a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">
+							Go!
 						</a>
 					</div>
 				</div>
@@ -211,7 +223,7 @@
 		<div class="mdl-snackbar__text"></div>
 		<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-snackbar__action"></button>
 	</div>
-	<script src="../scripts/scripts.js"></script>
+	<!--	<script src="../scripts/scripts.js"></script>-->
 	<script>
 		var searchList = new List('search-list', {
 			valueNames: ['name']

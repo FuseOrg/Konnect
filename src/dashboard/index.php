@@ -7,6 +7,7 @@
 	<meta name="description" content="Intranet for NCERC">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	<title>Konnect | Dashboard</title>
+	<link rel="manifest" href="../../manifest.json">
 	<meta name="theme-color" content="#fff">
 	<!-- Add to homescreen for Chrome on Android -->
 	<meta name="mobile-web-app-capable" content="yes">
@@ -21,7 +22,6 @@
 	<meta name="msapplication-TileImage" content="../../images/ios-desktop.png">
 	<meta name="msapplication-TileColor" content="#fff">
 	<link rel="shortcut icon" href="../../images/favicon.png">
-	<!--	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="../../styles/material.min.css">
@@ -29,6 +29,19 @@
 	<script src="../../scripts/material.min.js"></script>
 	<script src="../../scripts/jquery.min.js"></script>
 	<script src="../../scripts/list.min.js"></script>
+	<!--
+	<script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', function() {
+				navigator.serviceWorker.register('../../sw.js').then(function(registration) {
+					console.log('ServiceWorker registration successful with scope: ', registration.scope);
+				}).catch(function(err) {
+					console.log('ServiceWorker registration failed: ', err);
+				});
+			});
+		}
+	</script>
+-->
 </head>
 
 <body class="mdl-demo mdl-base">
@@ -172,17 +185,924 @@
 			</nav>
 		</div>
 		<main class="demo-main mdl-layout__content">
-			<div class="demo-content mdl-grid">
-				<!--Dashboard-->
-				<h4 class="heading mdl-cell mdl-cell--12-col">Dashboard</h4>
+			<div class="mdl-tabs mdl-js-tabs">
+				<div class="mdl-tabs__tab-bar">
+					<a href="#insight" class="mdl-tabs__tab is-active">Insight</a>
+					<a href="#all" class="mdl-tabs__tab">All</a>
+				</div>
+				<div class="mdl-tabs__panel is-active demo-content mdl-grid" id="insight">
+					<!--Insight cards-->
+					<div class="mdl-cell mdl-cell--12-col heading">Attendance</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg1.png); background-color: #f9f1ff;">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg3.png)">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--12-col">
+						<script>
+							window.onload = function() {
+								var chart1 = new CanvasJS.Chart("chartContainer1", {
+									animationEnabled: true,
+									theme: "light2",
+									axisY: {
+										suffix: "%",
+										labelFontSize: 16,
+										minimum: 0,
+										maximum: 100,
+										interval: 10,
+										lineColor: "grey",
+										labelFontColor: "grey",
+										labelFontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif",
+										lineThickness: 1,
+										tickColor: "rgba(0, 0, 0, .12)",
+										gridColor: "rgba(0, 0, 0, .12)",
+										gridThickness: 1,
+										stripLines: [{
+											value: 45,
+											label: "Minimum",
+											labelFontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif"
+										}]
+									},
+									axisX: {
+										labelFontSize: 16,
+										lineColor: "grey",
+										labelFontColor: "grey",
+										labelFontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif",
+										lineThickness: 1,
+										tickColor: "rgba(0, 0, 0, .12)",
+										gridColor: "rgba(0, 0, 0, .12)",
+										gridThickness: 1
+									},
+									toolTip: {
+										shared: true,
+										fontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif"
+									},
+									legend: {
+										cursor: "pointer",
+										itemclick: toggleDataSeries,
+										fontSize: 16,
+										fontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif",
+										fontColor: "grey"
+									},
+									data: [{
+											type: "spline",
+											name: "S7",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 78
+												},
+												{
+													label: "Sep",
+													y: 75
+												},
+												{
+													label: "Oct",
+													y: 67
+												},
+												{
+													label: "Nov",
+													y: 98
+												},
+												{
+													label: "Dec",
+													y: 89
+												},
+												{
+													label: "Jan",
+													y: 87
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "S8",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 97
+												},
+												{
+													label: "Sep",
+													y: 78
+												},
+												{
+													label: "Oct",
+													y: 58
+												},
+												{
+													label: "Nov",
+													y: 78
+												},
+												{
+													label: "Dec",
+													y: 74
+												},
+												{
+													label: "Jan",
+													y: 57
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "4th year",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 57
+												},
+												{
+													label: "Sep",
+													y: 58
+												},
+												{
+													label: "Oct",
+													y: 79
+												},
+												{
+													label: "Nov",
+													y: 98
+												},
+												{
+													label: "Dec",
+													y: 89
+												},
+												{
+													label: "Jan",
+													y: 85
+												}
+											]
+										}
+									]
+								});
+								var chart2 = new CanvasJS.Chart("chartContainer2", {
+									animationEnabled: true,
+									theme: "light2",
+									axisY: {
+										suffix: "%",
+										labelFontSize: 16,
+										minimum: 0,
+										maximum: 100,
+										interval: 10,
+										lineColor: "grey",
+										labelFontColor: "grey",
+										labelFontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif",
+										lineThickness: 1,
+										tickColor: "rgba(0, 0, 0, .12)",
+										gridColor: "rgba(0, 0, 0, .12)",
+										gridThickness: 1,
+										stripLines: [{
+											value: 45,
+											label: "Minimum",
+											labelFontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif"
+										}]
+									},
+									axisX: {
+										labelFontSize: 16,
+										lineColor: "grey",
+										labelFontColor: "grey",
+										labelFontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif",
+										lineThickness: 1,
+										tickColor: "rgba(0, 0, 0, .12)",
+										gridColor: "rgba(0, 0, 0, .12)",
+										gridThickness: 1
+									},
+									toolTip: {
+										shared: true,
+										fontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif"
+									},
+									legend: {
+										cursor: "pointer",
+										itemclick: toggleDataSeries,
+										fontSize: 16,
+										fontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif",
+										fontColor: "grey"
+									},
+									data: [{
+											type: "spline",
+											name: "CS401",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 78
+												},
+												{
+													label: "Sep",
+													y: 75
+												},
+												{
+													label: "Oct",
+													y: 67
+												},
+												{
+													label: "Nov",
+													y: 98
+												},
+												{
+													label: "Dec",
+													y: 89
+												},
+												{
+													label: "Jan",
+													y: 87
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS403",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 97
+												},
+												{
+													label: "Sep",
+													y: 78
+												},
+												{
+													label: "Oct",
+													y: 58
+												},
+												{
+													label: "Nov",
+													y: 78
+												},
+												{
+													label: "Dec",
+													y: 74
+												},
+												{
+													label: "Jan",
+													y: 57
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS405",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 57
+												},
+												{
+													label: "Sep",
+													y: 58
+												},
+												{
+													label: "Oct",
+													y: 79
+												},
+												{
+													label: "Nov",
+													y: 98
+												},
+												{
+													label: "Dec",
+													y: 89
+												},
+												{
+													label: "Jan",
+													y: 85
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS407",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 82
+												},
+												{
+													label: "Sep",
+													y: 94
+												},
+												{
+													label: "Oct",
+													y: 87
+												},
+												{
+													label: "Nov",
+													y: 65
+												},
+												{
+													label: "Dec",
+													y: 67
+												},
+												{
+													label: "Jan",
+													y: 69
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS409",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 89
+												},
+												{
+													label: "Sep",
+													y: 87
+												},
+												{
+													label: "Oct",
+													y: 75
+												},
+												{
+													label: "Nov",
+													y: 85
+												},
+												{
+													label: "Dec",
+													y: 65
+												},
+												{
+													label: "Jan",
+													y: 82
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS411",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 24
+												},
+												{
+													label: "Sep",
+													y: 84
+												},
+												{
+													label: "Oct",
+													y: 87
+												},
+												{
+													label: "Nov",
+													y: 85
+												},
+												{
+													label: "Dec",
+													y: 87
+												},
+												{
+													label: "Jan",
+													y: 85
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "S7",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 57
+												},
+												{
+													label: "Sep",
+													y: 45
+												},
+												{
+													label: "Oct",
+													y: 56
+												},
+												{
+													label: "Nov",
+													y: 45
+												},
+												{
+													label: "Dec",
+													y: 48
+												},
+												{
+													label: "Jan",
+													y: 45
+												}
+											]
+										}
+									]
+								});
+								var chart3 = new CanvasJS.Chart("chartContainer3", {
+									animationEnabled: true,
+									theme: "light2",
+									axisY: {
+										suffix: "%",
+										labelFontSize: 16,
+										minimum: 0,
+										maximum: 100,
+										interval: 10,
+										lineColor: "grey",
+										labelFontColor: "grey",
+										labelFontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif",
+										lineThickness: 1,
+										tickColor: "rgba(0, 0, 0, .12)",
+										gridColor: "rgba(0, 0, 0, .12)",
+										gridThickness: 1,
+										stripLines: [{
+											value: 45,
+											label: "Minimum",
+											labelFontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif"
+										}]
+									},
+									axisX: {
+										labelFontSize: 16,
+										lineColor: "grey",
+										labelFontColor: "grey",
+										labelFontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif",
+										lineThickness: 1,
+										tickColor: "rgba(0, 0, 0, .12)",
+										gridColor: "rgba(0, 0, 0, .12)",
+										gridThickness: 1
+									},
+									toolTip: {
+										shared: true,
+										fontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif"
+									},
+									legend: {
+										cursor: "pointer",
+										itemclick: toggleDataSeries,
+										fontSize: 16,
+										fontFamily: "'Product Sans', 'Roboto', 'Helvetica', sans-serif",
+										fontColor: "grey"
+									},
+									data: [{
+											type: "spline",
+											name: "CS401",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 78
+												},
+												{
+													label: "Sep",
+													y: 75
+												},
+												{
+													label: "Oct",
+													y: 67
+												},
+												{
+													label: "Nov",
+													y: 98
+												},
+												{
+													label: "Dec",
+													y: 89
+												},
+												{
+													label: "Jan",
+													y: 87
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS403",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 97
+												},
+												{
+													label: "Sep",
+													y: 78
+												},
+												{
+													label: "Oct",
+													y: 58
+												},
+												{
+													label: "Nov",
+													y: 78
+												},
+												{
+													label: "Dec",
+													y: 74
+												},
+												{
+													label: "Jan",
+													y: 57
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS405",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 57
+												},
+												{
+													label: "Sep",
+													y: 58
+												},
+												{
+													label: "Oct",
+													y: 79
+												},
+												{
+													label: "Nov",
+													y: 98
+												},
+												{
+													label: "Dec",
+													y: 89
+												},
+												{
+													label: "Jan",
+													y: 85
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS407",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 82
+												},
+												{
+													label: "Sep",
+													y: 94
+												},
+												{
+													label: "Oct",
+													y: 87
+												},
+												{
+													label: "Nov",
+													y: 65
+												},
+												{
+													label: "Dec",
+													y: 67
+												},
+												{
+													label: "Jan",
+													y: 69
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS409",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 89
+												},
+												{
+													label: "Sep",
+													y: 87
+												},
+												{
+													label: "Oct",
+													y: 75
+												},
+												{
+													label: "Nov",
+													y: 85
+												},
+												{
+													label: "Dec",
+													y: 65
+												},
+												{
+													label: "Jan",
+													y: 82
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "CS411",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 24
+												},
+												{
+													label: "Sep",
+													y: 84
+												},
+												{
+													label: "Oct",
+													y: 87
+												},
+												{
+													label: "Nov",
+													y: 85
+												},
+												{
+													label: "Dec",
+													y: 87
+												},
+												{
+													label: "Jan",
+													y: 85
+												}
+											]
+										},
+										{
+											type: "spline",
+											name: "S7",
+											lineThickness: 3,
+											showInLegend: true,
+											dataPoints: [{
+													label: "Aug",
+													y: 57
+												},
+												{
+													label: "Sep",
+													y: 45
+												},
+												{
+													label: "Oct",
+													y: 56
+												},
+												{
+													label: "Nov",
+													y: 45
+												},
+												{
+													label: "Dec",
+													y: 48
+												},
+												{
+													label: "Jan",
+													y: 45
+												}
+											]
+										}
+									]
+								});
+								chart1.render();
+								chart2.render();
+								chart3.render();
+
+								function toggleDataSeries(e) {
+									if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+										e.dataSeries.visible = false;
+									} else {
+										e.dataSeries.visible = true;
+									}
+									chart1.render();
+									chart2.render();
+									chart3.render();
+								}
+							}
+
+						</script>
+						<div id="chartContainer1" class="chart" style="height: 60vh; width: 100%;"></div>
+						<script src="../../scripts/canvasjs.min.js"></script>
+					</div>
+					<div class="mdl-cell mdl-cell--12-col heading">Semester</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg2.jpg); background-color: #f7f7f7;">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg4.png);">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--12-col">
+						<div id="chartContainer2" class="chart" style="height: 60vh; width: 100%;"></div>
+					</div>
+					<div class="mdl-cell mdl-cell--12-col heading">Others</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg5.jpg); background-color: #c2e3f6;">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg6.jpg); background-color: #efe9f5;">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--12-col">
+						<div id="chartContainer3" class="chart" style="height: 60vh; width: 100%;"></div>
+					</div>
+				</div>
+				<div class="mdl-tabs__panel demo-content mdl-grid" id="all">
+					<!--All cards-->
+					<div class="mdl-cell mdl-cell--12-col heading">Subjects</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg1.png); background-color: #f9f1ff;">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg2.jpg); background-color: #f7f7f7;">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg3.png)">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg4.png);">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg5.jpg); background-color: #c2e3f6;">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg6.jpg); background-color: #efe9f5;">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg7.png);">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Didn't found what you were looking for?</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Notifications are sent by college, check out news and events page for other announcements!
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../news/index.php">
+								See news
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg8.png);">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg9.png);">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">What's happening around?</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Involve in events, workshops, activities and more!
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../notifications/index.php">
+								See notifications
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../images/assisit/bg11.png); background-color: #f7f9fa;">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Didn't found what you were looking for?</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Notifications are sent by college, check out news and events page for other announcements!
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../news/index.php">
+								See news
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</main>
 	</div>
-	<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp" onclick="location.reload()">
-		<i class="material-icons">refresh</i>
-	</button>
-	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Refresh page</span>
-	<script src="../scripts/scripts.js"></script>
+	<!--	<script src="../scripts/scripts.js"></script>-->
 	<script>
 		var searchList = new List('search-list', {
 			valueNames: ['name']

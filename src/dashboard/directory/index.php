@@ -21,7 +21,6 @@
 	<meta name="msapplication-TileImage" content="../../../images/ios-desktop.png">
 	<meta name="msapplication-TileColor" content="#fff">
 	<link rel="shortcut icon" href="../../../images/favicon.png">
-	<!--	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="../../../styles/material.min.css">
@@ -232,24 +231,47 @@
 						</tfoot>
 					</table>
 				</div>
+				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg4.png);">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Attendance</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						Insights of current academic year attendance.
+					</div>
+					<div class="mdl-card__actions">
+						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							See my profile
+						</a>
+					</div>
+				</div>
+				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg6.jpg); background-color: #efe9f5;">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Attendance</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						Insights of current academic year attendance.
+					</div>
+					<div class="mdl-card__actions">
+						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							See my profile
+						</a>
+					</div>
+				</div>
 			</div>
 		</main>
 	</div>
-	<script src="../scripts/scripts.js"></script>
+	<!--	<script src="../scripts/scripts.js"></script>-->
 	<script>
 		var searchList = new List('search-list', {
 			valueNames: ['name']
 		});
-
 		var directory = {
 				valueNames: ["name", "strength"]
 			},
 			directoryTable = new List("directory-table", directory);
-
 		$($('th.sort')[0]).trigger('click', function() {
 			console.log('clicked');
 		});
-
 		$(document).on('click', '.sort', function() {
 			$('.sort').removeClass('mdl-data-table__header--sorted-ascending mdl-data-table__header--sorted-descending');
 			if ($(this).hasClass('asc')) {
@@ -258,7 +280,6 @@
 				$(this).addClass('mdl-data-table__header--sorted-descending')
 			}
 		});
-
 		$("input.search").on("keyup", function(e) {
 			if (e.keyCode === 27) {
 				$(e.currentTarget).val("");

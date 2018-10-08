@@ -21,7 +21,6 @@
 	<meta name="msapplication-TileImage" content="../../../images/ios-desktop.png">
 	<meta name="msapplication-TileColor" content="#fff">
 	<link rel="shortcut icon" href="../../../images/favicon.png">
-	<!--	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="../../../styles/material.min.css">
@@ -175,6 +174,32 @@
 			<div class="demo-content mdl-grid">
 				<!--Gallery cards-->
 				<div class="mdl-cell mdl-cell--12-col heading">Gallery</div>
+				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg7.png);">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Didn't found what you were looking for?</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						Notifications are sent by college, check out news and events page for other announcements!
+					</div>
+					<div class="mdl-card__actions">
+						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../news/index.php">
+							See news
+						</a>
+					</div>
+				</div>
+				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg8.png);">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Attendance</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						Insights of current academic year attendance.
+					</div>
+					<div class="mdl-card__actions">
+						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							See my profile
+						</a>
+					</div>
+				</div>
 				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg1.jpg)">
 					<div class="mdl-card__title mdl-card--expand"></div>
 					<div class="mdl-card__actions">
@@ -298,7 +323,7 @@
 			</div>
 		</main>
 	</div>
-	<script src="../scripts/scripts.js"></script>
+	<!--	<script src="../scripts/scripts.js"></script>-->
 	<script>
 		var searchList = new List('search-list', {
 			valueNames: ['name']

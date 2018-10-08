@@ -11,6 +11,15 @@
 	--accent-color: #2979FF;
 }
 
+html,
+body {
+	margin: 0;
+	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	user-select: none;
+}
+
 h1,
 h2,
 h3,
@@ -23,18 +32,6 @@ h6 {
 a {
 	text-decoration: none;
 	color: var(--accent-color);
-}
-
-html,
-body {
-	margin: 0;
-	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
-	font-size: 18px;
-	line-height: 1.5;
-	-webkit-tap-highlight-color: transparent;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	user-select: none;
 }
 
 .demo-avatar {
@@ -72,54 +69,16 @@ body {
 	padding-right: 8px;
 }
 
-.demo-drawer .mdl-menu__container {
-	z-index: -1;
-}
-
-.demo-drawer .demo-navigation {
-	z-index: -2;
-}
-
-.demo-drawer .mdl-menu .mdl-menu__item {
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-}
-
 .demo-drawer-header {
-	box-sizing: border-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-justify-content: flex-end;
-	-ms-flex-pack: end;
-	justify-content: flex-end;
-	padding: 16px;
+	padding: 16px 0 0 16px;
 }
 
 .demo-avatar-dropdown {
-	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	position: relative;
-	-webkit-flex-direction: row;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-	width: 100%;
 }
 
 .demo-navigation {
-	-webkit-flex-grow: 1;
-	-ms-flex-positive: 1;
 	flex-grow: 1;
 }
 
@@ -128,6 +87,7 @@ body {
 	font-size: 16px;
 	color: inherit;
 	border-radius: 0px 28px 28px 0;
+	font-weight: 600;
 }
 
 .demo-layout .demo-navigation .mdl-navigation__link:hover {
@@ -147,7 +107,6 @@ body {
 }
 
 .demo-header-row {
-	padding: 0 16px 0 64px;
 	background-color: #fff;
 }
 
@@ -164,12 +123,11 @@ body {
 .mdl-button:not(.mdl-button--icon):not(.mdl-button--fab) {
 	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
 	text-transform: none;
-	font-size: 16px;
+	font-size: 18px;
 	padding: 4px 24px;
 	margin: 4px;
 	height: auto;
 	border-radius: 8px;
-	
 }
 
 .mdl-button:not(.mdl-button--colored):not(.mdl-button--raised):not(.mdl-button--icon):not(.mdl-button--fab) {
@@ -177,13 +135,23 @@ body {
 }
 
 .heading {
-	padding: 0 0 16px 0;
-	font-size: 22px;
+	padding: 16px;
+	font-size: 24px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.canvasjs-chart-credit {
+	display: none;
 }
 
 .mdl-card {
 	border-radius: 8px;
 	border: 1px solid rgba(0, 0, 0, .12);
+}
+
+.mdl-cell {
+	border-radius: 8px;
 }
 
 .logo {
@@ -220,9 +188,9 @@ body {
 }
 
 .img-bg {
-	background-repeat: no-repeat !important;
-	background-size: cover !important;
 	background-position: center !important;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
 }
 
 #fab {
@@ -233,13 +201,28 @@ body {
 	z-index: 3;
 }
 
+.mdl-tabs.is-upgraded .mdl-tabs__panel.is-active {
+	display: flex;
+}
+
+.mdl-tabs__tab {
+	text-transform: none;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+	background-color: var(--accent-color);
+	height: 4px;
+	border-radius: 4px 4px 0 0;
+}
+
 .mdl-list__item {
 	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
 }
 
-.demo-options ul {
-	padding: 16px;
-	list-style-type: none;
+.mdl-card__title-text {
+	margin-top: 8px;
 }
 
 .mdl-card__actions {
@@ -266,7 +249,6 @@ body {
 }
 
 .demo-card-image.mdl-card {
-	min-height: 256px;
 	background-position: center !important;
 	background-size: cover !important;
 	background-repeat: no-repeat !important;
@@ -334,14 +316,8 @@ th.sort:hover {
 
 .mdl-dialog__actions {
 	padding: 16px;
-	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-flex-direction: row-reverse;
-	-ms-flex-direction: row-reverse;
 	flex-direction: row-reverse;
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 
@@ -392,6 +368,12 @@ th.sort:hover {
 	margin: 8px;
 }
 
+.section__circle {
+	height: 64px;
+	width: 64px;
+	border-radius: 100%;
+}
+
 @media screen and (max-width: 1024px) {
 	.search-list {
 		left: 0;
@@ -405,6 +387,10 @@ th.sort:hover {
 @media screen and (max-width: 640px) {
 	.demo-content {
 		padding: 16px 0 128px 0;
+	}
+
+	.mdl-tabs__tab-bar {
+		padding: 0 8px;
 	}
 
 	.section--footer {
