@@ -189,7 +189,112 @@
 					<div class="mdl-cell mdl-cell--12-col center">
 						<img src="../../../images/user.jpg" class="big-avatar">
 					</div>
-					more informations will be added later
+					<div class="mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Overview</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Registration number: NCE15CS000<br>
+							Student ID: 20152048<br>
+							Name: <?php echo $_SESSION["username"] ?><br>
+							Gender: Male<br>
+							Admission year: 2015
+						</div>
+					</div>
+					<div class="mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Academic info</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							College: Nehru College of Engineering and Research Centre<br>
+							Course: B.Tech Computer Science and Engineering<br>
+							Class: A
+						</div>
+					</div>
+					<div class="mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Personal info</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Date of birth: 12/07/1999<br>
+							Address: House no: 541, Wallstreet, NY.<br>
+							Phone: 0000000<br>
+							Email: drake@gmail.com
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								Edit my profile
+							</a>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--12-col">
+						More will be added later
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg1.png); background-color: #f9f1ff;">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg2.jpg); background-color: #f7f7f7;">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg3.png)">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg4.png);">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg5.jpg); background-color: #c2e3f6;">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Attendance</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Insights of current academic year attendance.
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+								See my profile
+							</a>
+						</div>
+					</div>
 				</div>
 				<div class="mdl-tabs__panel demo-content mdl-grid" id="actions">
 					<!--Action cards-->
