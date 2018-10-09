@@ -36,16 +36,16 @@
 					<div class="shp" onclick="toggler(this)">Show</div>
 					<script>
 						function toggler(e) {
-						if (e.innerHTML == 'Show') {
-							e.innerHTML = 'Hide'
-							document.getElementById('pwd').type = "text";
-						} else {
-							e.innerHTML = 'Show'
-							document.getElementById('pwd').type = "password";
+							if (e.innerHTML == 'Show') {
+								e.innerHTML = 'Hide'
+								document.getElementById('pwd').type = "text";
+							} else {
+								e.innerHTML = 'Show'
+								document.getElementById('pwd').type = "password";
+							}
 						}
-					}
-				</script>
-					<label style="color: red;">
+					</script>
+					<div class="hint">
 						<?php
 						  $servername = "127.0.0.1";
                           $username = "root";
@@ -77,7 +77,7 @@
                             $conn->close();
                           }
 						?>
-					</label>
+					</div>
 					<input class="link" type="submit" value="Sign In">
 				</form>
 			</div>

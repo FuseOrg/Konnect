@@ -83,10 +83,6 @@ body {
 	opacity: .4;
 }
 
-.input:last-of-type {
-	margin-bottom: 4px;
-}
-
 .shp {
 	position: relative;
 	font-size: 16px;
@@ -95,6 +91,15 @@ body {
 	color: rgba(0, 0, 0, .5);
 	float: right;
 	margin-top: -60px;
+	cursor: pointer;
+}
+
+.hint {
+	padding: 16px;
+	color: red;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, .12);
+	margin: 4px 0;
 }
 
 @media (max-width: 640px) {
