@@ -78,6 +78,11 @@ a {
 	position: relative;
 }
 
+.demo-avatar-dropdown span {
+	text-transform: capitalize;
+	font-weight: 600;
+}
+
 .demo-navigation {
 	flex-grow: 1;
 }
@@ -139,6 +144,7 @@ a {
 	font-size: 24px;
 	font-weight: 600;
 	text-align: center;
+	text-transform: capitalize;
 }
 
 .canvasjs-chart-credit {
@@ -299,6 +305,16 @@ th {
 
 th.sort:hover {
 	cursor: pointer;
+}
+
+.big-avatar {
+	width: 128px;
+	height: 128px;
+	border-radius: 100%;
+}
+
+.center {
+	text-align: center;
 }
 
 .mdl-dialog__content {

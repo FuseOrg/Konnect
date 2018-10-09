@@ -55,7 +55,7 @@
                               $result = $conn->query($sql);
 
                               if(!$result) {
-                              	echo "something went wrong! Please try again later.";
+                              	echo "something went wrong!";
                               }
                               else {
                               	echo "sign up successfull";
