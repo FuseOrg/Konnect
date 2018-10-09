@@ -36,23 +36,23 @@
 					<div class="shp" onclick="toggler(this)">Show</div>
 					<script>
 						function toggler(e) {
-						if (e.innerHTML == 'Show') {
-							e.innerHTML = 'Hide'
-							document.getElementById('pwd').type = "text";
-						} else {
-							e.innerHTML = 'Show'
-							document.getElementById('pwd').type = "password";
+							if (e.innerHTML == 'Show') {
+								e.innerHTML = 'Hide'
+								document.getElementById('pwd').type = "text";
+							} else {
+								e.innerHTML = 'Show'
+								document.getElementById('pwd').type = "password";
+							}
 						}
-					}
-				</script>
-					<label style="color: red;">
+					</script>
+					<div class="hint">
 						<?php
 						  $servername = "127.0.0.1";
                           $username = "root";
                           $password = "";
                           $dbname = "konnect_base";
             
-                          if (isset($_POST["uname"]) AND isset($_POST["pwd"])){
+                          if (isset($_POST["uname"]) AND isset($_POST["pwd"])) {
                           // Create connection
                             $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -62,22 +62,22 @@
                             if ($result->num_rows > 0) {
                               // output data of each row
                               $row = $result->fetch_assoc();
-                              if( $_POST["pwd"] == $row["password"] ){
+                              if( $_POST["pwd"] == $row["password"] ) {
                                 echo "Logging you in..";    
                                 session_start();
                                 $_SESSION["username"] = $row["username"];
                                 header("Location: ../dashboard/");  // lines
                               }
                               else
-                                echo "Password incorrect!";
+                                echo "password incorrect!";
                               } 
                             else {
-                                echo "Unknown username!";
+                                echo "unknown username!";
                             }
                             $conn->close();
                           }
 						?>
-					</label>
+					</div>
 					<input class="link" type="submit" value="Sign In">
 				</form>
 			</div>

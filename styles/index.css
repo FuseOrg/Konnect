@@ -45,18 +45,18 @@ body {
 	font-size: 20px;
 	font-weight: 600;
 	text-align: center;
-	box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(0, 0, 0, .12);
 }
 
 .link {
 	display: flex;
 	width: 100%;
-	margin: 8px 0;
+	margin: 4px 0;
 	padding: 16px 32px;
 	background-color: #fff;
 	color: #2979FF;
 	border-radius: 5px;
-	transition: 200ms ease;
+	transition: .1s ease;
 	border: 1px solid rgba(0, 0, 0, .12);
 	cursor: pointer;
 	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
@@ -80,11 +80,6 @@ body {
 }
 
 .input::placeholder {
-	opacity: .4;
-}
-
-.input:last-of-type {
-	margin-bottom: 4px;
 }
 
 .shp {
@@ -95,6 +90,14 @@ body {
 	color: rgba(0, 0, 0, .5);
 	float: right;
 	margin-top: -60px;
+	cursor: pointer;
+}
+
+.hint {
+	padding: 16px;
+	color: red;
+	border-radius: 5px;
+	margin: 4px 0;
 }
 
 @media (max-width: 640px) {
