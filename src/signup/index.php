@@ -47,7 +47,7 @@
 							}
 						}
 					</script>
-					<input class="input" type="password" id="cpwd" name="cpwd" placeholder="confirm password" required>
+					<input class="input" type="password" id="cpwd" name="cpwd" placeholder="retype password" required>
 					<div class="hint">
 						<?php
 						  $servername = "127.0.0.1";
@@ -55,26 +55,26 @@
                           $password = "";
                           $dbname = "konnect_base";
             
-                          if ( isset($_POST["pwd"]) AND isset($_POST["cpwd"]) AND isset($_POST["fname"]) AND isset($_POST["email"]) AND isset($_POST["uname"]) ){
+                          if ( isset($_POST["pwd"]) AND isset($_POST["cpwd"]) AND isset($_POST["fname"]) AND isset($_POST["email"]) AND isset($_POST["uname"]) ) {
 
-                            if ( $_POST["pwd"] == $_POST["cpwd"] ){
+                            if ( $_POST["pwd"] == $_POST["cpwd"] ) {
 
                               $conn = new mysqli($servername, $username, $password, $dbname);
 
                               $sql = "INSERT INTO users (full_name, username, password, email_id) VALUES ('".$_POST["fname"]."', '".$_POST["uname"]."', '".$_POST["pwd"]."', '".$_POST["email"]."')";
                               $result = $conn->query($sql);
 
-                              if(!$result){
-                              	echo "Something went wrong! Please try again later.";
+                              if(!$result) {
+                              	echo "something went wrong! Please try again later.";
                               }
-                              else{
-                              	echo "Sign up done successfully";
+                              else {
+                              	echo "sign up successfull";
                               	header("Location: ../dashboard/");
                               }
                             }
 
                             else {
-                          	  echo "Incorrect password";
+                          	  echo "incorrect password";
                             }
 
                           }

@@ -52,7 +52,7 @@
                           $password = "";
                           $dbname = "konnect_base";
             
-                          if (isset($_POST["uname"]) AND isset($_POST["pwd"])){
+                          if (isset($_POST["uname"]) AND isset($_POST["pwd"])) {
                           // Create connection
                             $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -62,17 +62,17 @@
                             if ($result->num_rows > 0) {
                               // output data of each row
                               $row = $result->fetch_assoc();
-                              if( $_POST["pwd"] == $row["password"] ){
+                              if( $_POST["pwd"] == $row["password"] ) {
                                 echo "Logging you in..";    
                                 session_start();
                                 $_SESSION["username"] = $row["username"];
                                 header("Location: ../dashboard/");  // lines
                               }
                               else
-                                echo "Password incorrect!";
+                                echo "password incorrect!";
                               } 
                             else {
-                                echo "Unknown username!";
+                                echo "unknown username!";
                             }
                             $conn->close();
                           }
