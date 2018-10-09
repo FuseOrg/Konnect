@@ -14,7 +14,6 @@ a {
 
 body {
 	margin: 0;
-	background-color: #f5f5f5;
 	color: rgba(0, 0, 0, .87);
 	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
 	font-size: 18px;
@@ -34,11 +33,8 @@ body {
 }
 
 .content {
-	margin: 0 auto;
-}
-
-.content * {
 	display: flex;
+	margin: 0 auto;
 	flex-direction: column;
 }
 
@@ -46,46 +42,62 @@ body {
 	height: 64px;
 	line-height: 64px;
 	background-color: #fff;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 600;
 	text-align: center;
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+	border-bottom: 1px solid rgba(0, 0, 0, .12);
 }
 
 .link {
-	margin: 8px 0;
+	display: flex;
+	width: 100%;
+	margin: 4px 0;
 	padding: 16px 32px;
-	text-align: center;
 	background-color: #fff;
 	color: #2979FF;
-	border-radius: 2px;
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
-	transition: 200ms ease;
-	font-weight: 600;
+	border-radius: 5px;
+	transition: .1s ease;
+	border: 1px solid rgba(0, 0, 0, .12);
+	cursor: pointer;
+	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
+	font-size: 18px;
 }
 
 .link:hover {
 	background-color: #2979FF;
 	color: #fff;
-	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
 }
 
 .input {
-	padding: 16px 8px;
-	background: rgba(0, 0, 0, .5);
-	color: #fff;
+	display: flex;
+	width: 100%;
+	padding: 16px;
 	font-size: 18px;
-	border-radius: 2px;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, .12);
 	margin: 4px 0;
+	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
 }
 
 .input::placeholder {
-	color: #fff;
-	opacity: .4;
 }
 
-.input:last-of-type {
-	margin-bottom: 4px;
+.shp {
+	position: relative;
+	font-size: 16px;
+	padding: 16px;
+	border-left: 1px solid rgba(0, 0, 0, .12);
+	color: rgba(0, 0, 0, .5);
+	float: right;
+	margin-top: -60px;
+	cursor: pointer;
+}
+
+.hint {
+	padding: 16px;
+	color: red;
+	border-radius: 5px;
+	margin: 4px 0;
 }
 
 @media (max-width: 640px) {
