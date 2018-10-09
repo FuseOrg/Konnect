@@ -31,6 +31,9 @@
 </head>
 
 <body class="mdl-demo mdl-base">
+	<?php
+	  session_start();
+	?>
 	<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
 		<header class="demo-header mdl-layout__header mdl-layout__header--waterfall">
 			<div class="demo-header-row mdl-layout__header-row">
@@ -130,7 +133,9 @@
 			<header class="demo-drawer-header">
 				<img src="../../../images/user.jpg" class="demo-avatar avatar">
 				<div class="demo-avatar-dropdown">
-					<span>User name</span>
+					<span>
+						<?php echo $_SESSION["username"] ?>
+					</span>
 					<div class="mdl-layout-spacer"></div>
 					<button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
 						<i class="material-icons" role="presentation">expand_more</i>
