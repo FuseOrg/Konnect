@@ -34,17 +34,7 @@
 					<input class="input" type="text" id="uname" name="uname" placeholder="username" required>
 					<input class="input" type="password" id="pwd" name="pwd" placeholder="password" required>
 					<div class="shp" onclick="toggler(this)">Show</div>
-					<script>
-						function toggler(e) {
-							if (e.innerHTML == 'Show') {
-								e.innerHTML = 'Hide'
-								document.getElementById('pwd').type = "text";
-							} else {
-								e.innerHTML = 'Show'
-								document.getElementById('pwd').type = "password";
-							}
-						}
-					</script>
+				
 					<div class="hint">
 						<?php
 						  $servername = "127.0.0.1";
@@ -84,5 +74,17 @@
 		</div>
 	</main>
 </body>
+
+<script>
+						function toggler(e) {
+							if (e.innerHTML == 'Show') {
+								e.innerHTML = 'Hide'
+								document.getElementById('pwd').type = "text";
+							} else {
+								e.innerHTML = 'Show'
+								document.getElementById('pwd').type = "password";
+							}
+						}
+</script>
 
 </html>
