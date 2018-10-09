@@ -175,13 +175,85 @@
 				<a class="mdl-navigation__link" href="../help"><i class="material-icons" role="presentation">help_outline</i>Help</a>
 			</nav>
 		</div>
-		<main class=" mdl-layout__content">
+		<main class="demo-main mdl-layout__content">
 			<div class="mdl-tabs mdl-js-tabs">
 				<div class="mdl-tabs__tab-bar">
-					<a href="#events" class="mdl-tabs__tab is-active">Events</a>
-					<a href="#news" class="mdl-tabs__tab">News</a>
+					<a href="#news" class="mdl-tabs__tab is-active">News</a>
+					<a href="#events" class="mdl-tabs__tab">Events</a>
 				</div>
-				<div class="mdl-tabs__panel is-active demo-content mdl-grid" id="events">
+				<div class="mdl-tabs__panel is-active demo-content mdl-grid" id="news">
+					<!--News cards-->
+					<div class="mdl-cell mdl-cell--12-col heading">News</div>
+					<div class="demo-card-wide mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title" style="background-image: url(../../../images/bg1.jpg);">
+							<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
+						</div>
+						<div class="mdl-card__actions">
+							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
+							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read more</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+					<div class="demo-card-wide mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title" style="background-image: url(../../../images/bg2.jpg);">
+							<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
+						</div>
+						<div class="mdl-card__actions">
+							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
+							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read more</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+					<div class="demo-card-wide mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title" style="background-image: url(../../../images/bg3.jpg);">
+							<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
+						</div>
+						<div class="mdl-card__actions">
+							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
+							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read more</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+					<div class="demo-card-wide mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__title" style="background-image: url(../../../images/bg4.jpg);">
+							<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
+						</div>
+						<div class="mdl-card__actions">
+							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
+							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read more</a>
+						</div>
+						<div class="mdl-card__menu">
+							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="mdl-tabs__panel demo-content mdl-grid" id="events">
 					<!--Event cards-->
 					<div class="mdl-cell mdl-cell--12-col heading">Events</div>
 					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg11.png); background-color: #f7f9fa;">
@@ -305,78 +377,6 @@
 							<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
 								Add to Calendar
 							</button>
-						</div>
-						<div class="mdl-card__menu">
-							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-								<i class="material-icons">share</i>
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="mdl-tabs__panel demo-content mdl-grid" id="news">
-					<!--News cards-->
-					<div class="mdl-cell mdl-cell--12-col heading">News</div>
-					<div class="demo-card-wide mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-						<div class="mdl-card__title" style="background-image: url(../../../images/bg1.jpg);">
-							<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
-						</div>
-						<div class="mdl-card__actions">
-							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
-							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read more</a>
-						</div>
-						<div class="mdl-card__menu">
-							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-								<i class="material-icons">share</i>
-							</button>
-						</div>
-					</div>
-					<div class="demo-card-wide mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-						<div class="mdl-card__title" style="background-image: url(../../../images/bg2.jpg);">
-							<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
-						</div>
-						<div class="mdl-card__actions">
-							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
-							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read more</a>
-						</div>
-						<div class="mdl-card__menu">
-							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-								<i class="material-icons">share</i>
-							</button>
-						</div>
-					</div>
-					<div class="demo-card-wide mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-						<div class="mdl-card__title" style="background-image: url(../../../images/bg3.jpg);">
-							<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
-						</div>
-						<div class="mdl-card__actions">
-							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
-							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read more</a>
-						</div>
-						<div class="mdl-card__menu">
-							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-								<i class="material-icons">share</i>
-							</button>
-						</div>
-					</div>
-					<div class="demo-card-wide mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-						<div class="mdl-card__title" style="background-image: url(../../../images/bg4.jpg);">
-							<h2 class="mdl-card__title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, nobis?</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
-						</div>
-						<div class="mdl-card__actions">
-							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
-							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read more</a>
 						</div>
 						<div class="mdl-card__menu">
 							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
