@@ -155,7 +155,9 @@
 			<header class="demo-drawer-header">
 				<img src="../../images/user.jpg" class="demo-avatar avatar">
 				<div class="demo-avatar-dropdown">
-					<span><?php echo $_SESSION["username"] ?></span>
+					<span>
+						<?php echo $_SESSION["username"] ?>
+					</span>
 					<div class="mdl-layout-spacer"></div>
 					<button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
 						<i class="material-icons" role="presentation">expand_more</i>
