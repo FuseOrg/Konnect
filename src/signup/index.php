@@ -40,25 +40,23 @@
 					<input class="input" type="password" id="cpwd" name="cpwd" placeholder="retype password" required>
 					<div class="hint">
 						<?php
-						  $servername = "127.0.0.1";
-                          $username = "root";
-                          $password = "";
-                          $dbname = "konnect_base";
+                          include('../db_config.php');
             
                           if ( isset($_POST["pwd"]) AND isset($_POST["cpwd"]) AND isset($_POST["fname"]) AND isset($_POST["email"]) AND isset($_POST["uname"]) ) {
 
                             if ( $_POST["pwd"] == $_POST["cpwd"] ) {
 
-                              $conn = new mysqli($servername, $username, $password, $dbname);
-
-                              $sql = "INSERT INTO users (full_name, username, password, email_id) VALUES ('".$_POST["fname"]."', '".$_POST["uname"]."', '".$_POST["pwd"]."', '".$_POST["email"]."')";
+                              $sql = "INSERT INTO users ( full_name, username, password, email_id ) VALUES ('".$_POST["fname"]."', '".$_POST["uname"]."', '".$_POST["pwd"]."', '".$_POST["email"]."')";
                               $result = $conn->query($sql);
 
                               if(!$result) {
-                              	echo "something went wrong!";
+                              	echo "Sorry, Something went wrong!";
                               }
                               else {
-                              	echo "sign up successfull";
+                              	echo "Sign up successfull";
+                              	session_start();
+                                $_SESSION["username"] = $row["username"];
+                                $_SESSION["status"] = "online";
                               	header("Location: ../dashboard/");
                               }
                             }
