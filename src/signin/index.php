@@ -37,6 +37,15 @@
 				
 					<div class="hint">
 						<?php
+
+                          session_start();
+
+                          if(isset($_SESSION["status"])) {
+                          	if($_SESSION["status"] == "online") {
+                          	  header('Location: ../dashboard/');
+                          	}
+                          }
+
 						  $servername = "127.0.0.1";
                           $username = "root";
                           $password = "";
@@ -56,6 +65,7 @@
                                 echo "Logging you in..";    
                                 session_start();
                                 $_SESSION["username"] = $row["username"];
+                                $_SESSION["status"] = "online";
                                 header("Location: ../dashboard/");  // lines
                               }
                               else
