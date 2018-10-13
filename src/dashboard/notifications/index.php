@@ -123,7 +123,7 @@
 					<a href="settings.php">
 						<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">tune</i>Settings</li>
 					</a>
-					<a href="../index.html">
+					<a href="../../signout">
 						<li class="mdl-menu__item"><i class="material-icons">exit_to_app</i>Sign out</li>
 					</a>
 				</ul>
@@ -148,7 +148,7 @@
 						<a href="settings.php">
 							<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">tune</i>Settings</li>
 						</a>
-						<a href="../index.html">
+						<a href="../../signout">
 							<li class="mdl-menu__item"><i class="material-icons">exit_to_app</i>Sign out</li>
 						</a>
 					</ul>
