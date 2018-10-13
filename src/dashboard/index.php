@@ -7,7 +7,6 @@
 	<meta name="description" content="Intranet for NCERC">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	<title>Konnect | Dashboard</title>
-	<link rel="manifest" href="../../manifest.json">
 	<meta name="theme-color" content="#fff">
 	<!-- Add to homescreen for Chrome on Android -->
 	<meta name="mobile-web-app-capable" content="yes">
@@ -22,26 +21,13 @@
 	<meta name="msapplication-TileImage" content="../../images/ios-desktop.png">
 	<meta name="msapplication-TileColor" content="#fff">
 	<link rel="shortcut icon" href="../../images/favicon.png">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="../../styles/productsans.css">
+	<link rel="stylesheet" href="../../styles/icon.css">
 	<link rel="stylesheet" href="../../styles/material.min.css">
 	<link rel="stylesheet" href="../../styles/styles.css">
 	<script src="../../scripts/material.min.js"></script>
 	<script src="../../scripts/jquery.min.js"></script>
 	<script src="../../scripts/list.min.js"></script>
-	<!--
-	<script>
-		if ('serviceWorker' in navigator) {
-			window.addEventListener('load', function() {
-				navigator.serviceWorker.register('../../sw.js').then(function(registration) {
-					console.log('ServiceWorker registration successful with scope: ', registration.scope);
-				}).catch(function(err) {
-					console.log('ServiceWorker registration failed: ', err);
-				});
-			});
-		}
-	</script>
--->
 </head>
 
 <body class="mdl-demo mdl-base">
@@ -1116,6 +1102,7 @@
 		var searchList = new List('search-list', {
 			valueNames: ['name']
 		});
+
 	</script>
 </body>
 
