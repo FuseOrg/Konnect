@@ -21,8 +21,8 @@
 	<meta name="msapplication-TileImage" content="../../../images/ios-desktop.png">
 	<meta name="msapplication-TileColor" content="#fff">
 	<link rel="shortcut icon" href="../../../images/favicon.png">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="../../../styles/productsans.css">
+	<link rel="stylesheet" href="../../../styles/icon.css">
 	<link rel="stylesheet" href="../../../styles/material.min.css">
 	<link rel="stylesheet" href="../../../styles/styles.css">
 	<script src="../../../scripts/material.min.js"></script>
@@ -131,7 +131,7 @@
 					<a href="settings.php">
 						<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">tune</i>Settings</li>
 					</a>
-					<a href="../index.html">
+					<a href="../../signout">
 						<li class="mdl-menu__item"><i class="material-icons">exit_to_app</i>Sign out</li>
 					</a>
 				</ul>
@@ -156,7 +156,7 @@
 						<a href="settings.php">
 							<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">tune</i>Settings</li>
 						</a>
-						<a href="../index.html">
+						<a href="../../signout">
 							<li class="mdl-menu__item"><i class="material-icons">exit_to_app</i>Sign out</li>
 						</a>
 					</ul>
