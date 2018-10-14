@@ -98,8 +98,8 @@ body {
 }
 
 .hint {
-	padding: 16px;
-	color: red;
+	padding: 8px 16px;
+	color: #f00;
 	border-radius: 5px;
 	margin: 4px 0;
 }
