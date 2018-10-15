@@ -194,7 +194,7 @@ a {
 }
 
 .img-bg {
-	background-position: center !important;
+	background-position: right !important;
 	background-size: contain !important;
 	background-repeat: no-repeat !important;
 }

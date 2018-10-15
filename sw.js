@@ -40,14 +40,13 @@ workbox.routing.registerRoute(
 );
 
 workbox.precaching.precacheAndRoute([
-    '/styles/material..css',
-    '/styles/styles..css',
+    '/styles/material.min.css',
+    '/styles/styles.css',
     '/scripts/material.min.js',
     '/scripts/list.min.js',
     '/scripts/canvasjs.min.js',
     '/scripts/jquery.min.js',
     '/scripts/scripts.js',
-    '/index.php',
 	{
 		url: '/index.html',
 		revision: '383676'

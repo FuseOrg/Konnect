@@ -7,7 +7,6 @@
 	<meta name="description" content="Intranet for NCERC">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	<title>Konnect | Dashboard</title>
-	<link rel="manifest" href="../../manifest.json">
 	<meta name="theme-color" content="#fff">
 	<!-- Add to homescreen for Chrome on Android -->
 	<meta name="mobile-web-app-capable" content="yes">
@@ -22,26 +21,13 @@
 	<meta name="msapplication-TileImage" content="../../images/ios-desktop.png">
 	<meta name="msapplication-TileColor" content="#fff">
 	<link rel="shortcut icon" href="../../images/favicon.png">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="../../styles/productsans.css">
+	<link rel="stylesheet" href="../../styles/icon.css">
 	<link rel="stylesheet" href="../../styles/material.min.css">
 	<link rel="stylesheet" href="../../styles/styles.css">
 	<script src="../../scripts/material.min.js"></script>
 	<script src="../../scripts/jquery.min.js"></script>
 	<script src="../../scripts/list.min.js"></script>
-	<!--
-	<script>
-		if ('serviceWorker' in navigator) {
-			window.addEventListener('load', function() {
-				navigator.serviceWorker.register('../../sw.js').then(function(registration) {
-					console.log('ServiceWorker registration successful with scope: ', registration.scope);
-				}).catch(function(err) {
-					console.log('ServiceWorker registration failed: ', err);
-				});
-			});
-		}
-	</script>
--->
 </head>
 
 <body class="mdl-demo mdl-base">
@@ -68,85 +54,87 @@
 						</div>
 					</div>
 					<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect list search-list" for="search">
-						<a href="dashboard.php">
+						<a href="dashboard">
 							<li class="mdl-menu__item">
 								<i class="material-icons">drag_indicator</i>
 								<span class="name">Dashboard</span>
 							</li>
 						</a>
-						<a href="notifications.php">
+						<a href="notifications">
 							<li class="mdl-menu__item">
 								<i class="material-icons">notifications_none</i>
 								<span class="name">Notifications</span>
 							</li>
 						</a>
-						<a href="news.php">
+						<a href="news">
 							<li class="mdl-menu__item">
 								<i class="material-icons">outlined_flag</i>
 								<span class="name">News</span>
 							</li>
 						</a>
-						<a href="directory.php">
+						<a href="directory">
 							<li class="mdl-menu__item">
 								<i class="material-icons">kitchen</i>
 								<span class="name">Directory</span>
 							</li>
 						</a>
-						<a href="files.php">
+						<a href="files">
 							<li class="mdl-menu__item">
 								<i class="material-icons">cloud_queue</i>
 								<span class="name">Files</span>
 							</li>
 						</a>
-						<a href="gallery.php">
+						<a href="gallery">
 							<li class="mdl-menu__item">
 								<i class="material-icons">crop_original</i>
 								<span class="name">Gallery</span>
 							</li>
 						</a>
-						<a href="profile.php">
+						<a href="profile">
 							<li class="mdl-menu__item">
 								<i class="material-icons">tag_faces</i>
 								<span class="name">Profile</span>
 							</li>
 						</a>
-						<a href="settings.php">
+						<a href="settings">
 							<li class="mdl-menu__item">
 								<i class="material-icons">tune</i>
 								<span class="name">Settings</span>
 							</li>
 						</a>
-						<a href="help.php">
+						<a href="help">
 							<li class="mdl-menu__item">
 								<i class="material-icons">help_outline</i>
 								<span class="name">Help</span>
 							</li>
 						</a>
 					</ul>
-				</div>+
+				</div>
 				<button id="notifications" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">notifications_none</i></button>
 				<span class="mdl-badge mdl-badge--overlap" data-badge="4"></span>
 				<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="notifications">
-					<a href="">
+					<a href="notifications">
 						<li class="mdl-menu__item"><i class="material-icons">outlined_flag</i>Notification #1</li>
 					</a>
-					<a href="">
+					<a href="notifications">
 						<li class="mdl-menu__item"><i class="material-icons">bookmark_border</i>Notification #2</li>
 					</a>
-					<a href="">
+					<a href="notifications">
 						<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">outlined_flag</i>Notification #3</li>
 					</a>
-					<a href="notifications.php">
+					<a href="notifications">
 						<li class="mdl-menu__item"><i class="material-icons">notifications_none</i>All notifications</li>
 					</a>
-					<li class="mdl-menu__item"><i class="material-icons">done_all</i>Mark all as read</li>
+					<a href="notifications">
+						<li class="mdl-menu__item"><i class="material-icons">done_all</i>Mark all as read</li>
+					</a>
 				</ul>
 				<button id="hdrbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon img-bg" style="background-image: url(../../images/user.jpg);"></button>
 				<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-					<a href="profile.php">
+					<a href="profile">
 						<li class="mdl-menu__item"><i class="material-icons">tag_faces</i>Profile</li>
 					</a>
-					<a href="settings.php">
+					<a href="settings">
 						<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">tune</i>Settings</li>
 					</a>
 					<a href="../signout">
@@ -171,10 +159,10 @@
 						<a href="profile">
 							<li class="mdl-menu__item"><i class="material-icons">tag_faces</i>Profile</li>
 						</a>
-						<a href="settings.php">
+						<a href="settings">
 							<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">tune</i>Settings</li>
 						</a>
-						<a href="../index.html">
+						<a href="../signout">
 							<li class="mdl-menu__item"><i class="material-icons">exit_to_app</i>Sign out</li>
 						</a>
 					</ul>
@@ -210,7 +198,7 @@
 							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile">
 								See my profile
 							</a>
 						</div>
@@ -223,7 +211,7 @@
 							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile">
 								See my profile
 							</a>
 						</div>
@@ -922,7 +910,7 @@
 							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile">
 								See my profile
 							</a>
 						</div>
@@ -935,7 +923,7 @@
 							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile">
 								See my profile
 							</a>
 						</div>
@@ -952,7 +940,7 @@
 							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile">
 								See my profile
 							</a>
 						</div>
@@ -965,7 +953,7 @@
 							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile">
 								See my profile
 							</a>
 						</div>
@@ -985,7 +973,7 @@
 							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile">
 								See my profile
 							</a>
 						</div>
@@ -998,7 +986,7 @@
 							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile">
 								See my profile
 							</a>
 						</div>
@@ -1011,7 +999,7 @@
 							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile">
 								See my profile
 							</a>
 						</div>
@@ -1024,7 +1012,7 @@
 							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile">
 								See my profile
 							</a>
 						</div>
@@ -1037,7 +1025,7 @@
 							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile">
 								See my profile
 							</a>
 						</div>
@@ -1050,7 +1038,7 @@
 							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile">
 								See my profile
 							</a>
 						</div>
@@ -1063,7 +1051,7 @@
 							Notifications are sent by college, check out news and events page for other announcements!
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../news/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../news">
 								See news
 							</a>
 						</div>
@@ -1076,7 +1064,7 @@
 							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile">
 								See my profile
 							</a>
 						</div>
@@ -1089,7 +1077,7 @@
 							Involve in events, workshops, activities and more!
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../notifications/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../notifications">
 								See notifications
 							</a>
 						</div>
@@ -1102,7 +1090,7 @@
 							Notifications are sent by college, check out news and events page for other announcements!
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../news/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../news">
 								See news
 							</a>
 						</div>
@@ -1116,6 +1104,7 @@
 		var searchList = new List('search-list', {
 			valueNames: ['name']
 		});
+
 	</script>
 </body>
 

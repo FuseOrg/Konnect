@@ -39,13 +39,18 @@ body {
 }
 
 .logo {
-	height: 64px;
-	line-height: 64px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	vertical-align: middle;
 	background-color: #fff;
 	font-size: 20px;
 	font-weight: 600;
-	text-align: center;
-	border-bottom: 1px solid rgba(0, 0, 0, .12);
+	height: 64px;
+}
+
+.logo div {
+	padding: 16px;
 }
 
 .link {
@@ -79,8 +84,7 @@ body {
 	font-family: 'Product Sans', 'Roboto', 'Helvetica', sans-serif;
 }
 
-.input::placeholder {
-}
+.input::placeholder {}
 
 .shp {
 	position: relative;
@@ -94,8 +98,8 @@ body {
 }
 
 .hint {
-	padding: 16px;
-	color: red;
+	padding: 8px 16px;
+	color: #f00;
 	border-radius: 5px;
 	margin: 4px 0;
 }

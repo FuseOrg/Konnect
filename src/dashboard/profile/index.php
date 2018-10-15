@@ -21,8 +21,8 @@
 	<meta name="msapplication-TileImage" content="../../../images/ios-desktop.png">
 	<meta name="msapplication-TileColor" content="#fff">
 	<link rel="shortcut icon" href="../../../images/favicon.png">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="../../../styles/productsans.css">
+	<link rel="stylesheet" href="../../../styles/icon.css">
 	<link rel="stylesheet" href="../../../styles/material.min.css">
 	<link rel="stylesheet" href="../../../styles/styles.css">
 	<script src="../../../scripts/material.min.js"></script>
@@ -50,55 +50,55 @@
 						</div>
 					</div>
 					<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect list search-list" for="search">
-						<a href="dashboard.php">
+						<a href="../dashboard">
 							<li class="mdl-menu__item">
 								<i class="material-icons">drag_indicator</i>
 								<span class="name">Dashboard</span>
 							</li>
 						</a>
-						<a href="notifications.php">
+						<a href="../notifications">
 							<li class="mdl-menu__item">
 								<i class="material-icons">notifications_none</i>
 								<span class="name">Notifications</span>
 							</li>
 						</a>
-						<a href="news.php">
+						<a href="../news">
 							<li class="mdl-menu__item">
 								<i class="material-icons">outlined_flag</i>
 								<span class="name">News</span>
 							</li>
 						</a>
-						<a href="directory.php">
+						<a href="../directory">
 							<li class="mdl-menu__item">
 								<i class="material-icons">kitchen</i>
 								<span class="name">Directory</span>
 							</li>
 						</a>
-						<a href="files.php">
+						<a href="../files">
 							<li class="mdl-menu__item">
 								<i class="material-icons">cloud_queue</i>
 								<span class="name">Files</span>
 							</li>
 						</a>
-						<a href="gallery.php">
+						<a href="../gallery">
 							<li class="mdl-menu__item">
 								<i class="material-icons">crop_original</i>
 								<span class="name">Gallery</span>
 							</li>
 						</a>
-						<a href="profile.php">
+						<a href="../profile">
 							<li class="mdl-menu__item">
 								<i class="material-icons">tag_faces</i>
 								<span class="name">Profile</span>
 							</li>
 						</a>
-						<a href="settings.php">
+						<a href="../settings">
 							<li class="mdl-menu__item">
 								<i class="material-icons">tune</i>
 								<span class="name">Settings</span>
 							</li>
 						</a>
-						<a href="help.php">
+						<a href="../help">
 							<li class="mdl-menu__item">
 								<i class="material-icons">help_outline</i>
 								<span class="name">Help</span>
@@ -109,29 +109,31 @@
 				<button id="notifications" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">notifications_none</i></button>
 				<span class="mdl-badge mdl-badge--overlap" data-badge="4"></span>
 				<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="notifications">
-					<a href="">
+					<a href="../notifications">
 						<li class="mdl-menu__item"><i class="material-icons">outlined_flag</i>Notification #1</li>
 					</a>
-					<a href="">
+					<a href="../notifications">
 						<li class="mdl-menu__item"><i class="material-icons">bookmark_border</i>Notification #2</li>
 					</a>
-					<a href="">
+					<a href="../notifications">
 						<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">outlined_flag</i>Notification #3</li>
 					</a>
-					<a href="notifications.php">
+					<a href="../notifications">
 						<li class="mdl-menu__item"><i class="material-icons">notifications_none</i>All notifications</li>
 					</a>
-					<li class="mdl-menu__item"><i class="material-icons">done_all</i>Mark all as read</li>
+					<a href="../notifications">
+						<li class="mdl-menu__item"><i class="material-icons">done_all</i>Mark all as read</li>
+					</a>
 				</ul>
 				<button id="hdrbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon img-bg" style="background-image: url(../../../images/user.jpg);"></button>
 				<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-					<a href="profile.php">
+					<a href="../profile">
 						<li class="mdl-menu__item"><i class="material-icons">tag_faces</i>Profile</li>
 					</a>
-					<a href="settings.php">
+					<a href="../settings">
 						<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">tune</i>Settings</li>
 					</a>
-					<a href="../index.html">
+					<a href="../../signout">
 						<li class="mdl-menu__item"><i class="material-icons">exit_to_app</i>Sign out</li>
 					</a>
 				</ul>
@@ -150,13 +152,13 @@
 						<span class="visuallyhidden">Accounts</span>
 					</button>
 					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
-						<a href="profile.php">
+						<a href="../profile">
 							<li class="mdl-menu__item"><i class="material-icons">tag_faces</i>Profile</li>
 						</a>
-						<a href="settings.php">
+						<a href="../settings">
 							<li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><i class="material-icons">tune</i>Settings</li>
 						</a>
-						<a href="../index.html">
+						<a href="../../signout">
 							<li class="mdl-menu__item"><i class="material-icons">exit_to_app</i>Sign out</li>
 						</a>
 					</ul>
@@ -196,7 +198,8 @@
 						<div class="mdl-card__supporting-text">
 							Registration number: NCE15CS000<br>
 							Student ID: 20152048<br>
-							Name: <?php echo $_SESSION["username"] ?><br>
+							Name:
+							<?php echo $_SESSION["username"] ?><br>
 							Gender: Male<br>
 							Admission year: 2015
 						</div>
@@ -222,7 +225,7 @@
 							Email: drake@gmail.com
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="">
 								Edit my profile
 							</a>
 						</div>
@@ -238,7 +241,7 @@
 							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="">
 								See my profile
 							</a>
 						</div>
@@ -251,7 +254,7 @@
 							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="">
 								See my profile
 							</a>
 						</div>
@@ -264,7 +267,7 @@
 							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="">
 								See my profile
 							</a>
 						</div>
@@ -277,7 +280,7 @@
 							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="">
 								See my profile
 							</a>
 						</div>
@@ -290,7 +293,7 @@
 							Insights of current academic year attendance.
 						</div>
 						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="">
 								See my profile
 							</a>
 						</div>
@@ -299,140 +302,74 @@
 				<div class="mdl-tabs__panel demo-content mdl-grid" id="actions">
 					<!--Action cards-->
 					<div class="mdl-cell mdl-cell--12-col heading">Actions</div>
-					<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg1.png); background-color: #f9f1ff;">
-						<div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">Attendance</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Insights of current academic year attendance.
-						</div>
-						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
-								See my profile
-							</a>
-						</div>
-					</div>
-					<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg2.jpg); background-color: #f7f7f7;">
-						<div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">Attendance</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Insights of current academic year attendance.
-						</div>
-						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
-								See my profile
-							</a>
-						</div>
-					</div>
-					<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg3.png)">
-						<div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">Attendance</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Insights of current academic year attendance.
-						</div>
-						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
-								See my profile
-							</a>
-						</div>
-					</div>
-					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg4.png);">
-						<div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">Attendance</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Insights of current academic year attendance.
-						</div>
-						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
-								See my profile
-							</a>
-						</div>
-					</div>
-					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg5.jpg); background-color: #c2e3f6;">
-						<div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">Attendance</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Insights of current academic year attendance.
-						</div>
-						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
-								See my profile
-							</a>
-						</div>
-					</div>
-					<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg6.jpg); background-color: #efe9f5;">
-						<div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">Attendance</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Insights of current academic year attendance.
-						</div>
-						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
-								See my profile
-							</a>
-						</div>
-					</div>
-					<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg7.png);">
-						<div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">Didn't found what you were looking for?</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Notifications are sent by college, check out news and events page for other announcements!
-						</div>
-						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../news/index.php">
-								See news
-							</a>
-						</div>
-					</div>
-					<div class="img-bg mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg8.png);">
-						<div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">Attendance</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Insights of current academic year attendance.
-						</div>
-						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile/index.php">
-								See my profile
-							</a>
-						</div>
-					</div>
-					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg9.png);">
-						<div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">What's happening around?</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Involve in events, workshops, activities and more!
-						</div>
-						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../notifications/index.php">
-								See notifications
-							</a>
-						</div>
-					</div>
-					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg11.png); background-color: #f7f9fa;">
-						<div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">Didn't found what you were looking for?</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Notifications are sent by college, check out news and events page for other announcements!
-						</div>
-						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../news/index.php">
-								See news
-							</a>
-						</div>
-					</div>
+					<ul class="demo-list-three mdl-list mdl-card mdl-cell mdl-cell--12-col mdl-list">
+						<li class="mdl-list__item mdl-list__item--three-line">
+							<span class="mdl-list__item-primary-content">
+								<i class="material-icons mdl-list__item-avatar">flag</i>
+								<span>Action #1</span>
+								<span class="mdl-list__item-text-body">
+									Description
+								</span>
+							</span>
+							<span class="mdl-list__item-secondary-content">
+								<a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-js-ripple-effect" href="">
+									Action #1
+								</a>
+							</span>
+						</li>
+						<li class="mdl-list__item mdl-list__item--three-line">
+							<span class="mdl-list__item-primary-content">
+								<i class="material-icons mdl-list__item-avatar">bookmark</i>
+								<span>Action #2</span>
+								<span class="mdl-list__item-text-body">
+									Description
+								</span>
+							</span>
+							<span class="mdl-list__item-secondary-content">
+								<a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-js-ripple-effect" href="">
+									Action #2
+								</a>
+							</span>
+						</li>
+						<li class="mdl-list__item mdl-list__item--three-line">
+							<span class="mdl-list__item-primary-content">
+								<i class="material-icons mdl-list__item-avatar">flag</i>
+								<span>Action #3</span>
+								<span class="mdl-list__item-text-body">
+									Description
+								</span>
+							</span>
+							<span class="mdl-list__item-secondary-content">
+								<a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-js-ripple-effect" href="">
+									Action #3
+								</a>
+							</span>
+						</li>
+						<li class="mdl-list__item mdl-list__item--three-line">
+							<span class="mdl-list__item-primary-content">
+								<i class="material-icons mdl-list__item-avatar">flag</i>
+								<span>Action #4</span>
+								<span class="mdl-list__item-text-body">
+									Description
+								</span>
+							</span>
+							<span class="mdl-list__item-secondary-content">
+								<a class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-js-ripple-effect" href="">
+									Action #4
+								</a>
+							</span>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</main>
 	</div>
+	<a href="../settings">
+		<button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-shadow--6dp">
+			<i class="material-icons">create</i>
+		</button>
+	</a>
+	<span class="mdl-tooltip mdl-tooltip--left" for="fab">Edit profile</span>
 	<!--	<script src="../scripts/scripts.js"></script>-->
 	<script>
 		var searchList = new List('search-list', {

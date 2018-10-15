@@ -21,20 +21,23 @@
 	<meta name="msapplication-TileImage" content="../../images/ios-desktop.png">
 	<meta name="msapplication-TileColor" content="#fff">
 	<link rel="shortcut icon" href="../../images/favicon.png">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
+	<link rel="stylesheet" href="../../styles/productsans.css">
+	<link rel="stylesheet" href="../../styles/icon.css">
 	<link rel="stylesheet" href="../../styles/index.css">
 </head>
 
 <body>
 	<main class="main">
-		<div class="logo">Konnect</div>
+		<div class="logo">
+			<div><a href="../../"><i class="material-icons">arrow_back</i></a></div>
+			<div>Konnect</div>
+		</div>
 		<div class="container">
 			<div class="content">
 				<form action="" method="post">
 					<input class="input" type="text" id="uname" name="uname" placeholder="username" required>
 					<input class="input" type="password" id="pwd" name="pwd" placeholder="password" required>
 					<div class="shp" onclick="toggler(this)">Show</div>
-				
 					<div class="hint">
 						<?php
 
@@ -69,10 +72,10 @@
                                 header("Location: ../dashboard/");  // lines
                               }
                               else
-                                echo "password incorrect!";
+                                echo "<i class='material-icons'>error_outline</i> &nbsp; incorrect password!";
                               } 
                             else {
-                                echo "unknown username!";
+                                echo "<i class='material-icons'>error_outline</i> &nbsp; unknown username!";
                             }
                             $conn->close();
                           }
@@ -83,18 +86,18 @@
 			</div>
 		</div>
 	</main>
-</body>
+	<script>
+		function toggler(e) {
+			if (e.innerHTML == 'Show') {
+				e.innerHTML = 'Hide'
+				document.getElementById('pwd').type = "text";
+			} else {
+				e.innerHTML = 'Show'
+				document.getElementById('pwd').type = "password";
+			}
+		}
 
-<script>
-						function toggler(e) {
-							if (e.innerHTML == 'Show') {
-								e.innerHTML = 'Hide'
-								document.getElementById('pwd').type = "text";
-							} else {
-								e.innerHTML = 'Show'
-								document.getElementById('pwd').type = "password";
-							}
-						}
-</script>
+	</script>
+</body>
 
 </html>
