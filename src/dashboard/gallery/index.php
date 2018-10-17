@@ -25,9 +25,16 @@
 	<link rel="stylesheet" href="../../../styles/icon.css">
 	<link rel="stylesheet" href="../../../styles/material.min.css">
 	<link rel="stylesheet" href="../../../styles/styles.css">
+	<link rel="stylesheet" href="../../../styles/lightgallery.min.css">
 	<script src="../../../scripts/material.min.js"></script>
 	<script src="../../../scripts/jquery.min.js"></script>
 	<script src="../../../scripts/list.min.js"></script>
+	<script src="../../../scripts/jquery.mousewheel.min.js"></script>
+	<script src="../../../scripts/lightgallery.min.js"></script>
+	<script src="../../../scripts/lg-thumbnail.min.js"></script>
+	<script src="../../../scripts/lg-fullscreen.min.js"></script>
+	<script src="../../../scripts/lg-autoplay.min.js"></script>
+	<script src="../../../scripts/lg-zoom.min.js"></script>
 </head>
 
 <body class="mdl-demo mdl-base">
@@ -178,7 +185,7 @@
 			</nav>
 		</div>
 		<main class="demo-main mdl-layout__content">
-			<div class="demo-content mdl-grid">
+			<div id="selector1" class="demo-content mdl-grid">
 				<!--Gallery cards-->
 				<div class="mdl-cell mdl-cell--12-col heading">Gallery</div>
 				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg7.png);">
@@ -207,127 +214,64 @@
 						</a>
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg1.jpg)">
+				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg1.jpg)" data-src="../../../images/bg1.jpg" data-sub-html=".caption">
 					<div class="mdl-card__title mdl-card--expand"></div>
-					<div class="mdl-card__actions">
-						<span>Image</span>
-						<div class="mdl-layout-spacer"></div>
-						<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-							<i class="material-icons">open_in_new</i>
-						</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
+					<div class="mdl-card__actions caption">
+						Caption
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg2.jpg)">
+				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg2.jpg)" data-src="../../../images/bg2.jpg" data-sub-html=".caption">
 					<div class="mdl-card__title mdl-card--expand"></div>
-					<div class="mdl-card__actions">
-						<span>Image</span>
-						<div class="mdl-layout-spacer"></div>
-						<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-							<i class="material-icons">open_in_new</i>
-						</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
+					<div class="mdl-card__actions caption">
+						Caption
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg3.jpg)">
+				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg3.jpg)" data-src="../../../images/bg3.jpg" data-sub-html=".caption">
 					<div class="mdl-card__title mdl-card--expand"></div>
-					<div class="mdl-card__actions">
-						<span>Image</span>
-						<div class="mdl-layout-spacer"></div>
-						<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-							<i class="material-icons">open_in_new</i>
-						</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
+					<div class="mdl-card__actions caption">
+						Caption
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg4.jpg)">
+				<div class="demo-card-image mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg4.jpg)" data-src="../../../images/bg4.jpg" data-sub-html=".caption">
 					<div class="mdl-card__title mdl-card--expand"></div>
-					<div class="mdl-card__actions">
-						<span>Image</span>
-						<div class="mdl-layout-spacer"></div>
-						<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-							<i class="material-icons">open_in_new</i>
-						</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
+					<div class="mdl-card__actions caption">
+						Caption
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg1.jpg)">
+				<div class="demo-card-image mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg1.jpg)" data-src="../../../images/bg1.jpg" data-sub-html=".caption">
 					<div class="mdl-card__title mdl-card--expand"></div>
-					<div class="mdl-card__actions">
-						<span>Image</span>
-						<div class="mdl-layout-spacer"></div>
-						<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-							<i class="material-icons">open_in_new</i>
-						</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
+					<div class="mdl-card__actions caption">
+						Caption
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg2.jpg)">
+				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg2.jpg)" data-src="../../../images/bg2.jpg" data-sub-html=".caption">
 					<div class="mdl-card__title mdl-card--expand"></div>
-					<div class="mdl-card__actions">
-						<span>Image</span>
-						<div class="mdl-layout-spacer"></div>
-						<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-							<i class="material-icons">open_in_new</i>
-						</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
+					<div class="mdl-card__actions caption">
+						Caption
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg3.jpg)">
+				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg3.jpg)" data-src="../../../images/bg3.jpg" data-sub-html=".caption">
 					<div class="mdl-card__title mdl-card--expand"></div>
-					<div class="mdl-card__actions">
-						<span>Image</span>
-						<div class="mdl-layout-spacer"></div>
-						<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-							<i class="material-icons">open_in_new</i>
-						</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
+					<div class="mdl-card__actions caption">
+						Caption
 					</div>
 				</div>
-				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg4.jpg)">
+				<div class="demo-card-image mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/bg4.jpg)" data-src="../../../images/bg4.jpg" data-sub-html=".caption">
 					<div class="mdl-card__title mdl-card--expand"></div>
-					<div class="mdl-card__actions">
-						<span>Image</span>
-						<div class="mdl-layout-spacer"></div>
-						<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" target="_blank">
-							<i class="material-icons">open_in_new</i>
-						</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
+					<div class="mdl-card__actions caption">
+						Caption
 					</div>
 				</div>
 			</div>
+			<script>
+				$('#selector1').lightGallery({
+					selector: '.demo-card-image',
+					thumbnail: false,
+					showThumbByDefault: false,
+					subHtmlSelectorRelative: true
+				});
+
+			</script>
 		</main>
 	</div>
 	<!--	<script src="../scripts/scripts.js"></script>-->

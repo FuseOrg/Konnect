@@ -254,11 +254,13 @@ a {
 	line-height: 1.5;
 }
 
-.demo-card-image.mdl-card {
+.demo-card-image {
 	background-position: center !important;
 	background-size: cover !important;
 	background-repeat: no-repeat !important;
 	color: #fff;
+	cursor: pointer;
+	min-height: 256px;
 }
 
 .demo-card-image .mdl-card__actions {
