@@ -196,14 +196,14 @@
 				</div>
 				<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg8.png);">
 					<div class="mdl-card__title">
-						<h2 class="mdl-card__title-text">Attendance</h2>
+						<h2 class="mdl-card__title-text">Find what's happening aroud!</h2>
 					</div>
 					<div class="mdl-card__supporting-text">
-						Insights of current academic year attendance.
+						Check out the latest images from across the college.
 					</div>
 					<div class="mdl-card__actions">
-						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="profile">
-							See my profile
+						<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../gallery">
+							See gallery
 						</a>
 					</div>
 				</div>
