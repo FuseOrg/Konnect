@@ -261,6 +261,7 @@ a {
 	color: #fff;
 	cursor: pointer;
 	min-height: 256px;
+	border: none;
 }
 
 .demo-card-image .mdl-card__actions {
