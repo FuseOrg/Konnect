@@ -32,7 +32,7 @@
 
 <body class="mdl-demo mdl-base">
 	<?php
-	  session_start();
+		session_start();
 	?>
 	<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
 		<header class="demo-header mdl-layout__header mdl-layout__header--waterfall">
@@ -181,12 +181,12 @@
 			<div class="demo-content mdl-grid">
 				<!--Settings-->
 				<h4 class="heading mdl-cell mdl-cell--12-col">Settings</h4>
-				<h1>
+			
 				<?php
-
+  
                   include('../../db_config.php');
                   
-				  if(isset($_POST["full_name"]) OR isset($_POST["username"]) OR isset($_POST["password"]) OR isset($_POST["email_id"]) OR isset($_POST["phoneno"])) {
+				          if(isset($_POST["full_name"]) OR isset($_POST["username"]) OR isset($_POST["password"]) OR isset($_POST["email_id"]) OR isset($_POST["phoneno"])) {
                   	    $sql2 = "UPDATE users SET full_name = '".$_POST["full_name"]."', username = '".$_POST["username"]."', password = '".$_POST["password"]."', email_id ='".$_POST["email_id"]."', phoneno ='".$_POST["phoneno"]."' WHERE username ='".$_SESSION["username"]."'";
                   	    $result2 = $conn->query($sql2);
 
@@ -197,7 +197,7 @@
                   $row = $result->fetch_assoc();
 
 				?>
-			    </h1>
+			 
 				<ul class="demo-list-two mdl-list mdl-card mdl-cell mdl-cell--12-col">
 					<form action="" method="post">
 						<li class="mdl-list__item mdl-list__item--two-line">
