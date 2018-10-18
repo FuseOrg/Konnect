@@ -70,7 +70,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`user_id`, `username`, `password`, `full_name`, `email_id`, `phoneno`) VALUES
 (1, 'donald', 'donald', 'Donald', 'a@a', NULL),
 (2, 'slimshady', 'rapgod', 'Eminem', 'e@g', NULL),
-(3, 'slimshady', 'pw', 'Eminem', 'e@g', NULL);
+(3, 'mgk', 'shit', 'MGK', 'm@g', NULL);
 
 --
 -- Indexes for dumped tables
