@@ -65,7 +65,7 @@
                             }
 
                             else {
-                          	  echo "<i class='material-icons'>error_outline</i> &nbsp; Incorrect password!";
+                          	  echo "<i class='material-icons'>error_outline</i> &nbsp; Incorrect passwords! Re-enter passwords again";
                             }
 
                           }
