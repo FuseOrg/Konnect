@@ -197,142 +197,143 @@
 
 				?>
 				<ul class="demo-list-two mdl-list mdl-card mdl-cell mdl-cell--12-col">
-				  <form action="" method="post">
-					<li class="mdl-list__item mdl-list__item--two-line">
-						<span class="mdl-list__item-primary-content">
-							<i class="material-icons mdl-list__item-avatar">face</i>
-							<span>Name</span>
-							<span class="mdl-list__item-sub-title">Display name</span>
-						</span>
-						<span class="mdl-list__item-secondary-content">
-							<span class="mdl-list__item-secondary-action">
+					<form action="" method="post">
+						<li class="mdl-list__item mdl-list__item--two-line">
+							<span class="mdl-list__item-primary-content">
+								<i class="material-icons mdl-list__item-avatar">face</i>
+								<span>Name</span>
+								<span class="mdl-list__item-sub-title">Display name</span>
+							</span>
+							<span class="mdl-list__item-secondary-content">
+								<span class="mdl-list__item-secondary-action">
 									<div class="mdl-textfield mdl-js-textfield">
-										<input class="mdl-textfield__input" type="text" name="full_name" id="name" value="<?php echo $row["full_name"]; ?>" pattern="[a-z,A-Z, ]*">
+										<input class="mdl-textfield__input" type="text" name="full_name" id="name" value="<?php echo $row[" full_name"]; ?>" pattern="[a-z,A-Z, ]*">
 										<label class="mdl-textfield__label" for="name">Name</label>
 										<span class="mdl-textfield__error">Letters and spaces only!</span>
 									</div>
+								</span>
 							</span>
-						</span>
-					</li>
-					<li class="mdl-list__item mdl-list__item--two-line">
-						<span class="mdl-list__item-primary-content">
-							<i class="material-icons mdl-list__item-avatar">alternate_email</i>
-							<span>User name</span>
-							<span class="mdl-list__item-sub-title">Registered name</span>
-						</span>
-						<span class="mdl-list__item-secondary-content">
-							<span class="mdl-list__item-secondary-action">
+						</li>
+						<li class="mdl-list__item mdl-list__item--two-line">
+							<span class="mdl-list__item-primary-content">
+								<i class="material-icons mdl-list__item-avatar">alternate_email</i>
+								<span>User name</span>
+								<span class="mdl-list__item-sub-title">Registered name</span>
+							</span>
+							<span class="mdl-list__item-secondary-content">
+								<span class="mdl-list__item-secondary-action">
 									<div class="mdl-textfield mdl-js-textfield">
-										<input class="mdl-textfield__input" type="text" pattern="[a-z,A-Z,0-9,_]*" value="<?php echo $_SESSION["username"]; ?>" id="uname" name="username">
+										<input class="mdl-textfield__input" type="text" pattern="[a-z,A-Z,0-9,_]*" value="<?php echo $_SESSION[" username"]; ?>" id="uname" name="username">
 										<label class="mdl-textfield__label" for="uname">Username</label>
 										<span class="mdl-textfield__error">Letters, digits and underscore only!</span>
 									</div>
+								</span>
 							</span>
-						</span>
-					</li>
-					<li class="mdl-list__item mdl-list__item--two-line">
-						<span class="mdl-list__item-primary-content">
-							<i class="material-icons mdl-list__item-avatar">settings</i>
-							<span>Password</span>
-							<span class="mdl-list__item-sub-title">Current password</span>
-						</span>
-						<span class="mdl-list__item-secondary-content">
-							<span class="mdl-list__item-secondary-action">
+						</li>
+						<li class="mdl-list__item mdl-list__item--two-line">
+							<span class="mdl-list__item-primary-content">
+								<i class="material-icons mdl-list__item-avatar">settings</i>
+								<span>Password</span>
+								<span class="mdl-list__item-sub-title">Current password</span>
+							</span>
+							<span class="mdl-list__item-secondary-content">
+								<span class="mdl-list__item-secondary-action">
 									<div class="mdl-textfield mdl-js-textfield">
-										<input class="mdl-textfield__input" type="text" pattern="[a-z,A-Z,0-9,_]*" value="<?php echo $row["password"]; ?>" id="uname" name="password">
+										<input class="mdl-textfield__input" type="text" pattern="[a-z,A-Z,0-9,_]*" value="<?php echo $row[" password"]; ?>" id="uname" name="password">
 										<label class="mdl-textfield__label" for="uname">Password</label>
 										<span class="mdl-textfield__error">Letters, digits and underscore only!</span>
 									</div>
+								</span>
 							</span>
-						</span>
-					</li>
-					<li class="mdl-list__item mdl-list__item--two-line">
-						<span class="mdl-list__item-primary-content">
-							<i class="material-icons mdl-list__item-avatar">phone</i>
-							<span>Phone</span>
-							<span class="mdl-list__item-sub-title">Contact number</span>
-						</span>
-						<span class="mdl-list__item-secondary-content">
-							<span class="mdl-list__item-secondary-action">
+						</li>
+						<li class="mdl-list__item mdl-list__item--two-line">
+							<span class="mdl-list__item-primary-content">
+								<i class="material-icons mdl-list__item-avatar">phone</i>
+								<span>Phone</span>
+								<span class="mdl-list__item-sub-title">Contact number</span>
+							</span>
+							<span class="mdl-list__item-secondary-content">
+								<span class="mdl-list__item-secondary-action">
 									<div class="mdl-textfield mdl-js-textfield">
-										<input class="mdl-textfield__input" type="tel" pattern="[0-9]*" value="<?php echo $row["phoneno"]; ?>" id="number" name="phoneno">
+										<input class="mdl-textfield__input" type="tel" pattern="[0-9]*" value="<?php echo $row[" phoneno"]; ?>" id="number" name="phoneno">
 										<label class="mdl-textfield__label" for="number">
 											Phone No.</label>
 										<span class="mdl-textfield__error">Invalid number!</span>
 									</div>
+								</span>
 							</span>
-						</span>
-					</li>
-					<li class="mdl-list__item mdl-list__item--two-line">
-						<span class="mdl-list__item-primary-content">
-							<i class="material-icons mdl-list__item-avatar">email</i>
-							<span>Email</span>
-							<span class="mdl-list__item-sub-title">Contact email</span>
-						</span>
-						<span class="mdl-list__item-secondary-content">
-							<span class="mdl-list__item-secondary-action">
+						</li>
+						<li class="mdl-list__item mdl-list__item--two-line">
+							<span class="mdl-list__item-primary-content">
+								<i class="material-icons mdl-list__item-avatar">email</i>
+								<span>Email</span>
+								<span class="mdl-list__item-sub-title">Contact email</span>
+							</span>
+							<span class="mdl-list__item-secondary-content">
+								<span class="mdl-list__item-secondary-action">
 									<div class="mdl-textfield mdl-js-textfield">
-										<input class="mdl-textfield__input" type="email" id="email" value="<?php echo $row["email_id"]; ?>" name="email_id">
+										<input class="mdl-textfield__input" type="email" id="email" value="<?php echo $row[" email_id"]; ?>" name="email_id">
 										<label class="mdl-textfield__label" for="email">Email</label>
 										<span class="mdl-textfield__error">Invalid email!</span>
 									</div>
+								</span>
 							</span>
-						</span>
-					</li>
-					<li class="mdl-list__item mdl-list__item--two-line">
-						<span class="mdl-list__item-primary-content">
-							<i class="material-icons mdl-list__item-avatar">tag_faces</i>
-							<span>Profile picture</span>
-							<span class="mdl-list__item-sub-title">Display picture</span>
-						</span>
-						<span class="mdl-list__item-secondary-content">
-							<span class="mdl-list__item-secondary-action">
-								<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">add_circle</i></button>
-								<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">delete</i></button>
+						</li>
+						<li class="mdl-list__item mdl-list__item--two-line">
+							<span class="mdl-list__item-primary-content">
+								<i class="material-icons mdl-list__item-avatar">tag_faces</i>
+								<span>Profile picture</span>
+								<span class="mdl-list__item-sub-title">Display picture</span>
 							</span>
-						</span>
-					</li>
-					<li class="mdl-list__item mdl-list__item--two-line">
-						<span class="mdl-list__item-primary-content">
-							<i class="material-icons mdl-list__item-avatar">person</i>
-							<span>User Type</span>
-							<span class="mdl-list__item-sub-title">Accessabilities of the account</span>
-						</span>
-						<span class="mdl-list__item-secondary-content">
-							<span class="mdl-list__item-secondary-action">
-								<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent"><?php echo $row["user_type"]; ?></button>
+							<span class="mdl-list__item-secondary-content">
+								<span class="mdl-list__item-secondary-action">
+									<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">add_circle</i></button>
+									<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">delete</i></button>
+								</span>
 							</span>
-						</span>
-					</li>
-					<li class="mdl-list__item mdl-list__item--two-line">
-						<span class="mdl-list__item-primary-content">
-							<i class="material-icons mdl-list__item-avatar">notifications</i>
-							<span>Notifications</span>
-							<span class="mdl-list__item-sub-title">Get notified on latest updates</span>
-						</span>
-						<span class="mdl-list__item-secondary-content">
-							<span class="mdl-list__item-secondary-action">
-								<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-3">
-									<input type="checkbox" id="switch-3" class="mdl-switch__input" checked>
-									<span class="mdl-switch__label">&nbsp;&nbsp;</span>
-								</label>
+						</li>
+						<li class="mdl-list__item mdl-list__item--two-line">
+							<span class="mdl-list__item-primary-content">
+								<i class="material-icons mdl-list__item-avatar">person</i>
+								<span>User Type</span>
+								<span class="mdl-list__item-sub-title">Accessabilities of the account</span>
 							</span>
-						</span>
-					</li>
-					<li class="mdl-list__item mdl-list__item--two-line">
-						<span class="mdl-list__item-primary-content">
-							<i class="material-icons mdl-list__item-avatar">save</i>
-							<span>Save changes</span>
-							<span class="mdl-list__item-sub-title">Or cancel</span>
-						</span>
-						<span class="mdl-list__item-secondary-content">
-							<span class="mdl-list__item-secondary-action">
-								<button onclick="window.location.href=''" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Cancel</button>
-								<button type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Save</button>
+							<span class="mdl-list__item-secondary-content">
+								<span class="mdl-list__item-secondary-action">
+									<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">
+										<?php echo $row["user_type"]; ?></button>
+								</span>
 							</span>
-						</span>
-					</li>
-				  </form>
+						</li>
+						<li class="mdl-list__item mdl-list__item--two-line">
+							<span class="mdl-list__item-primary-content">
+								<i class="material-icons mdl-list__item-avatar">notifications</i>
+								<span>Notifications</span>
+								<span class="mdl-list__item-sub-title">Get notified on latest updates</span>
+							</span>
+							<span class="mdl-list__item-secondary-content">
+								<span class="mdl-list__item-secondary-action">
+									<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-3">
+										<input type="checkbox" id="switch-3" class="mdl-switch__input" checked>
+										<span class="mdl-switch__label">&nbsp;&nbsp;</span>
+									</label>
+								</span>
+							</span>
+						</li>
+						<li class="mdl-list__item mdl-list__item--two-line">
+							<span class="mdl-list__item-primary-content">
+								<i class="material-icons mdl-list__item-avatar">save</i>
+								<span>Save changes</span>
+								<span class="mdl-list__item-sub-title">Or cancel</span>
+							</span>
+							<span class="mdl-list__item-secondary-content">
+								<span class="mdl-list__item-secondary-action">
+									<button onclick="window.location.href=''" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Cancel</button>
+									<button type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Save</button>
+								</span>
+							</span>
+						</li>
+					</form>
 				</ul>
 			</div>
 		</main>
@@ -350,6 +351,7 @@
 		var searchList = new List('search-list', {
 			valueNames: ['name']
 		});
+
 	</script>
 </body>
 
