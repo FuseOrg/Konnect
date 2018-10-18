@@ -258,32 +258,6 @@
 				<div class="mdl-tabs__panel demo-content mdl-grid" id="events">
 					<!--Event cards-->
 					<div class="mdl-cell mdl-cell--12-col heading">Events</div>
-					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg11.png); background-color: #f7f9fa;">
-						<div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">Didn't found what you were looking for?</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Notifications are sent by college, check out news and events page for other announcements!
-						</div>
-						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../news">
-								See news
-							</a>
-						</div>
-					</div>
-					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg9.png);">
-						<div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">What's happening around?</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Involve in events, workshops, activities and more!
-						</div>
-						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../notifications">
-								See notifications
-							</a>
-						</div>
-					</div>
 					<div class="demo-card-event mdl-color--teal-A200 mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
 						<div class="mdl-card__title mdl-card--expand">
 							<h4>
@@ -384,6 +358,32 @@
 							<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
 								<i class="material-icons">share</i>
 							</button>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg11.png); background-color: #f7f9fa;">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Didn't found what you were looking for?</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Notifications are sent by college, check out news and events page for other announcements!
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../news">
+								See news
+							</a>
+						</div>
+					</div>
+					<div class="img-bg mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url(../../../images/assisit/bg9.png);">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">What's happening around?</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Involve in events, workshops, activities and more!
+						</div>
+						<div class="mdl-card__actions">
+							<a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="../notifications">
+								See notifications
+							</a>
 						</div>
 					</div>
 				</div>
