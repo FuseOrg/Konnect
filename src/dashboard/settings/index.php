@@ -32,7 +32,7 @@
 
 <body class="mdl-demo mdl-base">
 	<?php
-	  session_start();
+		session_start();
 	?>
 	<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
 		<header class="demo-header mdl-layout__header mdl-layout__header--waterfall">
@@ -183,17 +183,17 @@
 				<h4 class="heading mdl-cell mdl-cell--12-col">Settings</h4>
 				<?php
 
-                  include('../../db_config.php');
-                  
-				  if(isset($_POST["full_name"]) OR isset($_POST["username"]) OR isset($_POST["password"]) OR isset($_POST["email_id"]) OR isset($_POST["phoneno"])) {
-                  	$sql2 = "UPDATE users SET full_name = '".$_POST["full_name"]."', username = '".$_POST["username"]."', password = '".$_POST["password"]."', email_id ='".$_POST["email_id"]."', phoneno ='".$_POST["phoneno"]."' WHERE username ='".$_SESSION["username"]."'";
-                  	$result2 = $conn->query($sql2);
+					include('../../db_config.php');
 
-                  }
+					if(isset($_POST["full_name"]) OR isset($_POST["username"]) OR isset($_POST["password"]) OR isset($_POST["email_id"]) OR isset($_POST["phoneno"])) {
+						$sql2 = "UPDATE users SET full_name = '".$_POST["full_name"]."', username = '".$_POST["username"]."', password = '".$_POST["password"]."', email_id = '".$_POST["email_id"]."', phoneno = '".$_POST["phoneno"]."' WHERE username = '".$_SESSION["username"]."'";
+						$result2 = $conn->query($sql2);
 
-                  $sql = "SELECT full_name, password, phoneno, email_id FROM users WHERE username ='".$_SESSION["username"]."'";
-                  $result = $conn->query($sql) or die($conn->error);
-                  $row = $result->fetch_assoc();
+					}
+
+					$sql = "SELECT full_name, password, phoneno, email_id FROM users WHERE username ='".$_SESSION["username"]."'";
+					$result = $conn->query($sql) or die($conn->error);
+					$row = $result->fetch_assoc();
 
 				?>
 				<ul class="demo-list-two mdl-list mdl-card mdl-cell mdl-cell--12-col">
