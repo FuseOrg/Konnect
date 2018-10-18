@@ -322,7 +322,7 @@
 						<span class="mdl-list__item-secondary-content">
 							<span class="mdl-list__item-secondary-action">
 								<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Cancel</button>
-								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Save</button>
+								<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">Save</button>
 							</span>
 						</span>
 					</li>
