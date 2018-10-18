@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 11, 2018 at 01:12 PM
+-- Generation Time: Oct 18, 2018 at 05:53 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -58,6 +58,7 @@ CREATE TABLE `users` (
   `user_id` int(10) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(30) NOT NULL,
+  `user_type` varchar(10) DEFAULT NULL,
   `full_name` varchar(50) NOT NULL,
   `email_id` varchar(50) DEFAULT NULL,
   `phoneno` int(13) DEFAULT NULL
@@ -67,10 +68,9 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`user_id`, `username`, `password`, `full_name`, `email_id`, `phoneno`) VALUES
-(1, 'donald', 'donald', 'Donald', 'a@a', NULL),
-(2, 'slimshady', 'rapgod', 'Eminem', 'e@g', NULL),
-(3, 'mgk', 'shit', 'MGK', 'm@g', NULL);
+INSERT INTO `users` (`user_id`, `username`, `password`, `user_type`, `full_name`, `email_id`, `phoneno`) VALUES
+(1, 'drake', 'drake', NULL, 'Drake', 'a@a', 0),
+(2, 'slimshady', 'rapgod', NULL, 'Eminem', 'e@g', NULL);
 
 --
 -- Indexes for dumped tables
@@ -102,7 +102,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
