@@ -181,6 +181,12 @@
 			<div class="demo-content mdl-grid">
 				<!--Settings-->
 				<h4 class="heading mdl-cell mdl-cell--12-col">Settings</h4>
+				<?php
+
+                  include('../../db_config.php');
+                  $sql = "SELECT fullname, "
+
+				?>
 				<ul class="demo-list-two mdl-list mdl-card mdl-cell mdl-cell--12-col">
 					<li class="mdl-list__item mdl-list__item--two-line">
 						<span class="mdl-list__item-primary-content">
@@ -204,7 +210,7 @@
 						<span class="mdl-list__item-primary-content">
 							<i class="material-icons mdl-list__item-avatar">alternate_email</i>
 							<span>User name</span>
-							<span class="mdl-list__item-sub-title">Registration number</span>
+							<span class="mdl-list__item-sub-title">Registered name</span>
 						</span>
 						<span class="mdl-list__item-secondary-content">
 							<span class="mdl-list__item-secondary-action">
@@ -212,6 +218,24 @@
 									<div class="mdl-textfield mdl-js-textfield">
 										<input class="mdl-textfield__input" type="text" pattern="[a-z,A-Z,0-9,_]*" id="uname">
 										<label class="mdl-textfield__label" for="uname">Username</label>
+										<span class="mdl-textfield__error">Letters, digits and underscore only!</span>
+									</div>
+								</form>
+							</span>
+						</span>
+					</li>
+					<li class="mdl-list__item mdl-list__item--two-line">
+						<span class="mdl-list__item-primary-content">
+							<i class="material-icons mdl-list__item-avatar">settings</i>
+							<span>Password</span>
+							<span class="mdl-list__item-sub-title">Current password</span>
+						</span>
+						<span class="mdl-list__item-secondary-content">
+							<span class="mdl-list__item-secondary-action">
+								<form action="#">
+									<div class="mdl-textfield mdl-js-textfield">
+										<input class="mdl-textfield__input" type="text" pattern="[a-z,A-Z,0-9,_]*" id="uname">
+										<label class="mdl-textfield__label" for="uname">Password</label>
 										<span class="mdl-textfield__error">Letters, digits and underscore only!</span>
 									</div>
 								</form>
@@ -230,7 +254,7 @@
 									<div class="mdl-textfield mdl-js-textfield">
 										<input class="mdl-textfield__input" type="tel" pattern="[0-9]*" id="number">
 										<label class="mdl-textfield__label" for="number">
-											Number...</label>
+											Phone No.</label>
 										<span class="mdl-textfield__error">Invalid number!</span>
 									</div>
 								</form>
@@ -270,31 +294,13 @@
 					</li>
 					<li class="mdl-list__item mdl-list__item--two-line">
 						<span class="mdl-list__item-primary-content">
-							<i class="material-icons mdl-list__item-avatar">settings</i>
-							<span>Option</span>
-							<span class="mdl-list__item-sub-title">Description</span>
-						</span>
-						<span class="mdl-list__item-secondary-content">
-							<span class="mdl-list__item-secondary-action">
-								<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
-									<input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
-									<span class="mdl-switch__label">&nbsp;&nbsp;</span>
-								</label>
-							</span>
-						</span>
-					</li>
-					<li class="mdl-list__item mdl-list__item--two-line">
-						<span class="mdl-list__item-primary-content">
 							<i class="material-icons mdl-list__item-avatar">person</i>
-							<span>Option</span>
-							<span class="mdl-list__item-sub-title">Description</span>
+							<span>User Type</span>
+							<span class="mdl-list__item-sub-title">Accessabilities of the account</span>
 						</span>
 						<span class="mdl-list__item-secondary-content">
 							<span class="mdl-list__item-secondary-action">
-								<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
-									<input type="checkbox" id="switch-2" class="mdl-switch__input">
-									<span class="mdl-switch__label">&nbsp;&nbsp;</span>
-								</label>
+								<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent" style="margin-left: 0;">Type</button>
 							</span>
 						</span>
 					</li>
