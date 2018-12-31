@@ -194,7 +194,7 @@
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
 						</div>
 						<div class="mdl-card__actions">
-							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
+							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">View</a>
 							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read more</a>
 						</div>
 						<div class="mdl-card__menu">
@@ -211,7 +211,7 @@
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
 						</div>
 						<div class="mdl-card__actions">
-							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
+							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">View</a>
 							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read more</a>
 						</div>
 						<div class="mdl-card__menu">
@@ -228,7 +228,7 @@
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
 						</div>
 						<div class="mdl-card__actions">
-							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
+							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">View</a>
 							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read more</a>
 						</div>
 						<div class="mdl-card__menu">
@@ -245,7 +245,7 @@
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugit cumque delectus vero quos quam aspernatur eligendi expedita maiores, suscipit.
 						</div>
 						<div class="mdl-card__actions">
-							<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View</a>
+							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent">View</a>
 							<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read more</a>
 						</div>
 						<div class="mdl-card__menu">
